@@ -44,8 +44,8 @@ def generate_svg(counter, path="gitlab-graph.svg"):
     # Start the graph on the Sunday of the week `start_date` is in.
     start_of_graph = start_date - datetime.timedelta(days=(start_date.weekday() + 1) % 7)
     
-    # Colors from GitHub's theme
-    colors = ["#ebedf0", "#9be9a8", "#40c463", "#30a14e", "#216e39"]
+    # Colors for GitHub's dark mode theme
+    colors = ["#161b22", "#0e4429", "#006d32", "#26a641", "#39d353"]
 
     def get_color(count):
         if count == 0: return colors[0]
