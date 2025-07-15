@@ -20,6 +20,13 @@ jobs:
         with:
           python-version: "3.11"
 
+      - name: Check GitLab Access
+          run: |
+            curl --connect-timeout 10 -sI ${{ secrets.GITLAB_URL }} | grep "200 OK" || {
+              echo "GitLab not available. Skipping update."
+              exit 0
+            }
+
       - name: Install Dependencies
         run: pip install python-gitlab svgwrite
 
