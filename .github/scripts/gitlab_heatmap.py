@@ -30,14 +30,24 @@ def get_contribution_dates(gl):
     
     return Counter(contribution_dates)
 
-def generate_svg(counter, path="gitlab-graph.svg"):
-    """Generates a GitHub-style heatmap SVG."""
+def generate_svg(counter, total_contributions, path="gitlab-graph.svg"):
+    """Generates a GitHub-style heatmap SVG with a contribution count."""
     box_size = 10
     box_margin = 3
+    text_height = 30  # Space at the top for the text
     width = (box_size + box_margin) * 53
-    height = (box_size + box_margin) * 7
+    height = (box_size + box_margin) * 7 + text_height
     
     dwg = svgwrite.Drawing(path, size=(f"{width}px", f"{height}px"))
+
+    # Add total contributions text
+    contribution_text = f"{total_contributions:,} contributions in the last year"
+    dwg.add(dwg.text(
+        contribution_text,
+        insert=(0, 18),  # x, y position
+        fill="#c9d1d9",
+        style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji'; font-size: 14px;"
+    ))
     
     today = datetime.date.today()
     start_date = today - datetime.timedelta(days=365)
@@ -65,7 +75,7 @@ def generate_svg(counter, path="gitlab-graph.svg"):
                 color = get_color(count)
                 
                 x = week * (box_size + box_margin)
-                y = day_of_week * (box_size + box_margin)
+                y = day_of_week * (box_size + box_margin) + text_height
                 
                 dwg.add(dwg.rect(
                     insert=(x, y),
@@ -110,7 +120,7 @@ def main():
             print("No contributions found. The generated graph will be empty.")
 
         print("Generating SVG heatmap...")
-        generate_svg(contribution_counts)
+        generate_svg(contribution_counts, total_contributions)
         print("Successfully generated gitlab-graph.svg")
 
     except Exception as e:
