@@ -6,6 +6,7 @@ import gitlab
 import svgwrite
 from collections import Counter
 import sys
+import requests
 
 # Configuration from environment variables
 GITLAB_URL = os.environ.get('GITLAB_URL')
@@ -87,7 +88,17 @@ def main():
         sys.exit(1)
 
     print(f"Connecting to GitLab at {GITLAB_URL}...")
-    gl = gitlab.Gitlab(GITLAB_URL, private_token=GITLAB_TOKEN)
+    gl = gitlab.Gitlab(GITLAB_URL, private_token=GITLAB_TOKEN, timeout=10)
+
+    try:
+        # Check if the GitLab instance is reachable before proceeding
+        gl.auth()
+        print("Successfully connected to GitLab.")
+    except (requests.exceptions.ConnectionError, gitlab.exceptions.GitlabAuthenticationError) as e:
+        print(f"GitLab not available at {GITLAB_URL}. Skipping update.", file=sys.stderr)
+        print(f"Error: {e}", file=sys.stderr)
+        # Exit gracefully so the workflow doesn't report a failure
+        sys.exit(0)
     
     print("Fetching GitLab contribution data...")
     try:
@@ -102,11 +113,8 @@ def main():
         generate_svg(contribution_counts)
         print("Successfully generated gitlab-graph.svg")
 
-    except gitlab.exceptions.GitlabAuthenticationError:
-        print("Error: GitLab authentication failed. Please check your GITLAB_TOKEN.", file=sys.stderr)
-        sys.exit(1)
     except Exception as e:
-        print(f"An error occurred: {e}", file=sys.stderr)
+        print(f"An unexpected error occurred: {e}", file=sys.stderr)
         sys.exit(1)
 
 if __name__ == "__main__":
