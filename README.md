@@ -17,7 +17,7 @@ A GitHub Action runs daily, executing a Python script that fetches your GitLab c
 To use this action, configure the following secrets in your GitHub repository under **Settings > Secrets and variables > Actions**:
 
 -   `GITLAB_URL`: The base URL of your GitLab instance (e.g., `https://gitlab.com`).
--   `GITLAB_TOKEN`: A GitLab Personal Access Token with `read_api` scope.
+-   `GITLAB_TOKEN`: A GitLab Personal Access Token with `read_user` scope.
 
 ### Important Note on VPN Access
 
