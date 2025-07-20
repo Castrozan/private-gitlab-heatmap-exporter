@@ -2,22 +2,40 @@ name: Update GitLab Activity Graph
 
 on:
   schedule:
-    - cron: "0 15 * * *" # 12:00 PM BRT
+    - cron: "0 15 * * *" # 12PM BRT
   workflow_dispatch:
 
 jobs:
+  check-runner:
+    runs-on: ubuntu-latest
+    outputs:
+      runner_online: ${{ steps.status.outputs.runner_online }}
+    steps:
+      - id: status
+        run: |
+          ONLINE_EXISTS=$(
+            gh api \
+              --paginate /repos/${{ github.repository }}/actions/runners \
+              --jq 'any(.runners[]; .status == "online")'
+          )
+
+          if [[ "$ONLINE_EXISTS" == "true" ]]; then
+            echo "runner_online=true" >> $GITHUB_OUTPUT
+          else
+            echo "runner_online=false" >> $GITHUB_OUTPUT
+          fi
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
   build:
+    needs: check-runner
+    if: needs.check-runner.outputs.runner_online == 'true'
     runs-on: self-hosted
     continue-on-error: true
     permissions:
       contents: write
 
     steps:
-      - name: Cancel if runner offline
-        uses: peter-evans/cancel-offline-runner@v1
-        with:
-          github-token: ${{ secrets.GITHUB_TOKEN }}
-
       - name: Checkout Repo
         uses: actions/checkout@v4
 
