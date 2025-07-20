@@ -11,8 +11,7 @@ jobs:
     outputs:
       runner_online: ${{ steps.status.outputs.runner_online }}
     steps:
-      - id: status
-        run: |
+      - run: |
           ONLINE_EXISTS=$(
             gh api \
               --paginate /repos/${{ github.repository }}/actions/runners \
@@ -25,7 +24,7 @@ jobs:
             echo "runner_online=false" >> $GITHUB_OUTPUT
           fi
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
   build:
     needs: check-runner
