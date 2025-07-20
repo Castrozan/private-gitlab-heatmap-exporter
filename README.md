@@ -18,12 +18,17 @@ To use this action, configure the following secrets in your GitHub repository un
 
 -   `GITLAB_URL`: The base URL of your GitLab instance (e.g., `https://gitlab.com`).
 -   `GITLAB_TOKEN`: A GitLab Personal Access Token with `read_user` scope.
+-   `RUNNER_CHECK_TOKEN`: A fine-grained personal GitHub access token with repository administration read permissions to check runner status (see [here](https://docs.github.com/en/rest/actions/self-hosted-runners?apiVersion=2022-11-28#list-self-hosted-runners-for-a-repository) for more information).
 
-### Important Note on VPN Access
+### Self-hosted Runner
 
-If your GitLab instance is on a private network or requires a VPN, the default GitHub-hosted runner will not be able to access it. You must use a [self-hosted runner](https://docs.github.com/en/actions/hosting-your-own-runners/about-self-hosted-runners) that is configured on a machine within that network.
+If your GitLab instance is on a private network or requires a VPN, the default GitHub-hosted runner will not be able to access it. You must use a [self-hosted runner](https://docs.github.com/en/actions/hosting-your-own-runners/about-self-hosted-runners) that is configured on a machine within that network - it can be your work laptop, a home server, etc.
 
 The workflow file is already configured to use a `self-hosted` runner.
+
+#### Self-hosted Runner Status Check
+
+The workflow includes an automatic runner status check that verifies if your self-hosted runner is online before executing the build.
 
 ### Local Development
 
