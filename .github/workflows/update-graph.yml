@@ -8,11 +8,16 @@ on:
 jobs:
   build:
     runs-on: self-hosted
-    continue-on-error: true # ← treat any failures in this job as non‑fatal
+    continue-on-error: true
     permissions:
       contents: write
 
     steps:
+      - name: Cancel if runner offline
+        uses: peter-evans/cancel-offline-runner@v1
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+
       - name: Checkout Repo
         uses: actions/checkout@v4
 
