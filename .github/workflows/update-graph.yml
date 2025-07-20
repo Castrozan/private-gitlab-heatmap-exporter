@@ -8,6 +8,7 @@ on:
 jobs:
   build:
     runs-on: self-hosted
+    continue-on-error: true # ← treat any failures in this job as non‑fatal
     permissions:
       contents: write
 
