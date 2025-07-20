@@ -8,15 +8,12 @@ on:
 jobs:
   check-runner:
     runs-on: ubuntu-latest
-    permissions:
-      actions: read
-      contents: write
     outputs:
       runner_online: ${{ steps.status.outputs.runner_online }}
     steps:
       - run: |
           ONLINE_EXISTS=$(
-            gh api repos/${{ github.repository }}/actions/runners --jq 'any(.runners[]; .status == "online")'
+            gh api repos/castrozan/private-gitlab-heatmap-exporter/actions/runners --jq 'any(.runners[]; .status == "online")'
           )
 
           if [[ "$ONLINE_EXISTS" == "true" ]]; then
@@ -26,7 +23,6 @@ jobs:
           fi
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          GITHUB_REPOSITORY: ${{ github.repository }}
 
   build:
     needs: check-runner
