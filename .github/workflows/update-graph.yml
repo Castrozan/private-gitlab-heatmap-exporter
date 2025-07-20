@@ -10,29 +10,32 @@ jobs:
     runs-on: ubuntu-latest
     outputs:
       runner_online: ${{ steps.status.outputs.runner_online }}
-    steps:
-      - run: |
-          ONLINE_EXISTS=$(
-            gh api repos/castrozan/private-gitlab-heatmap-exporter/actions/runners --jq 'any(.runners[]; .status == "online")'
-          )
 
-          if [[ "$ONLINE_EXISTS" == "true" ]]; then
-            echo "runner_online=true" >> $GITHUB_OUTPUT
-          else
-            echo "runner_online=false" >> $GITHUB_OUTPUT
-          fi
+    steps:
+      - name: Check runner online status
+        id: status
         env:
           GH_TOKEN: ${{ secrets.PRIVATE_GITLAB_HEATMAP_EXPORTER_PAT_TOKEN }}
+        run: |
+          IS_ONLINE=$(
+            gh api repos/${{ github.repository }}/actions/runners \
+              --jq 'any(.runners[]; .status == "online")'
+          )
+
+          echo "runner_online=$IS_ONLINE" >> $GITHUB_OUTPUT
 
   build:
     needs: check-runner
-    if: needs.check-runner.outputs.runner_online == 'true'
+    if: ${{ needs.check-runner.outputs.runner_online == 'true' }}
     runs-on: self-hosted
     continue-on-error: true
     permissions:
       contents: write
 
     steps:
+      - name: Debug runner_online
+        run: echo "runner_online=${{ needs.check-runner.outputs.runner_online }}"
+
       - name: Checkout Repo
         uses: actions/checkout@v4
 
