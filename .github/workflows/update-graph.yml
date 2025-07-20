@@ -22,7 +22,7 @@ jobs:
             echo "runner_online=false" >> $GITHUB_OUTPUT
           fi
         env:
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GH_TOKEN: ${{ secrets.PRIVATE_GITLAB_HEATMAP_EXPORTER_PAT_TOKEN }}
 
   build:
     needs: check-runner
