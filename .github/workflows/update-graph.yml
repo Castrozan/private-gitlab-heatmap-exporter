@@ -22,6 +22,7 @@ jobs:
               --jq 'any(.runners[]; .status == "online")'
           )
 
+          echo "IS_ONLINE: $IS_ONLINE"
           echo "runner_online=$IS_ONLINE" >> $GITHUB_OUTPUT
 
   build:
