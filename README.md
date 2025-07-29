@@ -43,6 +43,7 @@ To run the script locally for testing:
     ```bash
     export GITLAB_URL="<your_gitlab_instance_url>"
     export GITLAB_TOKEN="<your_gitlab_pat>"
+    export RUNNER_CHECK_TOKEN="<your_fine_grained_token>"
     ```
 
 3.  **Run the script:**
