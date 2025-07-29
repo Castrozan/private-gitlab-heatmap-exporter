@@ -34,9 +34,6 @@ jobs:
       contents: write
 
     steps:
-      - name: Debug runner_online
-        run: echo "runner_online=${{ needs.check-runner.outputs.runner_online }}"
-
       - name: Checkout Repo
         uses: actions/checkout@v4
 
