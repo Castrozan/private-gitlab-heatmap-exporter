@@ -30,6 +30,78 @@ The workflow file is already configured to use a `self-hosted` runner.
 
 The workflow includes an automatic runner status check that verifies if your self-hosted runner is online before executing the build.
 
+### Scheduled Runner Window (Optional)
+
+Instead of running the self-hosted runner 24/7, you can use systemd timers to start it just before the workflow fires and stop it right after. The workflow runs daily at **12PM BRT (15:00 UTC)**.
+
+1.  **Disable auto-start on boot:**
+    ```bash
+    sudo systemctl disable <RUNNER_SERVICE_NAME>
+    ```
+
+2.  **Create timer units** to start the runner at 11:45 and stop it at 12:30:
+
+    `/etc/systemd/system/github-actions-runner-start.timer`:
+    ```ini
+    [Unit]
+    Description=Start GitHub Actions runner before scheduled workflow
+
+    [Timer]
+    OnCalendar=11:45
+    Persistent=true
+
+    [Install]
+    WantedBy=timers.target
+    ```
+
+    `/etc/systemd/system/github-actions-runner-start.service`:
+    ```ini
+    [Unit]
+    Description=Start GitHub Actions runner for scheduled workflow
+
+    [Service]
+    Type=oneshot
+    ExecStart=/usr/bin/systemctl start <RUNNER_SERVICE_NAME>
+    ```
+
+    `/etc/systemd/system/github-actions-runner-stop.timer`:
+    ```ini
+    [Unit]
+    Description=Stop GitHub Actions runner after scheduled workflow
+
+    [Timer]
+    OnCalendar=12:30
+    Persistent=false
+
+    [Install]
+    WantedBy=timers.target
+    ```
+
+    `/etc/systemd/system/github-actions-runner-stop.service`:
+    ```ini
+    [Unit]
+    Description=Stop GitHub Actions runner after scheduled workflow
+
+    [Service]
+    Type=oneshot
+    ExecStart=/usr/bin/systemctl stop <RUNNER_SERVICE_NAME>
+    ```
+
+    > Replace `<RUNNER_SERVICE_NAME>` with your runner's service name. Find it with: `ls /etc/systemd/system/actions.runner.*`
+
+3.  **Enable the timers:**
+    ```bash
+    sudo systemctl daemon-reload
+    sudo systemctl enable --now github-actions-runner-start.timer github-actions-runner-stop.timer
+    ```
+
+4.  **Verify:**
+    ```bash
+    systemctl list-timers github-actions-runner-*
+    ```
+
+    Adjust the `OnCalendar` times if you changed the workflow cron schedule.
+
 ### Local Development
 
 To run the script locally for testing:

@@ -79,6 +79,72 @@ Verify the commit was made:
 gh api repos/OWNER/REPO/commits --jq '.[0] | {sha: .sha[0:7], message: .commit.message, date: .commit.author.date}'
 ```
 
+### 5. Scheduled Runner Window (Optional)
+
+Instead of running the runner 24/7, use systemd timers to start it just before the workflow fires and stop it after. This saves resources and avoids an always-on background process.
+
+The workflow runs at 12PM BRT (15:00 UTC). Create four systemd units — a start timer/service pair and a stop timer/service pair:
+
+**Start timer** (`/etc/systemd/system/github-actions-runner-start.timer`):
+```ini
+[Unit]
+Description=Start GitHub Actions runner before scheduled workflow
+
+[Timer]
+OnCalendar=11:45
+Persistent=true
+
+[Install]
+WantedBy=timers.target
+```
+
+**Start service** (`/etc/systemd/system/github-actions-runner-start.service`):
+```ini
+[Unit]
+Description=Start GitHub Actions runner for scheduled workflow
+
+[Service]
+Type=oneshot
+ExecStart=/usr/bin/systemctl start <RUNNER_SERVICE_NAME>
+```
+
+**Stop timer** (`/etc/systemd/system/github-actions-runner-stop.timer`):
+```ini
+[Unit]
+Description=Stop GitHub Actions runner after scheduled workflow
+
+[Timer]
+OnCalendar=12:30
+Persistent=false
+
+[Install]
+WantedBy=timers.target
+```
+
+**Stop service** (`/etc/systemd/system/github-actions-runner-stop.service`):
+```ini
+[Unit]
+Description=Stop GitHub Actions runner after scheduled workflow
+
+[Service]
+Type=oneshot
+ExecStart=/usr/bin/systemctl stop <RUNNER_SERVICE_NAME>
+```
+
+Replace `<RUNNER_SERVICE_NAME>` with the actual service name (check with `ls /etc/systemd/system/actions.runner.*`). Adjust `OnCalendar` times to match the workflow schedule with a buffer.
+
+After creating the units, disable the runner from auto-starting on boot and enable the timers:
+```bash
+sudo systemctl disable <RUNNER_SERVICE_NAME>
+sudo systemctl daemon-reload
+sudo systemctl enable --now github-actions-runner-start.timer github-actions-runner-stop.timer
+```
+
+Verify timers are scheduled:
+```bash
+systemctl list-timers github-actions-runner-*
+```
+
 ## Constraints
 
 - **VPN/Network**: If GitLab requires VPN, the runner machine must have VPN connected when the workflow fires. The workflow runs daily at 12PM BRT (15:00 UTC) — VPN needs to be active at that time.
