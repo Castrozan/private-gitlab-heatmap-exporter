@@ -14,7 +14,6 @@ GITHUB_DARK_MODE_CARD_BACKGROUND_COLOR = "#0d1117"
 GITHUB_DARK_MODE_CARD_BORDER_COLOR = "#30363d"
 GITHUB_DARK_MODE_HEADER_TEXT_COLOR = "#e6edf3"
 GITHUB_DARK_MODE_LABEL_TEXT_COLOR = "#9198a1"
-GITHUB_DARK_MODE_LINK_TEXT_COLOR = "#539bf5"
 GITHUB_FONT_FAMILY = (
     "-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans',"
     " Helvetica, Arial, sans-serif"
@@ -223,17 +222,6 @@ def add_contribution_cells_to_drawing(
             )
 
 
-def add_learn_how_link_to_drawing(drawing, grid_area_left_x, legend_baseline_y):
-    drawing.add(
-        drawing.text(
-            "Learn how we count contributions",
-            insert=(grid_area_left_x, legend_baseline_y),
-            fill=GITHUB_DARK_MODE_LINK_TEXT_COLOR,
-            style=build_label_font_style(12),
-        )
-    )
-
-
 def add_less_more_legend_to_drawing(drawing, total_width, legend_baseline_y):
     legend_swatch_size = 10
     legend_swatch_gap = 3
@@ -326,7 +314,6 @@ def generate_svg(counter, total_contributions, path="gitlab-graph.svg"):
     )
     legend_baseline_y = grid_top_y + grid_height + LEGEND_TOP_MARGIN + 14
 
-    add_learn_how_link_to_drawing(drawing, grid_area_left_x, legend_baseline_y)
     add_less_more_legend_to_drawing(drawing, total_width, legend_baseline_y)
 
     drawing.save()
