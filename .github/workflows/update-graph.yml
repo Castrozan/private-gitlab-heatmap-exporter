@@ -45,22 +45,18 @@ jobs:
       - name: Install Dependencies
         run: pip install python-gitlab svgwrite
 
-      - name: Generate Heatmap Graph
+      - name: Generate Contribution Graphs
         env:
           GITLAB_TOKEN: ${{ secrets.GITLAB_TOKEN }}
           GITLAB_URL: ${{ secrets.GITLAB_URL }}
-        run: python .github/scripts/gitlab_heatmap.py
-
-      - name: Generate Snake Animation
-        env:
-          GITLAB_TOKEN: ${{ secrets.GITLAB_TOKEN }}
-          GITLAB_URL: ${{ secrets.GITLAB_URL }}
-        run: python .github/scripts/gitlab_snake.py
+        run: PYTHONPATH=.github/scripts python .github/scripts/generate_all_contribution_graphs.py
 
       - name: Commit and Push
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add gitlab-graph.svg gitlab-snk.svg
+          for svg_file in gitlab-graph.svg gitlab-snk.svg; do
+            [ -f "$svg_file" ] && git add "$svg_file"
+          done
           git commit -m "Update GitLab contribution graph and snake" || echo "No changes"
           git push
