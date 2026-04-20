@@ -6,6 +6,8 @@ This project automatically generates a GitHub-style contribution graph from a pr
 
 ![GitLab Contributions](./gitlab-graph.svg)
 
+![GitLab Snake](./gitlab-snk.svg)
+
 ## How It Works
 
 A GitHub Action runs daily, executing a Python script that fetches your GitLab contribution events from the last year. It then generates an SVG image mimicking the GitHub contribution graph and commits the updated SVG back to this repository.
