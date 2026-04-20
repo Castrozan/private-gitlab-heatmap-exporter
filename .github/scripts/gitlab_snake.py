@@ -1,5 +1,7 @@
 import datetime
+import hashlib
 import os
+import random
 import sys
 from collections import Counter
 
@@ -61,7 +63,7 @@ SNAKE_BODY_BASE_RADIUS = 4.5
 SNAKE_BODY_RADIUS_DECAY_PER_SEGMENT = 0.3
 SNAKE_BODY_OPACITY_DECAY_PER_SEGMENT = 0.1
 
-SECONDS_PER_CELL_STEP = 0.075
+SECONDS_PER_CELL_STEP = 0.15
 TRAVERSAL_END_FRACTION = 0.78
 SNAKE_HIDE_FRACTION = 0.82
 CELL_RESTORE_START_FRACTION = 0.90
@@ -118,15 +120,52 @@ def build_contribution_grid(contribution_counter):
 
 
 def build_full_grid_serpentine_path(grid):
-    path = []
+    seed = hashlib.md5(datetime.date.today().isoformat().encode()).hexdigest()
+    rng = random.Random(seed)
+
+    all_cells = set()
     for column_index in range(GRID_COLUMN_COUNT):
-        if column_index % 2 == 0:
-            row_range = range(GRID_ROW_COUNT)
-        else:
-            row_range = range(GRID_ROW_COUNT - 1, -1, -1)
-        for row_index in row_range:
+        for row_index in range(GRID_ROW_COUNT):
             if grid[column_index][row_index] is not None:
-                path.append((column_index, row_index))
+                all_cells.add((column_index, row_index))
+
+    first_column_cells = [
+        (0, row) for row in range(GRID_ROW_COUNT) if (0, row) in all_cells
+    ]
+    start = first_column_cells[0] if first_column_cells else next(iter(all_cells))
+
+    path = [start]
+    visited = {start}
+    current = start
+
+    while len(visited) < len(all_cells):
+        column, row = current
+        neighbors = [
+            (column + 1, row),
+            (column - 1, row),
+            (column, row + 1),
+            (column, row - 1),
+        ]
+        unvisited_neighbors = [
+            n for n in neighbors if n in all_cells and n not in visited
+        ]
+
+        if unvisited_neighbors:
+            forward_neighbors = [n for n in unvisited_neighbors if n[0] >= column]
+            if forward_neighbors and rng.random() < 0.7:
+                next_cell = rng.choice(forward_neighbors)
+            else:
+                next_cell = rng.choice(unvisited_neighbors)
+        else:
+            remaining = all_cells - visited
+            next_cell = min(
+                remaining, key=lambda c: abs(c[0] - column) + abs(c[1] - row)
+            )
+
+        path.append(next_cell)
+        visited.add(next_cell)
+        current = next_cell
+
     return path
 
 
@@ -428,7 +467,7 @@ def build_svg_snake_elements(path, total_animation_seconds):
     lines.append("</circle>")
 
     for segment_number in range(1, SNAKE_BODY_SEGMENT_COUNT + 1):
-        delay_steps = segment_number * 2
+        delay_steps = segment_number
         segment_radius = (
             SNAKE_BODY_BASE_RADIUS
             - (segment_number - 1) * SNAKE_BODY_RADIUS_DECAY_PER_SEGMENT
