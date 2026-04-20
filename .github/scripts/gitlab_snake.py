@@ -119,6 +119,17 @@ def build_contribution_grid(contribution_counter):
     return grid, sunday_aligned_start, one_year_ago, today
 
 
+def count_unvisited_exits(cell, all_cells, visited):
+    column, row = cell
+    neighbors = [
+        (column + 1, row),
+        (column - 1, row),
+        (column, row + 1),
+        (column, row - 1),
+    ]
+    return sum(1 for n in neighbors if n in all_cells and n not in visited)
+
+
 def build_full_grid_serpentine_path(grid):
     seed = hashlib.md5(datetime.date.today().isoformat().encode()).hexdigest()
     rng = random.Random(seed)
@@ -151,11 +162,16 @@ def build_full_grid_serpentine_path(grid):
         ]
 
         if unvisited_neighbors:
-            forward_neighbors = [n for n in unvisited_neighbors if n[0] >= column]
-            if forward_neighbors and rng.random() < 0.7:
-                next_cell = rng.choice(forward_neighbors)
-            else:
-                next_cell = rng.choice(unvisited_neighbors)
+            min_exits = min(
+                count_unvisited_exits(n, all_cells, visited)
+                for n in unvisited_neighbors
+            )
+            best_neighbors = [
+                n
+                for n in unvisited_neighbors
+                if count_unvisited_exits(n, all_cells, visited) == min_exits
+            ]
+            next_cell = rng.choice(best_neighbors)
         else:
             remaining = all_cells - visited
             next_cell = min(
