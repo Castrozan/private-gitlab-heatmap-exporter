@@ -130,7 +130,7 @@ def count_unvisited_exits(cell, all_cells, visited):
     return sum(1 for n in neighbors if n in all_cells and n not in visited)
 
 
-def build_full_grid_serpentine_path(grid):
+def build_randomized_hamiltonian_path(grid):
     seed = hashlib.md5(datetime.date.today().isoformat().encode()).hexdigest()
     rng = random.Random(seed)
 
@@ -140,16 +140,20 @@ def build_full_grid_serpentine_path(grid):
             if grid[column_index][row_index] is not None:
                 all_cells.add((column_index, row_index))
 
+    total_cell_count = len(all_cells)
+
     first_column_cells = [
         (0, row) for row in range(GRID_ROW_COUNT) if (0, row) in all_cells
     ]
-    start = first_column_cells[0] if first_column_cells else next(iter(all_cells))
+    start = (
+        rng.choice(first_column_cells) if first_column_cells else next(iter(all_cells))
+    )
 
     path = [start]
     visited = {start}
     current = start
 
-    while len(visited) < len(all_cells):
+    while len(visited) < total_cell_count:
         column, row = current
         neighbors = [
             (column + 1, row),
@@ -162,16 +166,20 @@ def build_full_grid_serpentine_path(grid):
         ]
 
         if unvisited_neighbors:
-            min_exits = min(
-                count_unvisited_exits(n, all_cells, visited)
+            exit_counts = {
+                n: count_unvisited_exits(n, all_cells, visited)
                 for n in unvisited_neighbors
-            )
-            best_neighbors = [
-                n
-                for n in unvisited_neighbors
-                if count_unvisited_exits(n, all_cells, visited) == min_exits
+            }
+            minimum_exit_count = min(exit_counts.values())
+
+            remaining_fraction = (total_cell_count - len(visited)) / total_cell_count
+            warnsdorff_relaxation = 1 if remaining_fraction > 0.3 else 0
+            exit_threshold = minimum_exit_count + warnsdorff_relaxation
+
+            candidates = [
+                n for n in unvisited_neighbors if exit_counts[n] <= exit_threshold
             ]
-            next_cell = rng.choice(best_neighbors)
+            next_cell = rng.choice(candidates)
         else:
             remaining = all_cells - visited
             next_cell = min(
@@ -535,7 +543,7 @@ def generate_snake_svg(contribution_counter, output_path="gitlab-snk.svg"):
     grid, sunday_aligned_start, one_year_ago, today = build_contribution_grid(
         contribution_counter
     )
-    path = build_full_grid_serpentine_path(grid)
+    path = build_randomized_hamiltonian_path(grid)
     path_length = len(path)
 
     traversal_seconds = path_length * SECONDS_PER_CELL_STEP
