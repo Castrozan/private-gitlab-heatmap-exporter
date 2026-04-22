@@ -119,76 +119,40 @@ def build_contribution_grid(contribution_counter):
     return grid, sunday_aligned_start, one_year_ago, today
 
 
-def count_unvisited_exits(cell, all_cells, visited):
-    column, row = cell
-    neighbors = [
-        (column + 1, row),
-        (column - 1, row),
-        (column, row + 1),
-        (column, row - 1),
-    ]
-    return sum(1 for n in neighbors if n in all_cells and n not in visited)
-
-
 def build_randomized_hamiltonian_path(grid):
     seed = hashlib.md5(datetime.date.today().isoformat().encode()).hexdigest()
     rng = random.Random(seed)
 
-    all_cells = set()
+    columns = []
     for column_index in range(GRID_COLUMN_COUNT):
-        for row_index in range(GRID_ROW_COUNT):
-            if grid[column_index][row_index] is not None:
-                all_cells.add((column_index, row_index))
-
-    total_cell_count = len(all_cells)
-
-    first_column_cells = [
-        (0, row) for row in range(GRID_ROW_COUNT) if (0, row) in all_cells
-    ]
-    start = (
-        rng.choice(first_column_cells) if first_column_cells else next(iter(all_cells))
-    )
-
-    path = [start]
-    visited = {start}
-    current = start
-
-    while len(visited) < total_cell_count:
-        column, row = current
-        neighbors = [
-            (column + 1, row),
-            (column - 1, row),
-            (column, row + 1),
-            (column, row - 1),
+        rows_in_column = [
+            row_index
+            for row_index in range(GRID_ROW_COUNT)
+            if grid[column_index][row_index] is not None
         ]
-        unvisited_neighbors = [
-            n for n in neighbors if n in all_cells and n not in visited
-        ]
+        if rows_in_column:
+            columns.append((column_index, rows_in_column))
 
-        if unvisited_neighbors:
-            exit_counts = {
-                n: count_unvisited_exits(n, all_cells, visited)
-                for n in unvisited_neighbors
-            }
-            minimum_exit_count = min(exit_counts.values())
+    path = []
+    previous_exit_row = None
 
-            remaining_fraction = (total_cell_count - len(visited)) / total_cell_count
-            warnsdorff_relaxation = 1 if remaining_fraction > 0.3 else 0
-            exit_threshold = minimum_exit_count + warnsdorff_relaxation
-
-            candidates = [
-                n for n in unvisited_neighbors if exit_counts[n] <= exit_threshold
-            ]
-            next_cell = rng.choice(candidates)
+    for column_index, rows_in_column in columns:
+        if previous_exit_row is None:
+            go_down = rng.choice([True, False])
         else:
-            remaining = all_cells - visited
-            next_cell = min(
-                remaining, key=lambda c: abs(c[0] - column) + abs(c[1] - row)
-            )
+            closest_row = min(rows_in_column, key=lambda r: abs(r - previous_exit_row))
+            if closest_row == min(rows_in_column):
+                go_down = True
+            elif closest_row == max(rows_in_column):
+                go_down = False
+            else:
+                go_down = rng.choice([True, False])
 
-        path.append(next_cell)
-        visited.add(next_cell)
-        current = next_cell
+        ordered_rows = sorted(rows_in_column, reverse=not go_down)
+        for row_index in ordered_rows:
+            path.append((column_index, row_index))
+
+        previous_exit_row = ordered_rows[-1]
 
     return path
 
