@@ -119,84 +119,125 @@ def build_contribution_grid(contribution_counter):
     return grid, sunday_aligned_start, one_year_ago, today
 
 
-def count_unvisited_exits(cell, all_cells, visited):
-    column, row = cell
-    neighbors = [
-        (column + 1, row),
-        (column - 1, row),
-        (column, row + 1),
-        (column, row - 1),
-    ]
-    return sum(1 for n in neighbors if n in all_cells and n not in visited)
-
-
-def get_unvisited_neighbors(cell, all_cells, visited):
-    column, row = cell
-    neighbors = [
-        (column + 1, row),
-        (column - 1, row),
-        (column, row + 1),
-        (column, row - 1),
-    ]
-    return [n for n in neighbors if n in all_cells and n not in visited]
-
-
-def attempt_warnsdorff_path(all_cells, start, rng):
-    path = [start]
-    visited = {start}
-
-    while len(visited) < len(all_cells):
-        neighbors = get_unvisited_neighbors(path[-1], all_cells, visited)
-        if not neighbors:
-            return None
-
-        min_exits = min(count_unvisited_exits(n, all_cells, visited) for n in neighbors)
-        best = [
-            n
-            for n in neighbors
-            if count_unvisited_exits(n, all_cells, visited) == min_exits
-        ]
-        next_cell = rng.choice(best)
-        path.append(next_cell)
-        visited.add(next_cell)
-
-    return path
-
-
-def build_randomized_hamiltonian_path(grid):
+def build_full_grid_serpentine_path(grid):
     seed = hashlib.md5(datetime.date.today().isoformat().encode()).hexdigest()
     rng = random.Random(seed)
 
-    all_cells = set()
+    columns_with_cells = []
     for column_index in range(GRID_COLUMN_COUNT):
-        for row_index in range(GRID_ROW_COUNT):
-            if grid[column_index][row_index] is not None:
-                all_cells.add((column_index, row_index))
+        rows_in_column = [
+            row_index
+            for row_index in range(GRID_ROW_COUNT)
+            if grid[column_index][row_index] is not None
+        ]
+        if rows_in_column:
+            columns_with_cells.append((column_index, sorted(rows_in_column)))
 
-    edge_cells = [
-        (col, row)
-        for col, row in all_cells
-        if col == 0
-        or col == GRID_COLUMN_COUNT - 1
-        or row == 0
-        or row == GRID_ROW_COUNT - 1
-    ]
+    full_row_set = set(range(GRID_ROW_COUNT))
+    band_widths = partition_columns_into_band_widths(
+        columns_with_cells, full_row_set, rng
+    )
+    band_widths = ensure_partial_last_column_enters_from_top(
+        band_widths, columns_with_cells, full_row_set
+    )
+    return traverse_bands(columns_with_cells, band_widths)
 
-    for _ in range(100):
-        start = rng.choice(edge_cells)
-        path = attempt_warnsdorff_path(all_cells, start, rng)
-        if path is not None:
-            return path
 
-    path = []
-    for column_index in range(GRID_COLUMN_COUNT):
-        rows = [r for r in range(GRID_ROW_COUNT) if (column_index, r) in all_cells]
-        if path and path[-1][1] == max(rows):
-            rows.sort(reverse=True)
+def partition_columns_into_band_widths(columns_with_cells, full_row_set, rng):
+    band_widths = []
+    position = 0
+
+    while position < len(columns_with_cells):
+        consecutive_full_count = 0
+        while position + consecutive_full_count < len(columns_with_cells):
+            candidate_rows = set(
+                columns_with_cells[position + consecutive_full_count][1]
+            )
+            if candidate_rows != full_row_set:
+                break
+            if consecutive_full_count > 0:
+                previous_column_index = columns_with_cells[
+                    position + consecutive_full_count - 1
+                ][0]
+                current_column_index = columns_with_cells[
+                    position + consecutive_full_count
+                ][0]
+                if current_column_index != previous_column_index + 1:
+                    break
+            consecutive_full_count += 1
+
+        if consecutive_full_count == 0:
+            band_widths.append(1)
+            position += 1
         else:
-            rows.sort()
-        for r in rows:
-            path.append((column_index, r))
+            remaining = consecutive_full_count
+            while remaining > 0:
+                if remaining >= 3:
+                    width = rng.choice([1, 1, 2, 2, 3])
+                elif remaining >= 2:
+                    width = rng.choice([1, 2])
+                else:
+                    width = 1
+                band_widths.append(width)
+                remaining -= width
+            position += consecutive_full_count
+
+    return band_widths
+
+
+def ensure_partial_last_column_enters_from_top(
+    band_widths, columns_with_cells, full_row_set
+):
+    last_column_rows = set(columns_with_cells[-1][1])
+    if last_column_rows == full_row_set:
+        return band_widths
+
+    if len(band_widths) % 2 == 1:
+        return band_widths
+
+    for i in range(len(band_widths) - 2, -1, -1):
+        if band_widths[i] >= 2:
+            old_width = band_widths[i]
+            return band_widths[:i] + [1, old_width - 1] + band_widths[i + 1 :]
+
+    for i in range(len(band_widths) - 2, 0, -1):
+        if band_widths[i] == 1 and band_widths[i - 1] == 1:
+            return band_widths[: i - 1] + [2] + band_widths[i + 1 :]
+
+    return band_widths
+
+
+def traverse_bands(columns_with_cells, band_widths):
+    path = []
+    entering_from_top = True
+    column_position = 0
+
+    for band_width in band_widths:
+        band_columns = columns_with_cells[
+            column_position : column_position + band_width
+        ]
+        column_position += band_width
+
+        if band_width == 1:
+            column_index, rows = band_columns[0]
+            ordered_rows = rows if entering_from_top else list(reversed(rows))
+            for row_index in ordered_rows:
+                path.append((column_index, row_index))
+        else:
+            column_indices = [col[0] for col in band_columns]
+            rows = band_columns[0][1]
+            row_order = rows if entering_from_top else list(reversed(rows))
+
+            for row_offset, row_index in enumerate(row_order):
+                if row_offset % 2 == 0:
+                    for col_index in column_indices:
+                        path.append((col_index, row_index))
+                else:
+                    for col_index in reversed(column_indices):
+                        path.append((col_index, row_index))
+
+        entering_from_top = not entering_from_top
+
     return path
 
 
@@ -550,7 +591,7 @@ def generate_snake_svg(contribution_counter, output_path="gitlab-snk.svg"):
     grid, sunday_aligned_start, one_year_ago, today = build_contribution_grid(
         contribution_counter
     )
-    path = build_randomized_hamiltonian_path(grid)
+    path = build_full_grid_serpentine_path(grid)
     path_length = len(path)
 
     traversal_seconds = path_length * SECONDS_PER_CELL_STEP
