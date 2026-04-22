@@ -119,41 +119,84 @@ def build_contribution_grid(contribution_counter):
     return grid, sunday_aligned_start, one_year_ago, today
 
 
+def count_unvisited_exits(cell, all_cells, visited):
+    column, row = cell
+    neighbors = [
+        (column + 1, row),
+        (column - 1, row),
+        (column, row + 1),
+        (column, row - 1),
+    ]
+    return sum(1 for n in neighbors if n in all_cells and n not in visited)
+
+
+def get_unvisited_neighbors(cell, all_cells, visited):
+    column, row = cell
+    neighbors = [
+        (column + 1, row),
+        (column - 1, row),
+        (column, row + 1),
+        (column, row - 1),
+    ]
+    return [n for n in neighbors if n in all_cells and n not in visited]
+
+
+def attempt_warnsdorff_path(all_cells, start, rng):
+    path = [start]
+    visited = {start}
+
+    while len(visited) < len(all_cells):
+        neighbors = get_unvisited_neighbors(path[-1], all_cells, visited)
+        if not neighbors:
+            return None
+
+        min_exits = min(count_unvisited_exits(n, all_cells, visited) for n in neighbors)
+        best = [
+            n
+            for n in neighbors
+            if count_unvisited_exits(n, all_cells, visited) == min_exits
+        ]
+        next_cell = rng.choice(best)
+        path.append(next_cell)
+        visited.add(next_cell)
+
+    return path
+
+
 def build_randomized_hamiltonian_path(grid):
     seed = hashlib.md5(datetime.date.today().isoformat().encode()).hexdigest()
     rng = random.Random(seed)
 
-    columns = []
+    all_cells = set()
     for column_index in range(GRID_COLUMN_COUNT):
-        rows_in_column = [
-            row_index
-            for row_index in range(GRID_ROW_COUNT)
-            if grid[column_index][row_index] is not None
-        ]
-        if rows_in_column:
-            columns.append((column_index, rows_in_column))
+        for row_index in range(GRID_ROW_COUNT):
+            if grid[column_index][row_index] is not None:
+                all_cells.add((column_index, row_index))
+
+    edge_cells = [
+        (col, row)
+        for col, row in all_cells
+        if col == 0
+        or col == GRID_COLUMN_COUNT - 1
+        or row == 0
+        or row == GRID_ROW_COUNT - 1
+    ]
+
+    for _ in range(100):
+        start = rng.choice(edge_cells)
+        path = attempt_warnsdorff_path(all_cells, start, rng)
+        if path is not None:
+            return path
 
     path = []
-    previous_exit_row = None
-
-    for column_index, rows_in_column in columns:
-        if previous_exit_row is None:
-            go_down = rng.choice([True, False])
+    for column_index in range(GRID_COLUMN_COUNT):
+        rows = [r for r in range(GRID_ROW_COUNT) if (column_index, r) in all_cells]
+        if path and path[-1][1] == max(rows):
+            rows.sort(reverse=True)
         else:
-            closest_row = min(rows_in_column, key=lambda r: abs(r - previous_exit_row))
-            if closest_row == min(rows_in_column):
-                go_down = True
-            elif closest_row == max(rows_in_column):
-                go_down = False
-            else:
-                go_down = rng.choice([True, False])
-
-        ordered_rows = sorted(rows_in_column, reverse=not go_down)
-        for row_index in ordered_rows:
-            path.append((column_index, row_index))
-
-        previous_exit_row = ordered_rows[-1]
-
+            rows.sort()
+        for r in rows:
+            path.append((column_index, r))
     return path
 
 
