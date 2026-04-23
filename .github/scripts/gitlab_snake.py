@@ -119,124 +119,128 @@ def build_contribution_grid(contribution_counter):
     return grid, sunday_aligned_start, one_year_ago, today
 
 
-def build_full_grid_serpentine_path(grid):
-    seed = hashlib.md5(datetime.date.today().isoformat().encode()).hexdigest()
+def get_unvisited_adjacent_cells(cell, valid_cells, visited):
+    column, row = cell
+    adjacent = []
+    for delta_column, delta_row in [(0, 1), (0, -1), (1, 0), (-1, 0)]:
+        neighbor = (column + delta_column, row + delta_row)
+        if neighbor in valid_cells and neighbor not in visited:
+            adjacent.append(neighbor)
+    return adjacent
+
+
+def warnsdorff_from(valid_cells, start, rng):
+    current = start
+    path = [current]
+    visited = {current}
+    while len(path) < len(valid_cells):
+        neighbors = get_unvisited_adjacent_cells(current, valid_cells, visited)
+        if not neighbors:
+            break
+        scored = []
+        for neighbor in neighbors:
+            degree = len(
+                get_unvisited_adjacent_cells(
+                    neighbor, valid_cells, visited | {neighbor}
+                )
+            )
+            scored.append((degree, rng.random(), neighbor))
+        scored.sort()
+        current = scored[0][2]
+        path.append(current)
+        visited.add(current)
+    return path
+
+
+def divide_columns_into_parity_aware_chunks(total_columns, rng):
+    odd_chunk_width = rng.choice([3, 5])
+    even_remaining = total_columns - odd_chunk_width
+
+    even_widths = []
+    remaining = even_remaining
+    while remaining > 0:
+        if remaining <= 6:
+            even_widths.append(remaining)
+            remaining = 0
+        elif remaining == 8:
+            even_widths.append(4)
+            remaining = 4
+        else:
+            width = rng.choice([4, 4, 6])
+            if remaining - width < 2 and remaining - width > 0:
+                width = 4
+            even_widths.append(width)
+            remaining -= width
+
+    odd_position = rng.randint(0, len(even_widths))
+    all_widths = (
+        even_widths[:odd_position] + [odd_chunk_width] + even_widths[odd_position:]
+    )
+    return all_widths
+
+
+def build_chunked_warnsdorff_path(grid):
+    seed_string = datetime.date.today().isoformat()
+    seed = hashlib.md5(seed_string.encode()).hexdigest()
     rng = random.Random(seed)
 
-    columns_with_cells = []
+    valid_rows_by_column = {}
+    all_columns = []
     for column_index in range(GRID_COLUMN_COUNT):
-        rows_in_column = [
-            row_index
-            for row_index in range(GRID_ROW_COUNT)
-            if grid[column_index][row_index] is not None
+        rows = [
+            row for row in range(GRID_ROW_COUNT) if grid[column_index][row] is not None
         ]
-        if rows_in_column:
-            columns_with_cells.append((column_index, sorted(rows_in_column)))
+        if rows:
+            valid_rows_by_column[column_index] = sorted(rows)
+            all_columns.append(column_index)
 
-    full_row_set = set(range(GRID_ROW_COUNT))
-    band_widths = partition_columns_into_band_widths(
-        columns_with_cells, full_row_set, rng
+    chunk_widths = divide_columns_into_parity_aware_chunks(len(all_columns), rng)
+
+    first_column = all_columns[0]
+    valid_first_rows = valid_rows_by_column[first_column]
+    even_parity_rows = [
+        row for row in valid_first_rows if (first_column + row) % 2 == 0
+    ]
+    entry_row = (
+        rng.choice(even_parity_rows) if even_parity_rows else valid_first_rows[0]
     )
-    band_widths = ensure_partial_last_column_enters_from_top(
-        band_widths, columns_with_cells, full_row_set
-    )
-    return traverse_bands(columns_with_cells, band_widths)
 
-
-def partition_columns_into_band_widths(columns_with_cells, full_row_set, rng):
-    band_widths = []
-    position = 0
-
-    while position < len(columns_with_cells):
-        consecutive_full_count = 0
-        while position + consecutive_full_count < len(columns_with_cells):
-            candidate_rows = set(
-                columns_with_cells[position + consecutive_full_count][1]
-            )
-            if candidate_rows != full_row_set:
-                break
-            if consecutive_full_count > 0:
-                previous_column_index = columns_with_cells[
-                    position + consecutive_full_count - 1
-                ][0]
-                current_column_index = columns_with_cells[
-                    position + consecutive_full_count
-                ][0]
-                if current_column_index != previous_column_index + 1:
-                    break
-            consecutive_full_count += 1
-
-        if consecutive_full_count == 0:
-            band_widths.append(1)
-            position += 1
-        else:
-            remaining = consecutive_full_count
-            while remaining > 0:
-                if remaining >= 3:
-                    width = rng.choice([1, 1, 2, 2, 3])
-                elif remaining >= 2:
-                    width = rng.choice([1, 2])
-                else:
-                    width = 1
-                band_widths.append(width)
-                remaining -= width
-            position += consecutive_full_count
-
-    return band_widths
-
-
-def ensure_partial_last_column_enters_from_top(
-    band_widths, columns_with_cells, full_row_set
-):
-    last_column_rows = set(columns_with_cells[-1][1])
-    if last_column_rows == full_row_set:
-        return band_widths
-
-    if len(band_widths) % 2 == 1:
-        return band_widths
-
-    for i in range(len(band_widths) - 2, -1, -1):
-        if band_widths[i] >= 2:
-            old_width = band_widths[i]
-            return band_widths[:i] + [1, old_width - 1] + band_widths[i + 1 :]
-
-    for i in range(len(band_widths) - 2, 0, -1):
-        if band_widths[i] == 1 and band_widths[i - 1] == 1:
-            return band_widths[: i - 1] + [2] + band_widths[i + 1 :]
-
-    return band_widths
-
-
-def traverse_bands(columns_with_cells, band_widths):
     path = []
-    entering_from_top = True
     column_position = 0
 
-    for band_width in band_widths:
-        band_columns = columns_with_cells[
-            column_position : column_position + band_width
-        ]
-        column_position += band_width
+    for chunk_index, chunk_width in enumerate(chunk_widths):
+        is_last_chunk = chunk_index == len(chunk_widths) - 1
+        chunk_columns = all_columns[column_position : column_position + chunk_width]
+        column_position += chunk_width
 
-        if band_width == 1:
-            column_index, rows = band_columns[0]
-            ordered_rows = rows if entering_from_top else list(reversed(rows))
-            for row_index in ordered_rows:
-                path.append((column_index, row_index))
-        else:
-            column_indices = [col[0] for col in band_columns]
-            rows = band_columns[0][1]
-            row_order = rows if entering_from_top else list(reversed(rows))
+        chunk_cells = set()
+        for column in chunk_columns:
+            for row in valid_rows_by_column.get(column, []):
+                chunk_cells.add((column, row))
 
-            for row_offset, row_index in enumerate(row_order):
-                if row_offset % 2 == 0:
-                    for col_index in column_indices:
-                        path.append((col_index, row_index))
-                else:
-                    for col_index in reversed(column_indices):
-                        path.append((col_index, row_index))
+        entry_cell = (chunk_columns[0], entry_row)
+        if entry_cell not in chunk_cells:
+            valid_rows = valid_rows_by_column[chunk_columns[0]]
+            entry_row = min(valid_rows, key=lambda row: abs(row - entry_row))
+            entry_cell = (chunk_columns[0], entry_row)
 
-        entering_from_top = not entering_from_top
+        rightmost_column = chunk_columns[-1]
+        chunk_path = None
+        chunk_rng = random.Random(rng.randint(0, 2**32))
+
+        for _ in range(200):
+            candidate = warnsdorff_from(chunk_cells, entry_cell, chunk_rng)
+            if len(candidate) != len(chunk_cells):
+                continue
+            if is_last_chunk or candidate[-1][0] == rightmost_column:
+                chunk_path = candidate
+                break
+
+        if chunk_path is None:
+            chunk_path = warnsdorff_from(chunk_cells, entry_cell, chunk_rng)
+
+        path.extend(chunk_path)
+        entry_row = path[-1][1]
 
     return path
 
@@ -591,7 +595,7 @@ def generate_snake_svg(contribution_counter, output_path="gitlab-snk.svg"):
     grid, sunday_aligned_start, one_year_ago, today = build_contribution_grid(
         contribution_counter
     )
-    path = build_full_grid_serpentine_path(grid)
+    path = build_chunked_warnsdorff_path(grid)
     path_length = len(path)
 
     traversal_seconds = path_length * SECONDS_PER_CELL_STEP
