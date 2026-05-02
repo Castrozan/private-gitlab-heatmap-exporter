@@ -1,4 +1,6 @@
+import collections
 import datetime
+import math
 import os
 import random
 import sys
@@ -135,54 +137,110 @@ def manhattan_distance_between_cells(first_cell, second_cell):
     return abs(first_cell[0] - second_cell[0]) + abs(first_cell[1] - second_cell[1])
 
 
-def build_nearest_neighbor_stops_through_colored_cells(grid):
+SNAKE_BODY_LENGTH_FOR_PATH_AVOIDANCE = math.ceil(
+    SNAKE_BODY_SEGMENT_COUNT * SNAKE_BODY_SEGMENT_SPACING_IN_CELLS
+)
+
+
+def collect_all_valid_grid_cells(grid):
+    valid_cells = set()
+    for column_index in range(GRID_COLUMN_COUNT):
+        for row_index in range(GRID_ROW_COUNT):
+            if grid[column_index][row_index] is not None:
+                valid_cells.add((column_index, row_index))
+    return valid_cells
+
+
+def find_shortest_walk_from_head_to_target_avoiding_body(
+    head_cell, target_cell, body_cells_to_avoid, valid_cells_set
+):
+    if head_cell == target_cell:
+        return [head_cell]
+    came_from_cell = {head_cell: None}
+    queue = collections.deque([head_cell])
+    while queue:
+        current_cell = queue.popleft()
+        for delta_column, delta_row in [(0, 1), (0, -1), (1, 0), (-1, 0)]:
+            neighbor = (current_cell[0] + delta_column, current_cell[1] + delta_row)
+            if neighbor in came_from_cell:
+                continue
+            if neighbor not in valid_cells_set:
+                continue
+            if neighbor != target_cell and neighbor in body_cells_to_avoid:
+                continue
+            came_from_cell[neighbor] = current_cell
+            if neighbor == target_cell:
+                reverse_path = []
+                cell = neighbor
+                while cell is not None:
+                    reverse_path.append(cell)
+                    cell = came_from_cell[cell]
+                return list(reversed(reverse_path))
+            queue.append(neighbor)
+    return None
+
+
+def build_body_aware_walk_through_colored_cells(grid):
     deterministic_daily_seed = datetime.date.today().isoformat()
     rng = random.Random(deterministic_daily_seed)
 
     colored_cells = collect_colored_contribution_cells(grid)
     if not colored_cells:
-        return []
+        return [], []
+
+    valid_cells_set = collect_all_valid_grid_cells(grid)
 
     starting_cell = rng.choice(colored_cells)
+    walk = [starting_cell]
     stops = [starting_cell]
-    remaining_cells = set(colored_cells)
-    remaining_cells.remove(starting_cell)
+    remaining_stops = set(colored_cells)
+    remaining_stops.remove(starting_cell)
 
-    while remaining_cells:
-        current_cell = stops[-1]
-        nearest_cell = min(
-            remaining_cells,
+    while remaining_stops:
+        head_cell = walk[-1]
+        body_cells_to_avoid = set(
+            walk[-(SNAKE_BODY_LENGTH_FOR_PATH_AVOIDANCE + 1) : -1]
+        )
+
+        candidates_sorted_by_distance = sorted(
+            remaining_stops,
             key=lambda candidate: (
-                manhattan_distance_between_cells(current_cell, candidate),
+                manhattan_distance_between_cells(head_cell, candidate),
                 candidate,
             ),
         )
-        stops.append(nearest_cell)
-        remaining_cells.remove(nearest_cell)
 
-    return stops
+        chosen_path = None
+        chosen_stop = None
+        for candidate_stop in candidates_sorted_by_distance:
+            path_to_candidate = find_shortest_walk_from_head_to_target_avoiding_body(
+                head_cell, candidate_stop, body_cells_to_avoid, valid_cells_set
+            )
+            if path_to_candidate is not None:
+                chosen_path = path_to_candidate
+                chosen_stop = candidate_stop
+                break
 
+        if chosen_path is None:
+            for candidate_stop in candidates_sorted_by_distance:
+                path_to_candidate = (
+                    find_shortest_walk_from_head_to_target_avoiding_body(
+                        head_cell, candidate_stop, set(), valid_cells_set
+                    )
+                )
+                if path_to_candidate is not None:
+                    chosen_path = path_to_candidate
+                    chosen_stop = candidate_stop
+                    break
 
-def expand_stops_into_adjacent_walk(stops):
-    if not stops:
-        return []
+        if chosen_path is None:
+            break
 
-    walk = [stops[0]]
-    for next_stop in stops[1:]:
-        current_column, current_row = walk[-1]
-        target_column, target_row = next_stop
-        while current_column != target_column:
-            current_column += 1 if target_column > current_column else -1
-            walk.append((current_column, current_row))
-        while current_row != target_row:
-            current_row += 1 if target_row > current_row else -1
-            walk.append((current_column, current_row))
-    return walk
+        walk.extend(chosen_path[1:])
+        stops.append(chosen_stop)
+        remaining_stops.remove(chosen_stop)
 
-
-def build_nearest_neighbor_walk_through_colored_cells(grid):
-    stops = build_nearest_neighbor_stops_through_colored_cells(grid)
-    return expand_stops_into_adjacent_walk(stops)
+    return walk, stops
 
 
 def find_first_walk_index_for_each_colored_stop(walk, stops):
@@ -611,8 +669,7 @@ def generate_snake_svg(contribution_counter, output_path="gitlab-snk.svg"):
     grid, sunday_aligned_start, one_year_ago, today = build_contribution_grid(
         contribution_counter
     )
-    stops = build_nearest_neighbor_stops_through_colored_cells(grid)
-    path = expand_stops_into_adjacent_walk(stops)
+    path, stops = build_body_aware_walk_through_colored_cells(grid)
     path_length = len(path)
 
     traversal_seconds = path_length * SECONDS_PER_CELL_STEP
