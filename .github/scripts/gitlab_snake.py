@@ -57,13 +57,13 @@ DAY_OF_WEEK_LABELS_WITH_ROW_INDEX = [(1, "Mon"), (3, "Wed"), (5, "Fri")]
 
 SNAKE_HEAD_COLOR = "#58a6ff"
 SNAKE_HEAD_RADIUS = 5
-SNAKE_BODY_SEGMENT_COUNT = 5
+SNAKE_BODY_SEGMENT_COUNT = 25
 SNAKE_BODY_BASE_RADIUS = 4.5
-SNAKE_BODY_RADIUS_DECAY_PER_SEGMENT = 0.3
-SNAKE_BODY_OPACITY_DECAY_PER_SEGMENT = 0.1
+SNAKE_BODY_RADIUS_DECAY_PER_SEGMENT = 0.04
+SNAKE_BODY_OPACITY_DECAY_PER_SEGMENT = 0.0
 SNAKE_BODY_SEGMENT_SPACING_IN_CELLS = 0.5
 
-SECONDS_PER_CELL_STEP = 0.20
+SECONDS_PER_CELL_STEP = 0.30
 TRAVERSAL_END_FRACTION = 0.78
 SNAKE_HIDE_FRACTION = 0.82
 CELL_RESTORE_START_FRACTION = 0.90
@@ -186,6 +186,14 @@ def build_nearest_neighbor_walk_through_colored_cells(grid):
     return expand_stops_into_adjacent_walk(stops)
 
 
+def find_first_walk_index_for_each_colored_stop(walk, stops):
+    first_walk_index_per_cell = {}
+    for walk_index, cell in enumerate(walk):
+        if cell not in first_walk_index_per_cell:
+            first_walk_index_per_cell[cell] = walk_index
+    return [first_walk_index_per_cell[stop] for stop in stops]
+
+
 def grid_area_left_x():
     return CARD_PADDING + DAY_OF_WEEK_LABEL_WIDTH
 
@@ -279,22 +287,33 @@ def generate_cell_eating_keyframes(path, grid, total_animation_seconds):
     return "\n".join(lines)
 
 
-def generate_snake_visibility_keyframes(total_animation_seconds):
-    traversal_end = TRAVERSAL_END_FRACTION * 100
-    hide_at = SNAKE_HIDE_FRACTION * 100
-    show_at = SNAKE_SHOW_FRACTION * 100
+def generate_snake_element_lifecycle_keyframes(
+    element_dom_id, birth_fraction, total_animation_seconds
+):
+    birth_percent = birth_fraction * 100
+    just_born_percent = birth_percent + 0.5
+    traversal_end_percent = TRAVERSAL_END_FRACTION * 100
+    hide_percent = SNAKE_HIDE_FRACTION * 100
+    show_percent = SNAKE_SHOW_FRACTION * 100
+    just_visible_after_show_percent = show_percent + 0.5
 
-    lines = [
-        "@keyframes snake-visibility {",
-        f"  0%, {traversal_end:.1f}% {{ opacity: 1 }}",
-        f"  {hide_at:.1f}%, {show_at:.1f}% {{ opacity: 0 }}",
-        "  100% { opacity: 1 }",
-        "}",
-        ".snake-element {"
-        f" animation: snake-visibility {total_animation_seconds:.1f}s"
+    lines = [f"@keyframes {element_dom_id}-life {{"]
+    if birth_fraction > 0:
+        lines.append(f"  0%, {birth_percent:.2f}% {{ opacity: 0 }}")
+        lines.append(
+            f"  {just_born_percent:.2f}%, {traversal_end_percent:.2f}% {{ opacity: 1 }}"
+        )
+    else:
+        lines.append(f"  0%, {traversal_end_percent:.2f}% {{ opacity: 1 }}")
+    lines.append(f"  {hide_percent:.2f}%, {show_percent:.2f}% {{ opacity: 0 }}")
+    lines.append(f"  {just_visible_after_show_percent:.2f}%, 100% {{ opacity: 1 }}")
+    lines.append("}")
+    lines.append(
+        f"#{element_dom_id} {{"
+        f" animation: {element_dom_id}-life {total_animation_seconds:.1f}s"
         " linear infinite;"
-        " }",
-    ]
+        " }"
+    )
     return "\n".join(lines)
 
 
@@ -483,18 +502,45 @@ def build_svg_legend(total_width):
     return "\n".join(lines)
 
 
-def build_svg_snake_elements(path, total_animation_seconds):
-    lines = []
+def calculate_birth_fraction_per_body_segment(walk, stops):
+    walk_length = len(walk)
+    stop_count = len(stops)
+    if walk_length <= 1 or stop_count <= 1:
+        return [0.0] * SNAKE_BODY_SEGMENT_COUNT
+    walk_index_per_stop = find_first_walk_index_for_each_colored_stop(walk, stops)
+    arrival_fraction_per_stop = [
+        (walk_index / (walk_length - 1)) * TRAVERSAL_END_FRACTION
+        for walk_index in walk_index_per_stop
+    ]
+    birth_fractions = []
+    for segment_number in range(1, SNAKE_BODY_SEGMENT_COUNT + 1):
+        stop_index_for_birth = round(
+            segment_number * (stop_count - 1) / SNAKE_BODY_SEGMENT_COUNT
+        )
+        stop_index_for_birth = min(stop_index_for_birth, stop_count - 1)
+        birth_fractions.append(arrival_fraction_per_stop[stop_index_for_birth])
+    return birth_fractions
 
-    first_column, first_row = path[0]
+
+def build_svg_snake_elements(walk, stops, total_animation_seconds):
+    lines = []
+    keyframe_lines = []
+
+    first_column, first_row = walk[0]
     initial_cx = f"{cell_center_x(first_column):.0f}"
     initial_cy = f"{cell_center_y(first_row):.0f}"
 
     head_cx_values, head_cy_values, head_key_times = (
-        build_snake_element_position_values(path, 0)
+        build_snake_element_position_values(walk, 0)
+    )
+    head_dom_id = "snake-head"
+    keyframe_lines.append(
+        generate_snake_element_lifecycle_keyframes(
+            head_dom_id, 0.0, total_animation_seconds
+        )
     )
     lines.append(
-        f'<circle class="snake-element"'
+        f'<circle id="{head_dom_id}"'
         f' cx="{initial_cx}" cy="{initial_cy}"'
         f' r="{SNAKE_HEAD_RADIUS}" fill="{SNAKE_HEAD_COLOR}">'
     )
@@ -510,25 +556,31 @@ def build_svg_snake_elements(path, total_animation_seconds):
     )
     lines.append("</circle>")
 
+    birth_fractions = calculate_birth_fraction_per_body_segment(walk, stops)
+
     for segment_number in range(1, SNAKE_BODY_SEGMENT_COUNT + 1):
-        delay_steps = segment_number * SNAKE_BODY_SEGMENT_SPACING_IN_CELLS
+        delay_in_cells = segment_number * SNAKE_BODY_SEGMENT_SPACING_IN_CELLS
         segment_radius = (
             SNAKE_BODY_BASE_RADIUS
             - (segment_number - 1) * SNAKE_BODY_RADIUS_DECAY_PER_SEGMENT
         )
-        segment_opacity = (
-            1.0 - (segment_number - 1) * SNAKE_BODY_OPACITY_DECAY_PER_SEGMENT
+        segment_dom_id = f"snake-segment-{segment_number}"
+        birth_fraction = birth_fractions[segment_number - 1]
+        keyframe_lines.append(
+            generate_snake_element_lifecycle_keyframes(
+                segment_dom_id, birth_fraction, total_animation_seconds
+            )
         )
 
         segment_cx_values, segment_cy_values, segment_key_times = (
-            build_snake_element_position_values(path, delay_steps)
+            build_snake_element_position_values(walk, delay_in_cells)
         )
 
         lines.append(
-            f'<circle class="snake-element"'
+            f'<circle id="{segment_dom_id}"'
             f' cx="{initial_cx}" cy="{initial_cy}"'
             f' r="{segment_radius:.1f}" fill="{SNAKE_HEAD_COLOR}"'
-            f' opacity="{segment_opacity:.1f}">'
+            f' opacity="0">'
         )
         lines.append(
             f'  <animate attributeName="cx"'
@@ -546,7 +598,7 @@ def build_svg_snake_elements(path, total_animation_seconds):
         )
         lines.append("</circle>")
 
-    return "\n".join(lines)
+    return "\n".join(keyframe_lines), "\n".join(lines)
 
 
 def identify_colored_cells_in_path(path, grid):
@@ -563,7 +615,8 @@ def generate_snake_svg(contribution_counter, output_path="gitlab-snk.svg"):
     grid, sunday_aligned_start, one_year_ago, today = build_contribution_grid(
         contribution_counter
     )
-    path = build_nearest_neighbor_walk_through_colored_cells(grid)
+    stops = build_nearest_neighbor_stops_through_colored_cells(grid)
+    path = expand_stops_into_adjacent_walk(stops)
     path_length = len(path)
 
     traversal_seconds = path_length * SECONDS_PER_CELL_STEP
@@ -572,12 +625,16 @@ def generate_snake_svg(contribution_counter, output_path="gitlab-snk.svg"):
     total_width, total_height = calculate_total_svg_dimensions()
     colored_cells = identify_colored_cells_in_path(path, grid)
 
+    snake_lifecycle_keyframes, snake_circle_elements = build_svg_snake_elements(
+        path, stops, total_animation_seconds
+    )
+
     svg_parts = [
         f'<svg xmlns="http://www.w3.org/2000/svg"'
         f' width="{total_width}" height="{total_height}">',
         "<style>",
         generate_cell_eating_keyframes(path, grid, total_animation_seconds),
-        generate_snake_visibility_keyframes(total_animation_seconds),
+        snake_lifecycle_keyframes,
         "</style>",
         build_svg_card_background(total_width, total_height),
         build_svg_header_text(total_contributions),
@@ -585,7 +642,7 @@ def generate_snake_svg(contribution_counter, output_path="gitlab-snk.svg"):
         build_svg_day_of_week_labels(),
         build_svg_contribution_grid_cells(grid, colored_cells),
         build_svg_legend(total_width),
-        build_svg_snake_elements(path, total_animation_seconds),
+        snake_circle_elements,
         "</svg>",
     ]
 
