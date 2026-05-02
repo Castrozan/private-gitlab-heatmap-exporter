@@ -68,7 +68,6 @@ TRAVERSAL_END_FRACTION = 0.78
 SNAKE_HIDE_FRACTION = 0.82
 CELL_RESTORE_START_FRACTION = 0.90
 CELL_RESTORE_END_FRACTION = 0.95
-SNAKE_SHOW_FRACTION = 0.97
 
 
 def get_contribution_dates(gitlab_client):
@@ -294,8 +293,6 @@ def generate_snake_element_lifecycle_keyframes(
     just_born_percent = birth_percent + 0.5
     traversal_end_percent = TRAVERSAL_END_FRACTION * 100
     hide_percent = SNAKE_HIDE_FRACTION * 100
-    show_percent = SNAKE_SHOW_FRACTION * 100
-    just_visible_after_show_percent = show_percent + 0.5
 
     lines = [f"@keyframes {element_dom_id}-life {{"]
     if birth_fraction > 0:
@@ -305,8 +302,7 @@ def generate_snake_element_lifecycle_keyframes(
         )
     else:
         lines.append(f"  0%, {traversal_end_percent:.2f}% {{ opacity: 1 }}")
-    lines.append(f"  {hide_percent:.2f}%, {show_percent:.2f}% {{ opacity: 0 }}")
-    lines.append(f"  {just_visible_after_show_percent:.2f}%, 100% {{ opacity: 1 }}")
+    lines.append(f"  {hide_percent:.2f}%, 100% {{ opacity: 0 }}")
     lines.append("}")
     lines.append(
         f"#{element_dom_id} {{"
