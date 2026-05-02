@@ -62,7 +62,7 @@ SNAKE_BODY_BASE_RADIUS = 4.5
 SNAKE_BODY_RADIUS_DECAY_PER_SEGMENT = 0.3
 SNAKE_BODY_OPACITY_DECAY_PER_SEGMENT = 0.1
 
-SECONDS_PER_CELL_STEP = 0.075
+SECONDS_PER_CELL_STEP = 0.12
 TRAVERSAL_END_FRACTION = 0.78
 SNAKE_HIDE_FRACTION = 0.82
 CELL_RESTORE_START_FRACTION = 0.90
@@ -135,7 +135,7 @@ def manhattan_distance_between_cells(first_cell, second_cell):
     return abs(first_cell[0] - second_cell[0]) + abs(first_cell[1] - second_cell[1])
 
 
-def build_nearest_neighbor_path_through_colored_cells(grid):
+def build_nearest_neighbor_stops_through_colored_cells(grid):
     deterministic_daily_seed = datetime.date.today().isoformat()
     rng = random.Random(deterministic_daily_seed)
 
@@ -144,12 +144,12 @@ def build_nearest_neighbor_path_through_colored_cells(grid):
         return []
 
     starting_cell = rng.choice(colored_cells)
-    path = [starting_cell]
+    stops = [starting_cell]
     remaining_cells = set(colored_cells)
     remaining_cells.remove(starting_cell)
 
     while remaining_cells:
-        current_cell = path[-1]
+        current_cell = stops[-1]
         nearest_cell = min(
             remaining_cells,
             key=lambda candidate: (
@@ -157,10 +157,32 @@ def build_nearest_neighbor_path_through_colored_cells(grid):
                 candidate,
             ),
         )
-        path.append(nearest_cell)
+        stops.append(nearest_cell)
         remaining_cells.remove(nearest_cell)
 
-    return path
+    return stops
+
+
+def expand_stops_into_adjacent_walk(stops):
+    if not stops:
+        return []
+
+    walk = [stops[0]]
+    for next_stop in stops[1:]:
+        current_column, current_row = walk[-1]
+        target_column, target_row = next_stop
+        while current_column != target_column:
+            current_column += 1 if target_column > current_column else -1
+            walk.append((current_column, current_row))
+        while current_row != target_row:
+            current_row += 1 if target_row > current_row else -1
+            walk.append((current_column, current_row))
+    return walk
+
+
+def build_nearest_neighbor_walk_through_colored_cells(grid):
+    stops = build_nearest_neighbor_stops_through_colored_cells(grid)
+    return expand_stops_into_adjacent_walk(stops)
 
 
 def grid_area_left_x():
@@ -218,6 +240,7 @@ def calculate_total_svg_dimensions():
 def generate_cell_eating_keyframes(path, grid, total_animation_seconds):
     lines = []
     path_length = len(path)
+    cells_already_emitted = set()
 
     for step_index, (column_index, row_index) in enumerate(path):
         cell = grid[column_index][row_index]
@@ -225,6 +248,9 @@ def generate_cell_eating_keyframes(path, grid, total_animation_seconds):
 
         if original_color == GITHUB_DARK_MODE_GREEN_PALETTE[0]:
             continue
+        if (column_index, row_index) in cells_already_emitted:
+            continue
+        cells_already_emitted.add((column_index, row_index))
 
         cell_id = f"s{column_index}_{row_index}"
         arrival_percent = (step_index / max(path_length - 1, 1)) * (
@@ -513,7 +539,7 @@ def generate_snake_svg(contribution_counter, output_path="gitlab-snk.svg"):
     grid, sunday_aligned_start, one_year_ago, today = build_contribution_grid(
         contribution_counter
     )
-    path = build_nearest_neighbor_path_through_colored_cells(grid)
+    path = build_nearest_neighbor_walk_through_colored_cells(grid)
     path_length = len(path)
 
     traversal_seconds = path_length * SECONDS_PER_CELL_STEP
