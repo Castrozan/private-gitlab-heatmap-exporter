@@ -1,5 +1,6 @@
 import datetime
 import os
+import random
 import sys
 from collections import Counter
 
@@ -117,16 +118,48 @@ def build_contribution_grid(contribution_counter):
     return grid, sunday_aligned_start, one_year_ago, today
 
 
-def build_full_grid_serpentine_path(grid):
-    path = []
+def collect_colored_contribution_cells(grid):
+    colored_cells = []
     for column_index in range(GRID_COLUMN_COUNT):
-        if column_index % 2 == 0:
-            row_range = range(GRID_ROW_COUNT)
-        else:
-            row_range = range(GRID_ROW_COUNT - 1, -1, -1)
-        for row_index in row_range:
-            if grid[column_index][row_index] is not None:
-                path.append((column_index, row_index))
+        for row_index in range(GRID_ROW_COUNT):
+            cell = grid[column_index][row_index]
+            if cell is None:
+                continue
+            if cell["color"] == GITHUB_DARK_MODE_GREEN_PALETTE[0]:
+                continue
+            colored_cells.append((column_index, row_index))
+    return colored_cells
+
+
+def manhattan_distance_between_cells(first_cell, second_cell):
+    return abs(first_cell[0] - second_cell[0]) + abs(first_cell[1] - second_cell[1])
+
+
+def build_nearest_neighbor_path_through_colored_cells(grid):
+    deterministic_daily_seed = datetime.date.today().isoformat()
+    rng = random.Random(deterministic_daily_seed)
+
+    colored_cells = collect_colored_contribution_cells(grid)
+    if not colored_cells:
+        return []
+
+    starting_cell = rng.choice(colored_cells)
+    path = [starting_cell]
+    remaining_cells = set(colored_cells)
+    remaining_cells.remove(starting_cell)
+
+    while remaining_cells:
+        current_cell = path[-1]
+        nearest_cell = min(
+            remaining_cells,
+            key=lambda candidate: (
+                manhattan_distance_between_cells(current_cell, candidate),
+                candidate,
+            ),
+        )
+        path.append(nearest_cell)
+        remaining_cells.remove(nearest_cell)
+
     return path
 
 
@@ -480,7 +513,7 @@ def generate_snake_svg(contribution_counter, output_path="gitlab-snk.svg"):
     grid, sunday_aligned_start, one_year_ago, today = build_contribution_grid(
         contribution_counter
     )
-    path = build_full_grid_serpentine_path(grid)
+    path = build_nearest_neighbor_path_through_colored_cells(grid)
     path_length = len(path)
 
     traversal_seconds = path_length * SECONDS_PER_CELL_STEP
