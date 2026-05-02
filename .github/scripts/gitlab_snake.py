@@ -61,8 +61,9 @@ SNAKE_BODY_SEGMENT_COUNT = 5
 SNAKE_BODY_BASE_RADIUS = 4.5
 SNAKE_BODY_RADIUS_DECAY_PER_SEGMENT = 0.3
 SNAKE_BODY_OPACITY_DECAY_PER_SEGMENT = 0.1
+SNAKE_BODY_SEGMENT_SPACING_IN_CELLS = 0.5
 
-SECONDS_PER_CELL_STEP = 0.12
+SECONDS_PER_CELL_STEP = 0.20
 TRAVERSAL_END_FRACTION = 0.78
 SNAKE_HIDE_FRACTION = 0.82
 CELL_RESTORE_START_FRACTION = 0.90
@@ -297,17 +298,40 @@ def generate_snake_visibility_keyframes(total_animation_seconds):
     return "\n".join(lines)
 
 
-def build_snake_element_position_values(path, body_delay_steps):
+def interpolate_path_position_at_fractional_index(path, fractional_index):
+    path_length = len(path)
+    if path_length == 0:
+        return 0.0, 0.0
+    clamped_index = max(0.0, min(fractional_index, path_length - 1))
+    lower_index = int(clamped_index)
+    upper_index = min(lower_index + 1, path_length - 1)
+    interpolation_weight = clamped_index - lower_index
+
+    lower_column, lower_row = path[lower_index]
+    upper_column, upper_row = path[upper_index]
+    interpolated_x = (
+        cell_center_x(lower_column) * (1 - interpolation_weight)
+        + cell_center_x(upper_column) * interpolation_weight
+    )
+    interpolated_y = (
+        cell_center_y(lower_row) * (1 - interpolation_weight)
+        + cell_center_y(upper_row) * interpolation_weight
+    )
+    return interpolated_x, interpolated_y
+
+
+def build_snake_element_position_values(path, body_delay_in_cells):
     path_length = len(path)
     cx_values = []
     cy_values = []
     key_times = []
 
     for step_index in range(path_length):
-        source_index = max(0, step_index - body_delay_steps)
-        column_index, row_index = path[source_index]
-        cx_values.append(f"{cell_center_x(column_index):.0f}")
-        cy_values.append(f"{cell_center_y(row_index):.0f}")
+        position_x, position_y = interpolate_path_position_at_fractional_index(
+            path, step_index - body_delay_in_cells
+        )
+        cx_values.append(f"{position_x:.1f}")
+        cy_values.append(f"{position_y:.1f}")
 
         if step_index == 0:
             key_times.append("0")
@@ -487,7 +511,7 @@ def build_svg_snake_elements(path, total_animation_seconds):
     lines.append("</circle>")
 
     for segment_number in range(1, SNAKE_BODY_SEGMENT_COUNT + 1):
-        delay_steps = segment_number * 2
+        delay_steps = segment_number * SNAKE_BODY_SEGMENT_SPACING_IN_CELLS
         segment_radius = (
             SNAKE_BODY_BASE_RADIUS
             - (segment_number - 1) * SNAKE_BODY_RADIUS_DECAY_PER_SEGMENT

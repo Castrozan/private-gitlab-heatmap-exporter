@@ -5,823 +5,823 @@
   0.50%, 90.0% { fill: #161b22 }
   95.0%, 100% { fill: #39d353 }
 }
-#s51_3 { animation: s51_3 35.1s linear infinite; }
+#s51_3 { animation: s51_3 58.5s linear infinite; }
 @keyframes s50_3 {
   0%, 0.34% { fill: #39d353 }
   0.84%, 90.0% { fill: #161b22 }
   95.0%, 100% { fill: #39d353 }
 }
-#s50_3 { animation: s50_3 35.1s linear infinite; }
+#s50_3 { animation: s50_3 58.5s linear infinite; }
 @keyframes s49_3 {
   0%, 0.69% { fill: #39d353 }
   1.19%, 90.0% { fill: #161b22 }
   95.0%, 100% { fill: #39d353 }
 }
-#s49_3 { animation: s49_3 35.1s linear infinite; }
+#s49_3 { animation: s49_3 58.5s linear infinite; }
 @keyframes s48_3 {
   0%, 1.03% { fill: #39d353 }
   1.53%, 90.0% { fill: #161b22 }
   95.0%, 100% { fill: #39d353 }
 }
-#s48_3 { animation: s48_3 35.1s linear infinite; }
+#s48_3 { animation: s48_3 58.5s linear infinite; }
 @keyframes s48_2 {
   0%, 1.37% { fill: #26a641 }
   1.87%, 90.0% { fill: #161b22 }
   95.0%, 100% { fill: #26a641 }
 }
-#s48_2 { animation: s48_2 35.1s linear infinite; }
+#s48_2 { animation: s48_2 58.5s linear infinite; }
 @keyframes s48_1 {
   0%, 1.72% { fill: #39d353 }
   2.22%, 90.0% { fill: #161b22 }
   95.0%, 100% { fill: #39d353 }
 }
-#s48_1 { animation: s48_1 35.1s linear infinite; }
+#s48_1 { animation: s48_1 58.5s linear infinite; }
 @keyframes s49_1 {
   0%, 2.06% { fill: #39d353 }
   2.56%, 90.0% { fill: #161b22 }
   95.0%, 100% { fill: #39d353 }
 }
-#s49_1 { animation: s49_1 35.1s linear infinite; }
+#s49_1 { animation: s49_1 58.5s linear infinite; }
 @keyframes s49_2 {
   0%, 2.41% { fill: #39d353 }
   2.91%, 90.0% { fill: #161b22 }
   95.0%, 100% { fill: #39d353 }
 }
-#s49_2 { animation: s49_2 35.1s linear infinite; }
+#s49_2 { animation: s49_2 58.5s linear infinite; }
 @keyframes s50_2 {
   0%, 2.75% { fill: #39d353 }
   3.25%, 90.0% { fill: #161b22 }
   95.0%, 100% { fill: #39d353 }
 }
-#s50_2 { animation: s50_2 35.1s linear infinite; }
+#s50_2 { animation: s50_2 58.5s linear infinite; }
 @keyframes s50_1 {
   0%, 3.09% { fill: #39d353 }
   3.59%, 90.0% { fill: #161b22 }
   95.0%, 100% { fill: #39d353 }
 }
-#s50_1 { animation: s50_1 35.1s linear infinite; }
+#s50_1 { animation: s50_1 58.5s linear infinite; }
 @keyframes s51_2 {
   0%, 3.78% { fill: #39d353 }
   4.28%, 90.0% { fill: #161b22 }
   95.0%, 100% { fill: #39d353 }
 }
-#s51_2 { animation: s51_2 35.1s linear infinite; }
+#s51_2 { animation: s51_2 58.5s linear infinite; }
 @keyframes s51_4 {
   0%, 4.47% { fill: #39d353 }
   4.97%, 90.0% { fill: #161b22 }
   95.0%, 100% { fill: #39d353 }
 }
-#s51_4 { animation: s51_4 35.1s linear infinite; }
+#s51_4 { animation: s51_4 58.5s linear infinite; }
 @keyframes s50_4 {
   0%, 4.81% { fill: #39d353 }
   5.31%, 90.0% { fill: #161b22 }
   95.0%, 100% { fill: #39d353 }
 }
-#s50_4 { animation: s50_4 35.1s linear infinite; }
+#s50_4 { animation: s50_4 58.5s linear infinite; }
 @keyframes s49_4 {
   0%, 5.15% { fill: #39d353 }
   5.65%, 90.0% { fill: #161b22 }
   95.0%, 100% { fill: #39d353 }
 }
-#s49_4 { animation: s49_4 35.1s linear infinite; }
+#s49_4 { animation: s49_4 58.5s linear infinite; }
 @keyframes s48_4 {
   0%, 5.50% { fill: #006d32 }
   6.00%, 90.0% { fill: #161b22 }
   95.0%, 100% { fill: #006d32 }
 }
-#s48_4 { animation: s48_4 35.1s linear infinite; }
+#s48_4 { animation: s48_4 58.5s linear infinite; }
 @keyframes s48_5 {
   0%, 5.84% { fill: #39d353 }
   6.34%, 90.0% { fill: #161b22 }
   95.0%, 100% { fill: #39d353 }
 }
-#s48_5 { animation: s48_5 35.1s linear infinite; }
+#s48_5 { animation: s48_5 58.5s linear infinite; }
 @keyframes s46_5 {
   0%, 6.53% { fill: #39d353 }
   7.03%, 90.0% { fill: #161b22 }
   95.0%, 100% { fill: #39d353 }
 }
-#s46_5 { animation: s46_5 35.1s linear infinite; }
+#s46_5 { animation: s46_5 58.5s linear infinite; }
 @keyframes s45_5 {
   0%, 6.87% { fill: #26a641 }
   7.37%, 90.0% { fill: #161b22 }
   95.0%, 100% { fill: #26a641 }
 }
-#s45_5 { animation: s45_5 35.1s linear infinite; }
+#s45_5 { animation: s45_5 58.5s linear infinite; }
 @keyframes s44_5 {
   0%, 7.22% { fill: #39d353 }
   7.72%, 90.0% { fill: #161b22 }
   95.0%, 100% { fill: #39d353 }
 }
-#s44_5 { animation: s44_5 35.1s linear infinite; }
+#s44_5 { animation: s44_5 58.5s linear infinite; }
 @keyframes s43_5 {
   0%, 7.56% { fill: #39d353 }
   8.06%, 90.0% { fill: #161b22 }
   95.0%, 100% { fill: #39d353 }
 }
-#s43_5 { animation: s43_5 35.1s linear infinite; }
+#s43_5 { animation: s43_5 58.5s linear infinite; }
 @keyframes s42_5 {
   0%, 7.90% { fill: #39d353 }
   8.40%, 90.0% { fill: #161b22 }
   95.0%, 100% { fill: #39d353 }
 }
-#s42_5 { animation: s42_5 35.1s linear infinite; }
+#s42_5 { animation: s42_5 58.5s linear infinite; }
 @keyframes s41_5 {
   0%, 8.25% { fill: #26a641 }
   8.75%, 90.0% { fill: #161b22 }
   95.0%, 100% { fill: #26a641 }
 }
-#s41_5 { animation: s41_5 35.1s linear infinite; }
+#s41_5 { animation: s41_5 58.5s linear infinite; }
 @keyframes s40_5 {
   0%, 8.59% { fill: #0e4429 }
   9.09%, 90.0% { fill: #161b22 }
   95.0%, 100% { fill: #0e4429 }
 }
-#s40_5 { animation: s40_5 35.1s linear infinite; }
+#s40_5 { animation: s40_5 58.5s linear infinite; }
 @keyframes s39_5 {
   0%, 8.93% { fill: #39d353 }
   9.43%, 90.0% { fill: #161b22 }
   95.0%, 100% { fill: #39d353 }
 }
-#s39_5 { animation: s39_5 35.1s linear infinite; }
+#s39_5 { animation: s39_5 58.5s linear infinite; }
 @keyframes s38_5 {
   0%, 9.28% { fill: #39d353 }
   9.78%, 90.0% { fill: #161b22 }
   95.0%, 100% { fill: #39d353 }
 }
-#s38_5 { animation: s38_5 35.1s linear infinite; }
+#s38_5 { animation: s38_5 58.5s linear infinite; }
 @keyframes s38_4 {
   0%, 9.62% { fill: #39d353 }
   10.12%, 90.0% { fill: #161b22 }
   95.0%, 100% { fill: #39d353 }
 }
-#s38_4 { animation: s38_4 35.1s linear infinite; }
+#s38_4 { animation: s38_4 58.5s linear infinite; }
 @keyframes s37_4 {
   0%, 9.96% { fill: #0e4429 }
   10.46%, 90.0% { fill: #161b22 }
   95.0%, 100% { fill: #0e4429 }
 }
-#s37_4 { animation: s37_4 35.1s linear infinite; }
+#s37_4 { animation: s37_4 58.5s linear infinite; }
 @keyframes s38_3 {
   0%, 10.65% { fill: #0e4429 }
   11.15%, 90.0% { fill: #161b22 }
   95.0%, 100% { fill: #0e4429 }
 }
-#s38_3 { animation: s38_3 35.1s linear infinite; }
+#s38_3 { animation: s38_3 58.5s linear infinite; }
 @keyframes s38_2 {
   0%, 11.00% { fill: #0e4429 }
   11.50%, 90.0% { fill: #161b22 }
   95.0%, 100% { fill: #0e4429 }
 }
-#s38_2 { animation: s38_2 35.1s linear infinite; }
+#s38_2 { animation: s38_2 58.5s linear infinite; }
 @keyframes s38_1 {
   0%, 11.34% { fill: #006d32 }
   11.84%, 90.0% { fill: #161b22 }
   95.0%, 100% { fill: #006d32 }
 }
-#s38_1 { animation: s38_1 35.1s linear infinite; }
+#s38_1 { animation: s38_1 58.5s linear infinite; }
 @keyframes s37_1 {
   0%, 11.68% { fill: #39d353 }
   12.18%, 90.0% { fill: #161b22 }
   95.0%, 100% { fill: #39d353 }
 }
-#s37_1 { animation: s37_1 35.1s linear infinite; }
+#s37_1 { animation: s37_1 58.5s linear infinite; }
 @keyframes s35_1 {
   0%, 12.37% { fill: #26a641 }
   12.87%, 90.0% { fill: #161b22 }
   95.0%, 100% { fill: #26a641 }
 }
-#s35_1 { animation: s35_1 35.1s linear infinite; }
+#s35_1 { animation: s35_1 58.5s linear infinite; }
 @keyframes s33_1 {
   0%, 13.06% { fill: #0e4429 }
   13.56%, 90.0% { fill: #161b22 }
   95.0%, 100% { fill: #0e4429 }
 }
-#s33_1 { animation: s33_1 35.1s linear infinite; }
+#s33_1 { animation: s33_1 58.5s linear infinite; }
 @keyframes s32_1 {
   0%, 13.40% { fill: #0e4429 }
   13.90%, 90.0% { fill: #161b22 }
   95.0%, 100% { fill: #0e4429 }
 }
-#s32_1 { animation: s32_1 35.1s linear infinite; }
+#s32_1 { animation: s32_1 58.5s linear infinite; }
 @keyframes s33_2 {
   0%, 14.09% { fill: #39d353 }
   14.59%, 90.0% { fill: #161b22 }
   95.0%, 100% { fill: #39d353 }
 }
-#s33_2 { animation: s33_2 35.1s linear infinite; }
+#s33_2 { animation: s33_2 58.5s linear infinite; }
 @keyframes s33_3 {
   0%, 14.43% { fill: #0e4429 }
   14.93%, 90.0% { fill: #161b22 }
   95.0%, 100% { fill: #0e4429 }
 }
-#s33_3 { animation: s33_3 35.1s linear infinite; }
+#s33_3 { animation: s33_3 58.5s linear infinite; }
 @keyframes s33_4 {
   0%, 14.78% { fill: #26a641 }
   15.28%, 90.0% { fill: #161b22 }
   95.0%, 100% { fill: #26a641 }
 }
-#s33_4 { animation: s33_4 35.1s linear infinite; }
+#s33_4 { animation: s33_4 58.5s linear infinite; }
 @keyframes s34_4 {
   0%, 15.12% { fill: #26a641 }
   15.62%, 90.0% { fill: #161b22 }
   95.0%, 100% { fill: #26a641 }
 }
-#s34_4 { animation: s34_4 35.1s linear infinite; }
+#s34_4 { animation: s34_4 58.5s linear infinite; }
 @keyframes s34_5 {
   0%, 15.46% { fill: #006d32 }
   15.96%, 90.0% { fill: #161b22 }
   95.0%, 100% { fill: #006d32 }
 }
-#s34_5 { animation: s34_5 35.1s linear infinite; }
+#s34_5 { animation: s34_5 58.5s linear infinite; }
 @keyframes s35_5 {
   0%, 15.81% { fill: #0e4429 }
   16.31%, 90.0% { fill: #161b22 }
   95.0%, 100% { fill: #0e4429 }
 }
-#s35_5 { animation: s35_5 35.1s linear infinite; }
+#s35_5 { animation: s35_5 58.5s linear infinite; }
 @keyframes s32_5 {
   0%, 16.84% { fill: #0e4429 }
   17.34%, 90.0% { fill: #161b22 }
   95.0%, 100% { fill: #0e4429 }
 }
-#s32_5 { animation: s32_5 35.1s linear infinite; }
+#s32_5 { animation: s32_5 58.5s linear infinite; }
 @keyframes s31_5 {
   0%, 17.18% { fill: #0e4429 }
   17.68%, 90.0% { fill: #161b22 }
   95.0%, 100% { fill: #0e4429 }
 }
-#s31_5 { animation: s31_5 35.1s linear infinite; }
+#s31_5 { animation: s31_5 58.5s linear infinite; }
 @keyframes s31_3 {
   0%, 17.87% { fill: #006d32 }
   18.37%, 90.0% { fill: #161b22 }
   95.0%, 100% { fill: #006d32 }
 }
-#s31_3 { animation: s31_3 35.1s linear infinite; }
+#s31_3 { animation: s31_3 58.5s linear infinite; }
 @keyframes s30_2 {
   0%, 18.56% { fill: #0e4429 }
   19.06%, 90.0% { fill: #161b22 }
   95.0%, 100% { fill: #0e4429 }
 }
-#s30_2 { animation: s30_2 35.1s linear infinite; }
+#s30_2 { animation: s30_2 58.5s linear infinite; }
 @keyframes s29_4 {
   0%, 19.59% { fill: #26a641 }
   20.09%, 90.0% { fill: #161b22 }
   95.0%, 100% { fill: #26a641 }
 }
-#s29_4 { animation: s29_4 35.1s linear infinite; }
+#s29_4 { animation: s29_4 58.5s linear infinite; }
 @keyframes s24_4 {
   0%, 21.30% { fill: #0e4429 }
   21.80%, 90.0% { fill: #161b22 }
   95.0%, 100% { fill: #0e4429 }
 }
-#s24_4 { animation: s24_4 35.1s linear infinite; }
+#s24_4 { animation: s24_4 58.5s linear infinite; }
 @keyframes s22_5 {
   0%, 22.33% { fill: #0e4429 }
   22.83%, 90.0% { fill: #161b22 }
   95.0%, 100% { fill: #0e4429 }
 }
-#s22_5 { animation: s22_5 35.1s linear infinite; }
+#s22_5 { animation: s22_5 58.5s linear infinite; }
 @keyframes s20_4 {
   0%, 23.37% { fill: #006d32 }
   23.87%, 90.0% { fill: #161b22 }
   95.0%, 100% { fill: #006d32 }
 }
-#s20_4 { animation: s20_4 35.1s linear infinite; }
+#s20_4 { animation: s20_4 58.5s linear infinite; }
 @keyframes s18_4 {
   0%, 24.05% { fill: #006d32 }
   24.55%, 90.0% { fill: #161b22 }
   95.0%, 100% { fill: #006d32 }
 }
-#s18_4 { animation: s18_4 35.1s linear infinite; }
+#s18_4 { animation: s18_4 58.5s linear infinite; }
 @keyframes s17_4 {
   0%, 24.40% { fill: #26a641 }
   24.90%, 90.0% { fill: #161b22 }
   95.0%, 100% { fill: #26a641 }
 }
-#s17_4 { animation: s17_4 35.1s linear infinite; }
+#s17_4 { animation: s17_4 58.5s linear infinite; }
 @keyframes s16_4 {
   0%, 24.74% { fill: #0e4429 }
   25.24%, 90.0% { fill: #161b22 }
   95.0%, 100% { fill: #0e4429 }
 }
-#s16_4 { animation: s16_4 35.1s linear infinite; }
+#s16_4 { animation: s16_4 58.5s linear infinite; }
 @keyframes s15_4 {
   0%, 25.08% { fill: #26a641 }
   25.58%, 90.0% { fill: #161b22 }
   95.0%, 100% { fill: #26a641 }
 }
-#s15_4 { animation: s15_4 35.1s linear infinite; }
+#s15_4 { animation: s15_4 58.5s linear infinite; }
 @keyframes s14_4 {
   0%, 25.43% { fill: #39d353 }
   25.93%, 90.0% { fill: #161b22 }
   95.0%, 100% { fill: #39d353 }
 }
-#s14_4 { animation: s14_4 35.1s linear infinite; }
+#s14_4 { animation: s14_4 58.5s linear infinite; }
 @keyframes s13_4 {
   0%, 25.77% { fill: #26a641 }
   26.27%, 90.0% { fill: #161b22 }
   95.0%, 100% { fill: #26a641 }
 }
-#s13_4 { animation: s13_4 35.1s linear infinite; }
+#s13_4 { animation: s13_4 58.5s linear infinite; }
 @keyframes s12_4 {
   0%, 26.11% { fill: #006d32 }
   26.61%, 90.0% { fill: #161b22 }
   95.0%, 100% { fill: #006d32 }
 }
-#s12_4 { animation: s12_4 35.1s linear infinite; }
+#s12_4 { animation: s12_4 58.5s linear infinite; }
 @keyframes s11_4 {
   0%, 26.46% { fill: #26a641 }
   26.96%, 90.0% { fill: #161b22 }
   95.0%, 100% { fill: #26a641 }
 }
-#s11_4 { animation: s11_4 35.1s linear infinite; }
+#s11_4 { animation: s11_4 58.5s linear infinite; }
 @keyframes s10_4 {
   0%, 26.80% { fill: #26a641 }
   27.30%, 90.0% { fill: #161b22 }
   95.0%, 100% { fill: #26a641 }
 }
-#s10_4 { animation: s10_4 35.1s linear infinite; }
+#s10_4 { animation: s10_4 58.5s linear infinite; }
 @keyframes s10_3 {
   0%, 27.15% { fill: #006d32 }
   27.65%, 90.0% { fill: #161b22 }
   95.0%, 100% { fill: #006d32 }
 }
-#s10_3 { animation: s10_3 35.1s linear infinite; }
+#s10_3 { animation: s10_3 58.5s linear infinite; }
 @keyframes s10_2 {
   0%, 27.49% { fill: #006d32 }
   27.99%, 90.0% { fill: #161b22 }
   95.0%, 100% { fill: #006d32 }
 }
-#s10_2 { animation: s10_2 35.1s linear infinite; }
+#s10_2 { animation: s10_2 58.5s linear infinite; }
 @keyframes s9_2 {
   0%, 27.83% { fill: #006d32 }
   28.33%, 90.0% { fill: #161b22 }
   95.0%, 100% { fill: #006d32 }
 }
-#s9_2 { animation: s9_2 35.1s linear infinite; }
+#s9_2 { animation: s9_2 58.5s linear infinite; }
 @keyframes s8_3 {
   0%, 28.52% { fill: #0e4429 }
   29.02%, 90.0% { fill: #161b22 }
   95.0%, 100% { fill: #0e4429 }
 }
-#s8_3 { animation: s8_3 35.1s linear infinite; }
+#s8_3 { animation: s8_3 58.5s linear infinite; }
 @keyframes s8_5 {
   0%, 29.21% { fill: #0e4429 }
   29.71%, 90.0% { fill: #161b22 }
   95.0%, 100% { fill: #0e4429 }
 }
-#s8_5 { animation: s8_5 35.1s linear infinite; }
+#s8_5 { animation: s8_5 58.5s linear infinite; }
 @keyframes s10_5 {
   0%, 29.89% { fill: #26a641 }
   30.39%, 90.0% { fill: #161b22 }
   95.0%, 100% { fill: #26a641 }
 }
-#s10_5 { animation: s10_5 35.1s linear infinite; }
+#s10_5 { animation: s10_5 58.5s linear infinite; }
 @keyframes s11_5 {
   0%, 30.24% { fill: #26a641 }
   30.74%, 90.0% { fill: #161b22 }
   95.0%, 100% { fill: #26a641 }
 }
-#s11_5 { animation: s11_5 35.1s linear infinite; }
+#s11_5 { animation: s11_5 58.5s linear infinite; }
 @keyframes s12_5 {
   0%, 30.58% { fill: #39d353 }
   31.08%, 90.0% { fill: #161b22 }
   95.0%, 100% { fill: #39d353 }
 }
-#s12_5 { animation: s12_5 35.1s linear infinite; }
+#s12_5 { animation: s12_5 58.5s linear infinite; }
 @keyframes s12_3 {
   0%, 31.27% { fill: #26a641 }
   31.77%, 90.0% { fill: #161b22 }
   95.0%, 100% { fill: #26a641 }
 }
-#s12_3 { animation: s12_3 35.1s linear infinite; }
+#s12_3 { animation: s12_3 58.5s linear infinite; }
 @keyframes s11_3 {
   0%, 31.61% { fill: #0e4429 }
   32.11%, 90.0% { fill: #161b22 }
   95.0%, 100% { fill: #0e4429 }
 }
-#s11_3 { animation: s11_3 35.1s linear infinite; }
+#s11_3 { animation: s11_3 58.5s linear infinite; }
 @keyframes s11_1 {
   0%, 32.30% { fill: #006d32 }
   32.80%, 90.0% { fill: #161b22 }
   95.0%, 100% { fill: #006d32 }
 }
-#s11_1 { animation: s11_1 35.1s linear infinite; }
+#s11_1 { animation: s11_1 58.5s linear infinite; }
 @keyframes s10_1 {
   0%, 32.64% { fill: #006d32 }
   33.14%, 90.0% { fill: #161b22 }
   95.0%, 100% { fill: #006d32 }
 }
-#s10_1 { animation: s10_1 35.1s linear infinite; }
+#s10_1 { animation: s10_1 58.5s linear infinite; }
 @keyframes s12_1 {
   0%, 33.33% { fill: #39d353 }
   33.83%, 90.0% { fill: #161b22 }
   95.0%, 100% { fill: #39d353 }
 }
-#s12_1 { animation: s12_1 35.1s linear infinite; }
+#s12_1 { animation: s12_1 58.5s linear infinite; }
 @keyframes s12_2 {
   0%, 33.67% { fill: #006d32 }
   34.17%, 90.0% { fill: #161b22 }
   95.0%, 100% { fill: #006d32 }
 }
-#s12_2 { animation: s12_2 35.1s linear infinite; }
+#s12_2 { animation: s12_2 58.5s linear infinite; }
 @keyframes s13_2 {
   0%, 34.02% { fill: #0e4429 }
   34.52%, 90.0% { fill: #161b22 }
   95.0%, 100% { fill: #0e4429 }
 }
-#s13_2 { animation: s13_2 35.1s linear infinite; }
+#s13_2 { animation: s13_2 58.5s linear infinite; }
 @keyframes s13_1 {
   0%, 34.36% { fill: #39d353 }
   34.86%, 90.0% { fill: #161b22 }
   95.0%, 100% { fill: #39d353 }
 }
-#s13_1 { animation: s13_1 35.1s linear infinite; }
+#s13_1 { animation: s13_1 58.5s linear infinite; }
 @keyframes s14_1 {
   0%, 34.70% { fill: #006d32 }
   35.20%, 90.0% { fill: #161b22 }
   95.0%, 100% { fill: #006d32 }
 }
-#s14_1 { animation: s14_1 35.1s linear infinite; }
+#s14_1 { animation: s14_1 58.5s linear infinite; }
 @keyframes s14_2 {
   0%, 35.05% { fill: #26a641 }
   35.55%, 90.0% { fill: #161b22 }
   95.0%, 100% { fill: #26a641 }
 }
-#s14_2 { animation: s14_2 35.1s linear infinite; }
+#s14_2 { animation: s14_2 58.5s linear infinite; }
 @keyframes s14_3 {
   0%, 35.39% { fill: #39d353 }
   35.89%, 90.0% { fill: #161b22 }
   95.0%, 100% { fill: #39d353 }
 }
-#s14_3 { animation: s14_3 35.1s linear infinite; }
+#s14_3 { animation: s14_3 58.5s linear infinite; }
 @keyframes s13_3 {
   0%, 35.74% { fill: #39d353 }
   36.24%, 90.0% { fill: #161b22 }
   95.0%, 100% { fill: #39d353 }
 }
-#s13_3 { animation: s13_3 35.1s linear infinite; }
+#s13_3 { animation: s13_3 58.5s linear infinite; }
 @keyframes s15_3 {
   0%, 36.42% { fill: #26a641 }
   36.92%, 90.0% { fill: #161b22 }
   95.0%, 100% { fill: #26a641 }
 }
-#s15_3 { animation: s15_3 35.1s linear infinite; }
+#s15_3 { animation: s15_3 58.5s linear infinite; }
 @keyframes s15_2 {
   0%, 36.77% { fill: #39d353 }
   37.27%, 90.0% { fill: #161b22 }
   95.0%, 100% { fill: #39d353 }
 }
-#s15_2 { animation: s15_2 35.1s linear infinite; }
+#s15_2 { animation: s15_2 58.5s linear infinite; }
 @keyframes s15_1 {
   0%, 37.11% { fill: #0e4429 }
   37.61%, 90.0% { fill: #161b22 }
   95.0%, 100% { fill: #0e4429 }
 }
-#s15_1 { animation: s15_1 35.1s linear infinite; }
+#s15_1 { animation: s15_1 58.5s linear infinite; }
 @keyframes s16_1 {
   0%, 37.45% { fill: #39d353 }
   37.95%, 90.0% { fill: #161b22 }
   95.0%, 100% { fill: #39d353 }
 }
-#s16_1 { animation: s16_1 35.1s linear infinite; }
+#s16_1 { animation: s16_1 58.5s linear infinite; }
 @keyframes s16_2 {
   0%, 37.80% { fill: #39d353 }
   38.30%, 90.0% { fill: #161b22 }
   95.0%, 100% { fill: #39d353 }
 }
-#s16_2 { animation: s16_2 35.1s linear infinite; }
+#s16_2 { animation: s16_2 58.5s linear infinite; }
 @keyframes s16_3 {
   0%, 38.14% { fill: #26a641 }
   38.64%, 90.0% { fill: #161b22 }
   95.0%, 100% { fill: #26a641 }
 }
-#s16_3 { animation: s16_3 35.1s linear infinite; }
+#s16_3 { animation: s16_3 58.5s linear infinite; }
 @keyframes s17_3 {
   0%, 38.48% { fill: #006d32 }
   38.98%, 90.0% { fill: #161b22 }
   95.0%, 100% { fill: #006d32 }
 }
-#s17_3 { animation: s17_3 35.1s linear infinite; }
+#s17_3 { animation: s17_3 58.5s linear infinite; }
 @keyframes s17_2 {
   0%, 38.83% { fill: #006d32 }
   39.33%, 90.0% { fill: #161b22 }
   95.0%, 100% { fill: #006d32 }
 }
-#s17_2 { animation: s17_2 35.1s linear infinite; }
+#s17_2 { animation: s17_2 58.5s linear infinite; }
 @keyframes s17_1 {
   0%, 39.17% { fill: #0e4429 }
   39.67%, 90.0% { fill: #161b22 }
   95.0%, 100% { fill: #0e4429 }
 }
-#s17_1 { animation: s17_1 35.1s linear infinite; }
+#s17_1 { animation: s17_1 58.5s linear infinite; }
 @keyframes s18_1 {
   0%, 39.52% { fill: #006d32 }
   40.02%, 90.0% { fill: #161b22 }
   95.0%, 100% { fill: #006d32 }
 }
-#s18_1 { animation: s18_1 35.1s linear infinite; }
+#s18_1 { animation: s18_1 58.5s linear infinite; }
 @keyframes s19_1 {
   0%, 39.86% { fill: #006d32 }
   40.36%, 90.0% { fill: #161b22 }
   95.0%, 100% { fill: #006d32 }
 }
-#s19_1 { animation: s19_1 35.1s linear infinite; }
+#s19_1 { animation: s19_1 58.5s linear infinite; }
 @keyframes s16_5 {
   0%, 42.26% { fill: #26a641 }
   42.76%, 90.0% { fill: #161b22 }
   95.0%, 100% { fill: #26a641 }
 }
-#s16_5 { animation: s16_5 35.1s linear infinite; }
+#s16_5 { animation: s16_5 58.5s linear infinite; }
 @keyframes s15_5 {
   0%, 42.61% { fill: #006d32 }
   43.11%, 90.0% { fill: #161b22 }
   95.0%, 100% { fill: #006d32 }
 }
-#s15_5 { animation: s15_5 35.1s linear infinite; }
+#s15_5 { animation: s15_5 58.5s linear infinite; }
 @keyframes s14_5 {
   0%, 42.95% { fill: #26a641 }
   43.45%, 90.0% { fill: #161b22 }
   95.0%, 100% { fill: #26a641 }
 }
-#s14_5 { animation: s14_5 35.1s linear infinite; }
+#s14_5 { animation: s14_5 58.5s linear infinite; }
 @keyframes s5_5 {
   0%, 46.04% { fill: #0e4429 }
   46.54%, 90.0% { fill: #161b22 }
   95.0%, 100% { fill: #0e4429 }
 }
-#s5_5 { animation: s5_5 35.1s linear infinite; }
+#s5_5 { animation: s5_5 58.5s linear infinite; }
 @keyframes s3_5 {
   0%, 46.73% { fill: #0e4429 }
   47.23%, 90.0% { fill: #161b22 }
   95.0%, 100% { fill: #0e4429 }
 }
-#s3_5 { animation: s3_5 35.1s linear infinite; }
+#s3_5 { animation: s3_5 58.5s linear infinite; }
 @keyframes s2_5 {
   0%, 47.07% { fill: #006d32 }
   47.57%, 90.0% { fill: #161b22 }
   95.0%, 100% { fill: #006d32 }
 }
-#s2_5 { animation: s2_5 35.1s linear infinite; }
+#s2_5 { animation: s2_5 58.5s linear infinite; }
 @keyframes s2_4 {
   0%, 47.42% { fill: #0e4429 }
   47.92%, 90.0% { fill: #161b22 }
   95.0%, 100% { fill: #0e4429 }
 }
-#s2_4 { animation: s2_4 35.1s linear infinite; }
+#s2_4 { animation: s2_4 58.5s linear infinite; }
 @keyframes s3_4 {
   0%, 47.76% { fill: #26a641 }
   48.26%, 90.0% { fill: #161b22 }
   95.0%, 100% { fill: #26a641 }
 }
-#s3_4 { animation: s3_4 35.1s linear infinite; }
+#s3_4 { animation: s3_4 58.5s linear infinite; }
 @keyframes s3_1 {
   0%, 48.79% { fill: #26a641 }
   49.29%, 90.0% { fill: #161b22 }
   95.0%, 100% { fill: #26a641 }
 }
-#s3_1 { animation: s3_1 35.1s linear infinite; }
+#s3_1 { animation: s3_1 58.5s linear infinite; }
 @keyframes s4_2 {
   0%, 49.48% { fill: #0e4429 }
   49.98%, 90.0% { fill: #161b22 }
   95.0%, 100% { fill: #0e4429 }
 }
-#s4_2 { animation: s4_2 35.1s linear infinite; }
+#s4_2 { animation: s4_2 58.5s linear infinite; }
 @keyframes s5_3 {
   0%, 50.17% { fill: #006d32 }
   50.67%, 90.0% { fill: #161b22 }
   95.0%, 100% { fill: #006d32 }
 }
-#s5_3 { animation: s5_3 35.1s linear infinite; }
+#s5_3 { animation: s5_3 58.5s linear infinite; }
 @keyframes s36_2 {
   0%, 61.16% { fill: #006d32 }
   61.66%, 90.0% { fill: #161b22 }
   95.0%, 100% { fill: #006d32 }
 }
-#s36_2 { animation: s36_2 35.1s linear infinite; }
+#s36_2 { animation: s36_2 58.5s linear infinite; }
 @keyframes s39_2 {
   0%, 62.19% { fill: #39d353 }
   62.69%, 90.0% { fill: #161b22 }
   95.0%, 100% { fill: #39d353 }
 }
-#s39_2 { animation: s39_2 35.1s linear infinite; }
+#s39_2 { animation: s39_2 58.5s linear infinite; }
 @keyframes s39_1 {
   0%, 62.54% { fill: #26a641 }
   63.04%, 90.0% { fill: #161b22 }
   95.0%, 100% { fill: #26a641 }
 }
-#s39_1 { animation: s39_1 35.1s linear infinite; }
+#s39_1 { animation: s39_1 58.5s linear infinite; }
 @keyframes s40_1 {
   0%, 62.88% { fill: #26a641 }
   63.38%, 90.0% { fill: #161b22 }
   95.0%, 100% { fill: #26a641 }
 }
-#s40_1 { animation: s40_1 35.1s linear infinite; }
+#s40_1 { animation: s40_1 58.5s linear infinite; }
 @keyframes s40_2 {
   0%, 63.22% { fill: #0e4429 }
   63.72%, 90.0% { fill: #161b22 }
   95.0%, 100% { fill: #0e4429 }
 }
-#s40_2 { animation: s40_2 35.1s linear infinite; }
+#s40_2 { animation: s40_2 58.5s linear infinite; }
 @keyframes s40_3 {
   0%, 63.57% { fill: #006d32 }
   64.07%, 90.0% { fill: #161b22 }
   95.0%, 100% { fill: #006d32 }
 }
-#s40_3 { animation: s40_3 35.1s linear infinite; }
+#s40_3 { animation: s40_3 58.5s linear infinite; }
 @keyframes s39_3 {
   0%, 63.91% { fill: #006d32 }
   64.41%, 90.0% { fill: #161b22 }
   95.0%, 100% { fill: #006d32 }
 }
-#s39_3 { animation: s39_3 35.1s linear infinite; }
+#s39_3 { animation: s39_3 58.5s linear infinite; }
 @keyframes s39_4 {
   0%, 64.26% { fill: #39d353 }
   64.76%, 90.0% { fill: #161b22 }
   95.0%, 100% { fill: #39d353 }
 }
-#s39_4 { animation: s39_4 35.1s linear infinite; }
+#s39_4 { animation: s39_4 58.5s linear infinite; }
 @keyframes s40_4 {
   0%, 64.60% { fill: #0e4429 }
   65.10%, 90.0% { fill: #161b22 }
   95.0%, 100% { fill: #0e4429 }
 }
-#s40_4 { animation: s40_4 35.1s linear infinite; }
+#s40_4 { animation: s40_4 58.5s linear infinite; }
 @keyframes s41_4 {
   0%, 64.94% { fill: #39d353 }
   65.44%, 90.0% { fill: #161b22 }
   95.0%, 100% { fill: #39d353 }
 }
-#s41_4 { animation: s41_4 35.1s linear infinite; }
+#s41_4 { animation: s41_4 58.5s linear infinite; }
 @keyframes s41_3 {
   0%, 65.29% { fill: #39d353 }
   65.79%, 90.0% { fill: #161b22 }
   95.0%, 100% { fill: #39d353 }
 }
-#s41_3 { animation: s41_3 35.1s linear infinite; }
+#s41_3 { animation: s41_3 58.5s linear infinite; }
 @keyframes s41_2 {
   0%, 65.63% { fill: #39d353 }
   66.13%, 90.0% { fill: #161b22 }
   95.0%, 100% { fill: #39d353 }
 }
-#s41_2 { animation: s41_2 35.1s linear infinite; }
+#s41_2 { animation: s41_2 58.5s linear infinite; }
 @keyframes s41_1 {
   0%, 65.97% { fill: #39d353 }
   66.47%, 90.0% { fill: #161b22 }
   95.0%, 100% { fill: #39d353 }
 }
-#s41_1 { animation: s41_1 35.1s linear infinite; }
+#s41_1 { animation: s41_1 58.5s linear infinite; }
 @keyframes s42_1 {
   0%, 66.32% { fill: #39d353 }
   66.82%, 90.0% { fill: #161b22 }
   95.0%, 100% { fill: #39d353 }
 }
-#s42_1 { animation: s42_1 35.1s linear infinite; }
+#s42_1 { animation: s42_1 58.5s linear infinite; }
 @keyframes s42_2 {
   0%, 66.66% { fill: #39d353 }
   67.16%, 90.0% { fill: #161b22 }
   95.0%, 100% { fill: #39d353 }
 }
-#s42_2 { animation: s42_2 35.1s linear infinite; }
+#s42_2 { animation: s42_2 58.5s linear infinite; }
 @keyframes s42_3 {
   0%, 67.00% { fill: #26a641 }
   67.50%, 90.0% { fill: #161b22 }
   95.0%, 100% { fill: #26a641 }
 }
-#s42_3 { animation: s42_3 35.1s linear infinite; }
+#s42_3 { animation: s42_3 58.5s linear infinite; }
 @keyframes s43_3 {
   0%, 67.35% { fill: #39d353 }
   67.85%, 90.0% { fill: #161b22 }
   95.0%, 100% { fill: #39d353 }
 }
-#s43_3 { animation: s43_3 35.1s linear infinite; }
+#s43_3 { animation: s43_3 58.5s linear infinite; }
 @keyframes s43_2 {
   0%, 67.69% { fill: #26a641 }
   68.19%, 90.0% { fill: #161b22 }
   95.0%, 100% { fill: #26a641 }
 }
-#s43_2 { animation: s43_2 35.1s linear infinite; }
+#s43_2 { animation: s43_2 58.5s linear infinite; }
 @keyframes s43_1 {
   0%, 68.04% { fill: #39d353 }
   68.54%, 90.0% { fill: #161b22 }
   95.0%, 100% { fill: #39d353 }
 }
-#s43_1 { animation: s43_1 35.1s linear infinite; }
+#s43_1 { animation: s43_1 58.5s linear infinite; }
 @keyframes s43_0 {
   0%, 68.38% { fill: #39d353 }
   68.88%, 90.0% { fill: #161b22 }
   95.0%, 100% { fill: #39d353 }
 }
-#s43_0 { animation: s43_0 35.1s linear infinite; }
+#s43_0 { animation: s43_0 58.5s linear infinite; }
 @keyframes s44_1 {
   0%, 69.07% { fill: #39d353 }
   69.57%, 90.0% { fill: #161b22 }
   95.0%, 100% { fill: #39d353 }
 }
-#s44_1 { animation: s44_1 35.1s linear infinite; }
+#s44_1 { animation: s44_1 58.5s linear infinite; }
 @keyframes s44_2 {
   0%, 69.41% { fill: #39d353 }
   69.91%, 90.0% { fill: #161b22 }
   95.0%, 100% { fill: #39d353 }
 }
-#s44_2 { animation: s44_2 35.1s linear infinite; }
+#s44_2 { animation: s44_2 58.5s linear infinite; }
 @keyframes s44_3 {
   0%, 69.75% { fill: #0e4429 }
   70.25%, 90.0% { fill: #161b22 }
   95.0%, 100% { fill: #0e4429 }
 }
-#s44_3 { animation: s44_3 35.1s linear infinite; }
+#s44_3 { animation: s44_3 58.5s linear infinite; }
 @keyframes s45_3 {
   0%, 70.10% { fill: #39d353 }
   70.60%, 90.0% { fill: #161b22 }
   95.0%, 100% { fill: #39d353 }
 }
-#s45_3 { animation: s45_3 35.1s linear infinite; }
+#s45_3 { animation: s45_3 58.5s linear infinite; }
 @keyframes s45_2 {
   0%, 70.44% { fill: #39d353 }
   70.94%, 90.0% { fill: #161b22 }
   95.0%, 100% { fill: #39d353 }
 }
-#s45_2 { animation: s45_2 35.1s linear infinite; }
+#s45_2 { animation: s45_2 58.5s linear infinite; }
 @keyframes s45_1 {
   0%, 70.78% { fill: #39d353 }
   71.28%, 90.0% { fill: #161b22 }
   95.0%, 100% { fill: #39d353 }
 }
-#s45_1 { animation: s45_1 35.1s linear infinite; }
+#s45_1 { animation: s45_1 58.5s linear infinite; }
 @keyframes s46_1 {
   0%, 71.13% { fill: #39d353 }
   71.63%, 90.0% { fill: #161b22 }
   95.0%, 100% { fill: #39d353 }
 }
-#s46_1 { animation: s46_1 35.1s linear infinite; }
+#s46_1 { animation: s46_1 58.5s linear infinite; }
 @keyframes s46_2 {
   0%, 71.47% { fill: #26a641 }
   71.97%, 90.0% { fill: #161b22 }
   95.0%, 100% { fill: #26a641 }
 }
-#s46_2 { animation: s46_2 35.1s linear infinite; }
+#s46_2 { animation: s46_2 58.5s linear infinite; }
 @keyframes s46_3 {
   0%, 71.81% { fill: #26a641 }
   72.31%, 90.0% { fill: #161b22 }
   95.0%, 100% { fill: #26a641 }
 }
-#s46_3 { animation: s46_3 35.1s linear infinite; }
+#s46_3 { animation: s46_3 58.5s linear infinite; }
 @keyframes s46_4 {
   0%, 72.16% { fill: #39d353 }
   72.66%, 90.0% { fill: #161b22 }
   95.0%, 100% { fill: #39d353 }
 }
-#s46_4 { animation: s46_4 35.1s linear infinite; }
+#s46_4 { animation: s46_4 58.5s linear infinite; }
 @keyframes s45_4 {
   0%, 72.50% { fill: #39d353 }
   73.00%, 90.0% { fill: #161b22 }
   95.0%, 100% { fill: #39d353 }
 }
-#s45_4 { animation: s45_4 35.1s linear infinite; }
+#s45_4 { animation: s45_4 58.5s linear infinite; }
 @keyframes s43_4 {
   0%, 73.19% { fill: #39d353 }
   73.69%, 90.0% { fill: #161b22 }
   95.0%, 100% { fill: #39d353 }
 }
-#s43_4 { animation: s43_4 35.1s linear infinite; }
+#s43_4 { animation: s43_4 58.5s linear infinite; }
 @keyframes s50_5 {
   0%, 75.94% { fill: #39d353 }
   76.44%, 90.0% { fill: #161b22 }
   95.0%, 100% { fill: #39d353 }
 }
-#s50_5 { animation: s50_5 35.1s linear infinite; }
+#s50_5 { animation: s50_5 58.5s linear infinite; }
 @keyframes s51_5 {
   0%, 76.28% { fill: #39d353 }
   76.78%, 90.0% { fill: #161b22 }
   95.0%, 100% { fill: #39d353 }
 }
-#s51_5 { animation: s51_5 35.1s linear infinite; }
+#s51_5 { animation: s51_5 58.5s linear infinite; }
 @keyframes s52_4 {
   0%, 76.97% { fill: #39d353 }
   77.47%, 90.0% { fill: #161b22 }
   95.0%, 100% { fill: #39d353 }
 }
-#s52_4 { animation: s52_4 35.1s linear infinite; }
+#s52_4 { animation: s52_4 58.5s linear infinite; }
 @keyframes s52_3 {
   0%, 77.31% { fill: #39d353 }
   77.81%, 90.0% { fill: #161b22 }
   95.0%, 100% { fill: #39d353 }
 }
-#s52_3 { animation: s52_3 35.1s linear infinite; }
+#s52_3 { animation: s52_3 58.5s linear infinite; }
 @keyframes s52_1 {
   0%, 78.00% { fill: #39d353 }
   78.00%, 90.0% { fill: #161b22 }
   95.0%, 100% { fill: #39d353 }
 }
-#s52_1 { animation: s52_1 35.1s linear infinite; }
+#s52_1 { animation: s52_1 58.5s linear infinite; }
 @keyframes snake-visibility {
   0%, 78.0% { opacity: 1 }
   82.0%, 97.0% { opacity: 0 }
   100% { opacity: 1 }
 }
-.snake-element { animation: snake-visibility 35.1s linear infinite; }
+.snake-element { animation: snake-visibility 58.5s linear infinite; }
 </style>
 <rect width="742" height="178" fill="#0d1117" stroke="#30363d" stroke-width="1" rx="6" ry="6"/>
 <text x="44" y="26" fill="#e6edf3" style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif; font-size: 14px;">837 contributions in the last year</text>
@@ -1214,27 +1214,27 @@
 <rect x="686" y="151" width="10" height="10" fill="#39d353" rx="2" ry="2"/>
 <text x="700" y="160" fill="#9198a1" style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif; font-size: 12px;">More</text>
 <circle class="snake-element" cx="712" cy="94" r="5" fill="#58a6ff">
-  <animate attributeName="cx" values="712;699;686;673;673;673;686;686;699;699;712;712;712;712;699;686;673;673;660;647;634;621;608;595;582;569;556;543;543;530;543;543;543;543;530;517;504;491;478;465;478;478;478;478;491;491;504;491;478;465;452;452;452;439;439;426;426;426;413;400;387;374;361;348;335;335;322;309;309;296;283;270;257;244;231;218;205;192;179;179;179;166;153;153;153;153;166;179;192;205;205;205;192;192;192;179;192;205;205;218;218;231;231;231;218;231;244;244;244;257;257;257;270;270;270;283;296;283;270;257;257;257;257;257;244;231;218;205;192;179;166;153;140;127;114;101;88;75;75;88;88;88;88;101;101;114;114;127;140;153;166;179;192;205;218;231;244;257;270;283;296;309;322;335;348;361;374;387;400;413;426;439;452;465;478;491;504;517;517;530;543;556;556;569;569;569;556;556;569;582;582;582;582;595;595;595;608;608;608;608;621;621;621;621;634;634;634;647;647;647;647;634;621;608;621;634;647;660;673;686;699;699;712;725;725;725;725;725;725" keyTimes="0;0.0034;0.0069;0.0103;0.0137;0.0172;0.0206;0.0241;0.0275;0.0309;0.0344;0.0378;0.0412;0.0447;0.0481;0.0515;0.0550;0.0584;0.0619;0.0653;0.0687;0.0722;0.0756;0.0790;0.0825;0.0859;0.0893;0.0928;0.0962;0.0996;0.1031;0.1065;0.1100;0.1134;0.1168;0.1203;0.1237;0.1271;0.1306;0.1340;0.1374;0.1409;0.1443;0.1478;0.1512;0.1546;0.1581;0.1615;0.1649;0.1684;0.1718;0.1752;0.1787;0.1821;0.1856;0.1890;0.1924;0.1959;0.1993;0.2027;0.2062;0.2096;0.2130;0.2165;0.2199;0.2233;0.2268;0.2302;0.2337;0.2371;0.2405;0.2440;0.2474;0.2508;0.2543;0.2577;0.2611;0.2646;0.2680;0.2715;0.2749;0.2783;0.2818;0.2852;0.2886;0.2921;0.2955;0.2989;0.3024;0.3058;0.3093;0.3127;0.3161;0.3196;0.3230;0.3264;0.3299;0.3333;0.3367;0.3402;0.3436;0.3470;0.3505;0.3539;0.3574;0.3608;0.3642;0.3677;0.3711;0.3745;0.3780;0.3814;0.3848;0.3883;0.3917;0.3952;0.3986;0.4020;0.4055;0.4089;0.4123;0.4158;0.4192;0.4226;0.4261;0.4295;0.4330;0.4364;0.4398;0.4433;0.4467;0.4501;0.4536;0.4570;0.4604;0.4639;0.4673;0.4707;0.4742;0.4776;0.4811;0.4845;0.4879;0.4914;0.4948;0.4982;0.5017;0.5051;0.5085;0.5120;0.5154;0.5189;0.5223;0.5257;0.5292;0.5326;0.5360;0.5395;0.5429;0.5463;0.5498;0.5532;0.5567;0.5601;0.5635;0.5670;0.5704;0.5738;0.5773;0.5807;0.5841;0.5876;0.5910;0.5944;0.5979;0.6013;0.6048;0.6082;0.6116;0.6151;0.6185;0.6219;0.6254;0.6288;0.6322;0.6357;0.6391;0.6426;0.6460;0.6494;0.6529;0.6563;0.6597;0.6632;0.6666;0.6700;0.6735;0.6769;0.6804;0.6838;0.6872;0.6907;0.6941;0.6975;0.7010;0.7044;0.7078;0.7113;0.7147;0.7181;0.7216;0.7250;0.7285;0.7319;0.7353;0.7388;0.7422;0.7456;0.7491;0.7525;0.7559;0.7594;0.7628;0.7663;0.7697;0.7731;0.7766;0.7800;1" dur="35.1s" repeatCount="indefinite"/>
-  <animate attributeName="cy" values="94;94;94;94;81;68;68;81;81;68;68;81;94;107;107;107;107;120;120;120;120;120;120;120;120;120;120;120;107;107;107;94;81;68;68;68;68;68;68;68;68;81;94;107;107;120;120;120;120;120;120;107;94;94;81;81;94;107;107;107;107;107;107;107;107;120;120;120;107;107;107;107;107;107;107;107;107;107;107;94;81;81;81;94;107;120;120;120;120;120;107;94;94;81;68;68;68;68;81;81;68;68;81;94;94;94;94;81;68;68;81;94;94;81;68;68;68;68;68;68;81;94;107;120;120;120;120;120;120;120;120;120;120;120;120;120;120;120;107;107;94;81;68;68;81;81;94;94;94;94;94;94;94;94;94;94;94;94;94;94;94;94;94;94;94;94;94;94;94;94;94;94;94;94;94;94;94;94;81;81;81;81;68;68;81;94;94;107;107;107;94;81;68;68;81;94;94;81;68;55;55;68;81;94;94;81;68;68;81;94;107;107;107;107;107;107;107;107;107;107;107;120;120;120;107;94;81;68;68" keyTimes="0;0.0034;0.0069;0.0103;0.0137;0.0172;0.0206;0.0241;0.0275;0.0309;0.0344;0.0378;0.0412;0.0447;0.0481;0.0515;0.0550;0.0584;0.0619;0.0653;0.0687;0.0722;0.0756;0.0790;0.0825;0.0859;0.0893;0.0928;0.0962;0.0996;0.1031;0.1065;0.1100;0.1134;0.1168;0.1203;0.1237;0.1271;0.1306;0.1340;0.1374;0.1409;0.1443;0.1478;0.1512;0.1546;0.1581;0.1615;0.1649;0.1684;0.1718;0.1752;0.1787;0.1821;0.1856;0.1890;0.1924;0.1959;0.1993;0.2027;0.2062;0.2096;0.2130;0.2165;0.2199;0.2233;0.2268;0.2302;0.2337;0.2371;0.2405;0.2440;0.2474;0.2508;0.2543;0.2577;0.2611;0.2646;0.2680;0.2715;0.2749;0.2783;0.2818;0.2852;0.2886;0.2921;0.2955;0.2989;0.3024;0.3058;0.3093;0.3127;0.3161;0.3196;0.3230;0.3264;0.3299;0.3333;0.3367;0.3402;0.3436;0.3470;0.3505;0.3539;0.3574;0.3608;0.3642;0.3677;0.3711;0.3745;0.3780;0.3814;0.3848;0.3883;0.3917;0.3952;0.3986;0.4020;0.4055;0.4089;0.4123;0.4158;0.4192;0.4226;0.4261;0.4295;0.4330;0.4364;0.4398;0.4433;0.4467;0.4501;0.4536;0.4570;0.4604;0.4639;0.4673;0.4707;0.4742;0.4776;0.4811;0.4845;0.4879;0.4914;0.4948;0.4982;0.5017;0.5051;0.5085;0.5120;0.5154;0.5189;0.5223;0.5257;0.5292;0.5326;0.5360;0.5395;0.5429;0.5463;0.5498;0.5532;0.5567;0.5601;0.5635;0.5670;0.5704;0.5738;0.5773;0.5807;0.5841;0.5876;0.5910;0.5944;0.5979;0.6013;0.6048;0.6082;0.6116;0.6151;0.6185;0.6219;0.6254;0.6288;0.6322;0.6357;0.6391;0.6426;0.6460;0.6494;0.6529;0.6563;0.6597;0.6632;0.6666;0.6700;0.6735;0.6769;0.6804;0.6838;0.6872;0.6907;0.6941;0.6975;0.7010;0.7044;0.7078;0.7113;0.7147;0.7181;0.7216;0.7250;0.7285;0.7319;0.7353;0.7388;0.7422;0.7456;0.7491;0.7525;0.7559;0.7594;0.7628;0.7663;0.7697;0.7731;0.7766;0.7800;1" dur="35.1s" repeatCount="indefinite"/>
+  <animate attributeName="cx" values="712.0;699.0;686.0;673.0;673.0;673.0;686.0;686.0;699.0;699.0;712.0;712.0;712.0;712.0;699.0;686.0;673.0;673.0;660.0;647.0;634.0;621.0;608.0;595.0;582.0;569.0;556.0;543.0;543.0;530.0;543.0;543.0;543.0;543.0;530.0;517.0;504.0;491.0;478.0;465.0;478.0;478.0;478.0;478.0;491.0;491.0;504.0;491.0;478.0;465.0;452.0;452.0;452.0;439.0;439.0;426.0;426.0;426.0;413.0;400.0;387.0;374.0;361.0;348.0;335.0;335.0;322.0;309.0;309.0;296.0;283.0;270.0;257.0;244.0;231.0;218.0;205.0;192.0;179.0;179.0;179.0;166.0;153.0;153.0;153.0;153.0;166.0;179.0;192.0;205.0;205.0;205.0;192.0;192.0;192.0;179.0;192.0;205.0;205.0;218.0;218.0;231.0;231.0;231.0;218.0;231.0;244.0;244.0;244.0;257.0;257.0;257.0;270.0;270.0;270.0;283.0;296.0;283.0;270.0;257.0;257.0;257.0;257.0;257.0;244.0;231.0;218.0;205.0;192.0;179.0;166.0;153.0;140.0;127.0;114.0;101.0;88.0;75.0;75.0;88.0;88.0;88.0;88.0;101.0;101.0;114.0;114.0;127.0;140.0;153.0;166.0;179.0;192.0;205.0;218.0;231.0;244.0;257.0;270.0;283.0;296.0;309.0;322.0;335.0;348.0;361.0;374.0;387.0;400.0;413.0;426.0;439.0;452.0;465.0;478.0;491.0;504.0;517.0;517.0;530.0;543.0;556.0;556.0;569.0;569.0;569.0;556.0;556.0;569.0;582.0;582.0;582.0;582.0;595.0;595.0;595.0;608.0;608.0;608.0;608.0;621.0;621.0;621.0;621.0;634.0;634.0;634.0;647.0;647.0;647.0;647.0;634.0;621.0;608.0;621.0;634.0;647.0;660.0;673.0;686.0;699.0;699.0;712.0;725.0;725.0;725.0;725.0;725.0;725.0" keyTimes="0;0.0034;0.0069;0.0103;0.0137;0.0172;0.0206;0.0241;0.0275;0.0309;0.0344;0.0378;0.0412;0.0447;0.0481;0.0515;0.0550;0.0584;0.0619;0.0653;0.0687;0.0722;0.0756;0.0790;0.0825;0.0859;0.0893;0.0928;0.0962;0.0996;0.1031;0.1065;0.1100;0.1134;0.1168;0.1203;0.1237;0.1271;0.1306;0.1340;0.1374;0.1409;0.1443;0.1478;0.1512;0.1546;0.1581;0.1615;0.1649;0.1684;0.1718;0.1752;0.1787;0.1821;0.1856;0.1890;0.1924;0.1959;0.1993;0.2027;0.2062;0.2096;0.2130;0.2165;0.2199;0.2233;0.2268;0.2302;0.2337;0.2371;0.2405;0.2440;0.2474;0.2508;0.2543;0.2577;0.2611;0.2646;0.2680;0.2715;0.2749;0.2783;0.2818;0.2852;0.2886;0.2921;0.2955;0.2989;0.3024;0.3058;0.3093;0.3127;0.3161;0.3196;0.3230;0.3264;0.3299;0.3333;0.3367;0.3402;0.3436;0.3470;0.3505;0.3539;0.3574;0.3608;0.3642;0.3677;0.3711;0.3745;0.3780;0.3814;0.3848;0.3883;0.3917;0.3952;0.3986;0.4020;0.4055;0.4089;0.4123;0.4158;0.4192;0.4226;0.4261;0.4295;0.4330;0.4364;0.4398;0.4433;0.4467;0.4501;0.4536;0.4570;0.4604;0.4639;0.4673;0.4707;0.4742;0.4776;0.4811;0.4845;0.4879;0.4914;0.4948;0.4982;0.5017;0.5051;0.5085;0.5120;0.5154;0.5189;0.5223;0.5257;0.5292;0.5326;0.5360;0.5395;0.5429;0.5463;0.5498;0.5532;0.5567;0.5601;0.5635;0.5670;0.5704;0.5738;0.5773;0.5807;0.5841;0.5876;0.5910;0.5944;0.5979;0.6013;0.6048;0.6082;0.6116;0.6151;0.6185;0.6219;0.6254;0.6288;0.6322;0.6357;0.6391;0.6426;0.6460;0.6494;0.6529;0.6563;0.6597;0.6632;0.6666;0.6700;0.6735;0.6769;0.6804;0.6838;0.6872;0.6907;0.6941;0.6975;0.7010;0.7044;0.7078;0.7113;0.7147;0.7181;0.7216;0.7250;0.7285;0.7319;0.7353;0.7388;0.7422;0.7456;0.7491;0.7525;0.7559;0.7594;0.7628;0.7663;0.7697;0.7731;0.7766;0.7800;1" dur="58.5s" repeatCount="indefinite"/>
+  <animate attributeName="cy" values="94.0;94.0;94.0;94.0;81.0;68.0;68.0;81.0;81.0;68.0;68.0;81.0;94.0;107.0;107.0;107.0;107.0;120.0;120.0;120.0;120.0;120.0;120.0;120.0;120.0;120.0;120.0;120.0;107.0;107.0;107.0;94.0;81.0;68.0;68.0;68.0;68.0;68.0;68.0;68.0;68.0;81.0;94.0;107.0;107.0;120.0;120.0;120.0;120.0;120.0;120.0;107.0;94.0;94.0;81.0;81.0;94.0;107.0;107.0;107.0;107.0;107.0;107.0;107.0;107.0;120.0;120.0;120.0;107.0;107.0;107.0;107.0;107.0;107.0;107.0;107.0;107.0;107.0;107.0;94.0;81.0;81.0;81.0;94.0;107.0;120.0;120.0;120.0;120.0;120.0;107.0;94.0;94.0;81.0;68.0;68.0;68.0;68.0;81.0;81.0;68.0;68.0;81.0;94.0;94.0;94.0;94.0;81.0;68.0;68.0;81.0;94.0;94.0;81.0;68.0;68.0;68.0;68.0;68.0;68.0;81.0;94.0;107.0;120.0;120.0;120.0;120.0;120.0;120.0;120.0;120.0;120.0;120.0;120.0;120.0;120.0;120.0;120.0;107.0;107.0;94.0;81.0;68.0;68.0;81.0;81.0;94.0;94.0;94.0;94.0;94.0;94.0;94.0;94.0;94.0;94.0;94.0;94.0;94.0;94.0;94.0;94.0;94.0;94.0;94.0;94.0;94.0;94.0;94.0;94.0;94.0;94.0;94.0;94.0;94.0;94.0;94.0;94.0;81.0;81.0;81.0;81.0;68.0;68.0;81.0;94.0;94.0;107.0;107.0;107.0;94.0;81.0;68.0;68.0;81.0;94.0;94.0;81.0;68.0;55.0;55.0;68.0;81.0;94.0;94.0;81.0;68.0;68.0;81.0;94.0;107.0;107.0;107.0;107.0;107.0;107.0;107.0;107.0;107.0;107.0;107.0;120.0;120.0;120.0;107.0;94.0;81.0;68.0;68.0" keyTimes="0;0.0034;0.0069;0.0103;0.0137;0.0172;0.0206;0.0241;0.0275;0.0309;0.0344;0.0378;0.0412;0.0447;0.0481;0.0515;0.0550;0.0584;0.0619;0.0653;0.0687;0.0722;0.0756;0.0790;0.0825;0.0859;0.0893;0.0928;0.0962;0.0996;0.1031;0.1065;0.1100;0.1134;0.1168;0.1203;0.1237;0.1271;0.1306;0.1340;0.1374;0.1409;0.1443;0.1478;0.1512;0.1546;0.1581;0.1615;0.1649;0.1684;0.1718;0.1752;0.1787;0.1821;0.1856;0.1890;0.1924;0.1959;0.1993;0.2027;0.2062;0.2096;0.2130;0.2165;0.2199;0.2233;0.2268;0.2302;0.2337;0.2371;0.2405;0.2440;0.2474;0.2508;0.2543;0.2577;0.2611;0.2646;0.2680;0.2715;0.2749;0.2783;0.2818;0.2852;0.2886;0.2921;0.2955;0.2989;0.3024;0.3058;0.3093;0.3127;0.3161;0.3196;0.3230;0.3264;0.3299;0.3333;0.3367;0.3402;0.3436;0.3470;0.3505;0.3539;0.3574;0.3608;0.3642;0.3677;0.3711;0.3745;0.3780;0.3814;0.3848;0.3883;0.3917;0.3952;0.3986;0.4020;0.4055;0.4089;0.4123;0.4158;0.4192;0.4226;0.4261;0.4295;0.4330;0.4364;0.4398;0.4433;0.4467;0.4501;0.4536;0.4570;0.4604;0.4639;0.4673;0.4707;0.4742;0.4776;0.4811;0.4845;0.4879;0.4914;0.4948;0.4982;0.5017;0.5051;0.5085;0.5120;0.5154;0.5189;0.5223;0.5257;0.5292;0.5326;0.5360;0.5395;0.5429;0.5463;0.5498;0.5532;0.5567;0.5601;0.5635;0.5670;0.5704;0.5738;0.5773;0.5807;0.5841;0.5876;0.5910;0.5944;0.5979;0.6013;0.6048;0.6082;0.6116;0.6151;0.6185;0.6219;0.6254;0.6288;0.6322;0.6357;0.6391;0.6426;0.6460;0.6494;0.6529;0.6563;0.6597;0.6632;0.6666;0.6700;0.6735;0.6769;0.6804;0.6838;0.6872;0.6907;0.6941;0.6975;0.7010;0.7044;0.7078;0.7113;0.7147;0.7181;0.7216;0.7250;0.7285;0.7319;0.7353;0.7388;0.7422;0.7456;0.7491;0.7525;0.7559;0.7594;0.7628;0.7663;0.7697;0.7731;0.7766;0.7800;1" dur="58.5s" repeatCount="indefinite"/>
 </circle>
 <circle class="snake-element" cx="712" cy="94" r="4.5" fill="#58a6ff" opacity="1.0">
-  <animate attributeName="cx" values="712;712;712;699;686;673;673;673;686;686;699;699;712;712;712;712;699;686;673;673;660;647;634;621;608;595;582;569;556;543;543;530;543;543;543;543;530;517;504;491;478;465;478;478;478;478;491;491;504;491;478;465;452;452;452;439;439;426;426;426;413;400;387;374;361;348;335;335;322;309;309;296;283;270;257;244;231;218;205;192;179;179;179;166;153;153;153;153;166;179;192;205;205;205;192;192;192;179;192;205;205;218;218;231;231;231;218;231;244;244;244;257;257;257;270;270;270;283;296;283;270;257;257;257;257;257;244;231;218;205;192;179;166;153;140;127;114;101;88;75;75;88;88;88;88;101;101;114;114;127;140;153;166;179;192;205;218;231;244;257;270;283;296;309;322;335;348;361;374;387;400;413;426;439;452;465;478;491;504;517;517;530;543;556;556;569;569;569;556;556;569;582;582;582;582;595;595;595;608;608;608;608;621;621;621;621;634;634;634;647;647;647;647;634;621;608;621;634;647;660;673;686;699;699;712;725;725;725;725" keyTimes="0;0.0034;0.0069;0.0103;0.0137;0.0172;0.0206;0.0241;0.0275;0.0309;0.0344;0.0378;0.0412;0.0447;0.0481;0.0515;0.0550;0.0584;0.0619;0.0653;0.0687;0.0722;0.0756;0.0790;0.0825;0.0859;0.0893;0.0928;0.0962;0.0996;0.1031;0.1065;0.1100;0.1134;0.1168;0.1203;0.1237;0.1271;0.1306;0.1340;0.1374;0.1409;0.1443;0.1478;0.1512;0.1546;0.1581;0.1615;0.1649;0.1684;0.1718;0.1752;0.1787;0.1821;0.1856;0.1890;0.1924;0.1959;0.1993;0.2027;0.2062;0.2096;0.2130;0.2165;0.2199;0.2233;0.2268;0.2302;0.2337;0.2371;0.2405;0.2440;0.2474;0.2508;0.2543;0.2577;0.2611;0.2646;0.2680;0.2715;0.2749;0.2783;0.2818;0.2852;0.2886;0.2921;0.2955;0.2989;0.3024;0.3058;0.3093;0.3127;0.3161;0.3196;0.3230;0.3264;0.3299;0.3333;0.3367;0.3402;0.3436;0.3470;0.3505;0.3539;0.3574;0.3608;0.3642;0.3677;0.3711;0.3745;0.3780;0.3814;0.3848;0.3883;0.3917;0.3952;0.3986;0.4020;0.4055;0.4089;0.4123;0.4158;0.4192;0.4226;0.4261;0.4295;0.4330;0.4364;0.4398;0.4433;0.4467;0.4501;0.4536;0.4570;0.4604;0.4639;0.4673;0.4707;0.4742;0.4776;0.4811;0.4845;0.4879;0.4914;0.4948;0.4982;0.5017;0.5051;0.5085;0.5120;0.5154;0.5189;0.5223;0.5257;0.5292;0.5326;0.5360;0.5395;0.5429;0.5463;0.5498;0.5532;0.5567;0.5601;0.5635;0.5670;0.5704;0.5738;0.5773;0.5807;0.5841;0.5876;0.5910;0.5944;0.5979;0.6013;0.6048;0.6082;0.6116;0.6151;0.6185;0.6219;0.6254;0.6288;0.6322;0.6357;0.6391;0.6426;0.6460;0.6494;0.6529;0.6563;0.6597;0.6632;0.6666;0.6700;0.6735;0.6769;0.6804;0.6838;0.6872;0.6907;0.6941;0.6975;0.7010;0.7044;0.7078;0.7113;0.7147;0.7181;0.7216;0.7250;0.7285;0.7319;0.7353;0.7388;0.7422;0.7456;0.7491;0.7525;0.7559;0.7594;0.7628;0.7663;0.7697;0.7731;0.7766;0.7800;1" dur="35.1s" repeatCount="indefinite"/>
-  <animate attributeName="cy" values="94;94;94;94;94;94;81;68;68;81;81;68;68;81;94;107;107;107;107;120;120;120;120;120;120;120;120;120;120;120;107;107;107;94;81;68;68;68;68;68;68;68;68;81;94;107;107;120;120;120;120;120;120;107;94;94;81;81;94;107;107;107;107;107;107;107;107;120;120;120;107;107;107;107;107;107;107;107;107;107;107;94;81;81;81;94;107;120;120;120;120;120;107;94;94;81;68;68;68;68;81;81;68;68;81;94;94;94;94;81;68;68;81;94;94;81;68;68;68;68;68;68;81;94;107;120;120;120;120;120;120;120;120;120;120;120;120;120;120;120;107;107;94;81;68;68;81;81;94;94;94;94;94;94;94;94;94;94;94;94;94;94;94;94;94;94;94;94;94;94;94;94;94;94;94;94;94;94;94;94;81;81;81;81;68;68;81;94;94;107;107;107;94;81;68;68;81;94;94;81;68;55;55;68;81;94;94;81;68;68;81;94;107;107;107;107;107;107;107;107;107;107;107;120;120;120;107;94;94" keyTimes="0;0.0034;0.0069;0.0103;0.0137;0.0172;0.0206;0.0241;0.0275;0.0309;0.0344;0.0378;0.0412;0.0447;0.0481;0.0515;0.0550;0.0584;0.0619;0.0653;0.0687;0.0722;0.0756;0.0790;0.0825;0.0859;0.0893;0.0928;0.0962;0.0996;0.1031;0.1065;0.1100;0.1134;0.1168;0.1203;0.1237;0.1271;0.1306;0.1340;0.1374;0.1409;0.1443;0.1478;0.1512;0.1546;0.1581;0.1615;0.1649;0.1684;0.1718;0.1752;0.1787;0.1821;0.1856;0.1890;0.1924;0.1959;0.1993;0.2027;0.2062;0.2096;0.2130;0.2165;0.2199;0.2233;0.2268;0.2302;0.2337;0.2371;0.2405;0.2440;0.2474;0.2508;0.2543;0.2577;0.2611;0.2646;0.2680;0.2715;0.2749;0.2783;0.2818;0.2852;0.2886;0.2921;0.2955;0.2989;0.3024;0.3058;0.3093;0.3127;0.3161;0.3196;0.3230;0.3264;0.3299;0.3333;0.3367;0.3402;0.3436;0.3470;0.3505;0.3539;0.3574;0.3608;0.3642;0.3677;0.3711;0.3745;0.3780;0.3814;0.3848;0.3883;0.3917;0.3952;0.3986;0.4020;0.4055;0.4089;0.4123;0.4158;0.4192;0.4226;0.4261;0.4295;0.4330;0.4364;0.4398;0.4433;0.4467;0.4501;0.4536;0.4570;0.4604;0.4639;0.4673;0.4707;0.4742;0.4776;0.4811;0.4845;0.4879;0.4914;0.4948;0.4982;0.5017;0.5051;0.5085;0.5120;0.5154;0.5189;0.5223;0.5257;0.5292;0.5326;0.5360;0.5395;0.5429;0.5463;0.5498;0.5532;0.5567;0.5601;0.5635;0.5670;0.5704;0.5738;0.5773;0.5807;0.5841;0.5876;0.5910;0.5944;0.5979;0.6013;0.6048;0.6082;0.6116;0.6151;0.6185;0.6219;0.6254;0.6288;0.6322;0.6357;0.6391;0.6426;0.6460;0.6494;0.6529;0.6563;0.6597;0.6632;0.6666;0.6700;0.6735;0.6769;0.6804;0.6838;0.6872;0.6907;0.6941;0.6975;0.7010;0.7044;0.7078;0.7113;0.7147;0.7181;0.7216;0.7250;0.7285;0.7319;0.7353;0.7388;0.7422;0.7456;0.7491;0.7525;0.7559;0.7594;0.7628;0.7663;0.7697;0.7731;0.7766;0.7800;1" dur="35.1s" repeatCount="indefinite"/>
+  <animate attributeName="cx" values="712.0;705.5;692.5;679.5;673.0;673.0;679.5;686.0;692.5;699.0;705.5;712.0;712.0;712.0;705.5;692.5;679.5;673.0;666.5;653.5;640.5;627.5;614.5;601.5;588.5;575.5;562.5;549.5;543.0;536.5;536.5;543.0;543.0;543.0;536.5;523.5;510.5;497.5;484.5;471.5;471.5;478.0;478.0;478.0;484.5;491.0;497.5;497.5;484.5;471.5;458.5;452.0;452.0;445.5;439.0;432.5;426.0;426.0;419.5;406.5;393.5;380.5;367.5;354.5;341.5;335.0;328.5;315.5;309.0;302.5;289.5;276.5;263.5;250.5;237.5;224.5;211.5;198.5;185.5;179.0;179.0;172.5;159.5;153.0;153.0;153.0;159.5;172.5;185.5;198.5;205.0;205.0;198.5;192.0;192.0;185.5;185.5;198.5;205.0;211.5;218.0;224.5;231.0;231.0;224.5;224.5;237.5;244.0;244.0;250.5;257.0;257.0;263.5;270.0;270.0;276.5;289.5;289.5;276.5;263.5;257.0;257.0;257.0;257.0;250.5;237.5;224.5;211.5;198.5;185.5;172.5;159.5;146.5;133.5;120.5;107.5;94.5;81.5;75.0;81.5;88.0;88.0;88.0;94.5;101.0;107.5;114.0;120.5;133.5;146.5;159.5;172.5;185.5;198.5;211.5;224.5;237.5;250.5;263.5;276.5;289.5;302.5;315.5;328.5;341.5;354.5;367.5;380.5;393.5;406.5;419.5;432.5;445.5;458.5;471.5;484.5;497.5;510.5;517.0;523.5;536.5;549.5;556.0;562.5;569.0;569.0;562.5;556.0;562.5;575.5;582.0;582.0;582.0;588.5;595.0;595.0;601.5;608.0;608.0;608.0;614.5;621.0;621.0;621.0;627.5;634.0;634.0;640.5;647.0;647.0;647.0;640.5;627.5;614.5;614.5;627.5;640.5;653.5;666.5;679.5;692.5;699.0;705.5;718.5;725.0;725.0;725.0;725.0;725.0" keyTimes="0;0.0034;0.0069;0.0103;0.0137;0.0172;0.0206;0.0241;0.0275;0.0309;0.0344;0.0378;0.0412;0.0447;0.0481;0.0515;0.0550;0.0584;0.0619;0.0653;0.0687;0.0722;0.0756;0.0790;0.0825;0.0859;0.0893;0.0928;0.0962;0.0996;0.1031;0.1065;0.1100;0.1134;0.1168;0.1203;0.1237;0.1271;0.1306;0.1340;0.1374;0.1409;0.1443;0.1478;0.1512;0.1546;0.1581;0.1615;0.1649;0.1684;0.1718;0.1752;0.1787;0.1821;0.1856;0.1890;0.1924;0.1959;0.1993;0.2027;0.2062;0.2096;0.2130;0.2165;0.2199;0.2233;0.2268;0.2302;0.2337;0.2371;0.2405;0.2440;0.2474;0.2508;0.2543;0.2577;0.2611;0.2646;0.2680;0.2715;0.2749;0.2783;0.2818;0.2852;0.2886;0.2921;0.2955;0.2989;0.3024;0.3058;0.3093;0.3127;0.3161;0.3196;0.3230;0.3264;0.3299;0.3333;0.3367;0.3402;0.3436;0.3470;0.3505;0.3539;0.3574;0.3608;0.3642;0.3677;0.3711;0.3745;0.3780;0.3814;0.3848;0.3883;0.3917;0.3952;0.3986;0.4020;0.4055;0.4089;0.4123;0.4158;0.4192;0.4226;0.4261;0.4295;0.4330;0.4364;0.4398;0.4433;0.4467;0.4501;0.4536;0.4570;0.4604;0.4639;0.4673;0.4707;0.4742;0.4776;0.4811;0.4845;0.4879;0.4914;0.4948;0.4982;0.5017;0.5051;0.5085;0.5120;0.5154;0.5189;0.5223;0.5257;0.5292;0.5326;0.5360;0.5395;0.5429;0.5463;0.5498;0.5532;0.5567;0.5601;0.5635;0.5670;0.5704;0.5738;0.5773;0.5807;0.5841;0.5876;0.5910;0.5944;0.5979;0.6013;0.6048;0.6082;0.6116;0.6151;0.6185;0.6219;0.6254;0.6288;0.6322;0.6357;0.6391;0.6426;0.6460;0.6494;0.6529;0.6563;0.6597;0.6632;0.6666;0.6700;0.6735;0.6769;0.6804;0.6838;0.6872;0.6907;0.6941;0.6975;0.7010;0.7044;0.7078;0.7113;0.7147;0.7181;0.7216;0.7250;0.7285;0.7319;0.7353;0.7388;0.7422;0.7456;0.7491;0.7525;0.7559;0.7594;0.7628;0.7663;0.7697;0.7731;0.7766;0.7800;1" dur="58.5s" repeatCount="indefinite"/>
+  <animate attributeName="cy" values="94.0;94.0;94.0;94.0;87.5;74.5;68.0;74.5;81.0;74.5;68.0;74.5;87.5;100.5;107.0;107.0;107.0;113.5;120.0;120.0;120.0;120.0;120.0;120.0;120.0;120.0;120.0;120.0;113.5;107.0;107.0;100.5;87.5;74.5;68.0;68.0;68.0;68.0;68.0;68.0;68.0;74.5;87.5;100.5;107.0;113.5;120.0;120.0;120.0;120.0;120.0;113.5;100.5;94.0;87.5;81.0;87.5;100.5;107.0;107.0;107.0;107.0;107.0;107.0;107.0;113.5;120.0;120.0;113.5;107.0;107.0;107.0;107.0;107.0;107.0;107.0;107.0;107.0;107.0;100.5;87.5;81.0;81.0;87.5;100.5;113.5;120.0;120.0;120.0;120.0;113.5;100.5;94.0;87.5;74.5;68.0;68.0;68.0;74.5;81.0;74.5;68.0;74.5;87.5;94.0;94.0;94.0;87.5;74.5;68.0;74.5;87.5;94.0;87.5;74.5;68.0;68.0;68.0;68.0;68.0;74.5;87.5;100.5;113.5;120.0;120.0;120.0;120.0;120.0;120.0;120.0;120.0;120.0;120.0;120.0;120.0;120.0;120.0;113.5;107.0;100.5;87.5;74.5;68.0;74.5;81.0;87.5;94.0;94.0;94.0;94.0;94.0;94.0;94.0;94.0;94.0;94.0;94.0;94.0;94.0;94.0;94.0;94.0;94.0;94.0;94.0;94.0;94.0;94.0;94.0;94.0;94.0;94.0;94.0;94.0;94.0;94.0;94.0;87.5;81.0;81.0;81.0;74.5;68.0;74.5;87.5;94.0;100.5;107.0;107.0;100.5;87.5;74.5;68.0;74.5;87.5;94.0;87.5;74.5;61.5;55.0;61.5;74.5;87.5;94.0;87.5;74.5;68.0;74.5;87.5;100.5;107.0;107.0;107.0;107.0;107.0;107.0;107.0;107.0;107.0;107.0;113.5;120.0;120.0;113.5;100.5;87.5;74.5;74.5" keyTimes="0;0.0034;0.0069;0.0103;0.0137;0.0172;0.0206;0.0241;0.0275;0.0309;0.0344;0.0378;0.0412;0.0447;0.0481;0.0515;0.0550;0.0584;0.0619;0.0653;0.0687;0.0722;0.0756;0.0790;0.0825;0.0859;0.0893;0.0928;0.0962;0.0996;0.1031;0.1065;0.1100;0.1134;0.1168;0.1203;0.1237;0.1271;0.1306;0.1340;0.1374;0.1409;0.1443;0.1478;0.1512;0.1546;0.1581;0.1615;0.1649;0.1684;0.1718;0.1752;0.1787;0.1821;0.1856;0.1890;0.1924;0.1959;0.1993;0.2027;0.2062;0.2096;0.2130;0.2165;0.2199;0.2233;0.2268;0.2302;0.2337;0.2371;0.2405;0.2440;0.2474;0.2508;0.2543;0.2577;0.2611;0.2646;0.2680;0.2715;0.2749;0.2783;0.2818;0.2852;0.2886;0.2921;0.2955;0.2989;0.3024;0.3058;0.3093;0.3127;0.3161;0.3196;0.3230;0.3264;0.3299;0.3333;0.3367;0.3402;0.3436;0.3470;0.3505;0.3539;0.3574;0.3608;0.3642;0.3677;0.3711;0.3745;0.3780;0.3814;0.3848;0.3883;0.3917;0.3952;0.3986;0.4020;0.4055;0.4089;0.4123;0.4158;0.4192;0.4226;0.4261;0.4295;0.4330;0.4364;0.4398;0.4433;0.4467;0.4501;0.4536;0.4570;0.4604;0.4639;0.4673;0.4707;0.4742;0.4776;0.4811;0.4845;0.4879;0.4914;0.4948;0.4982;0.5017;0.5051;0.5085;0.5120;0.5154;0.5189;0.5223;0.5257;0.5292;0.5326;0.5360;0.5395;0.5429;0.5463;0.5498;0.5532;0.5567;0.5601;0.5635;0.5670;0.5704;0.5738;0.5773;0.5807;0.5841;0.5876;0.5910;0.5944;0.5979;0.6013;0.6048;0.6082;0.6116;0.6151;0.6185;0.6219;0.6254;0.6288;0.6322;0.6357;0.6391;0.6426;0.6460;0.6494;0.6529;0.6563;0.6597;0.6632;0.6666;0.6700;0.6735;0.6769;0.6804;0.6838;0.6872;0.6907;0.6941;0.6975;0.7010;0.7044;0.7078;0.7113;0.7147;0.7181;0.7216;0.7250;0.7285;0.7319;0.7353;0.7388;0.7422;0.7456;0.7491;0.7525;0.7559;0.7594;0.7628;0.7663;0.7697;0.7731;0.7766;0.7800;1" dur="58.5s" repeatCount="indefinite"/>
 </circle>
 <circle class="snake-element" cx="712" cy="94" r="4.2" fill="#58a6ff" opacity="0.9">
-  <animate attributeName="cx" values="712;712;712;712;712;699;686;673;673;673;686;686;699;699;712;712;712;712;699;686;673;673;660;647;634;621;608;595;582;569;556;543;543;530;543;543;543;543;530;517;504;491;478;465;478;478;478;478;491;491;504;491;478;465;452;452;452;439;439;426;426;426;413;400;387;374;361;348;335;335;322;309;309;296;283;270;257;244;231;218;205;192;179;179;179;166;153;153;153;153;166;179;192;205;205;205;192;192;192;179;192;205;205;218;218;231;231;231;218;231;244;244;244;257;257;257;270;270;270;283;296;283;270;257;257;257;257;257;244;231;218;205;192;179;166;153;140;127;114;101;88;75;75;88;88;88;88;101;101;114;114;127;140;153;166;179;192;205;218;231;244;257;270;283;296;309;322;335;348;361;374;387;400;413;426;439;452;465;478;491;504;517;517;530;543;556;556;569;569;569;556;556;569;582;582;582;582;595;595;595;608;608;608;608;621;621;621;621;634;634;634;647;647;647;647;634;621;608;621;634;647;660;673;686;699;699;712;725;725" keyTimes="0;0.0034;0.0069;0.0103;0.0137;0.0172;0.0206;0.0241;0.0275;0.0309;0.0344;0.0378;0.0412;0.0447;0.0481;0.0515;0.0550;0.0584;0.0619;0.0653;0.0687;0.0722;0.0756;0.0790;0.0825;0.0859;0.0893;0.0928;0.0962;0.0996;0.1031;0.1065;0.1100;0.1134;0.1168;0.1203;0.1237;0.1271;0.1306;0.1340;0.1374;0.1409;0.1443;0.1478;0.1512;0.1546;0.1581;0.1615;0.1649;0.1684;0.1718;0.1752;0.1787;0.1821;0.1856;0.1890;0.1924;0.1959;0.1993;0.2027;0.2062;0.2096;0.2130;0.2165;0.2199;0.2233;0.2268;0.2302;0.2337;0.2371;0.2405;0.2440;0.2474;0.2508;0.2543;0.2577;0.2611;0.2646;0.2680;0.2715;0.2749;0.2783;0.2818;0.2852;0.2886;0.2921;0.2955;0.2989;0.3024;0.3058;0.3093;0.3127;0.3161;0.3196;0.3230;0.3264;0.3299;0.3333;0.3367;0.3402;0.3436;0.3470;0.3505;0.3539;0.3574;0.3608;0.3642;0.3677;0.3711;0.3745;0.3780;0.3814;0.3848;0.3883;0.3917;0.3952;0.3986;0.4020;0.4055;0.4089;0.4123;0.4158;0.4192;0.4226;0.4261;0.4295;0.4330;0.4364;0.4398;0.4433;0.4467;0.4501;0.4536;0.4570;0.4604;0.4639;0.4673;0.4707;0.4742;0.4776;0.4811;0.4845;0.4879;0.4914;0.4948;0.4982;0.5017;0.5051;0.5085;0.5120;0.5154;0.5189;0.5223;0.5257;0.5292;0.5326;0.5360;0.5395;0.5429;0.5463;0.5498;0.5532;0.5567;0.5601;0.5635;0.5670;0.5704;0.5738;0.5773;0.5807;0.5841;0.5876;0.5910;0.5944;0.5979;0.6013;0.6048;0.6082;0.6116;0.6151;0.6185;0.6219;0.6254;0.6288;0.6322;0.6357;0.6391;0.6426;0.6460;0.6494;0.6529;0.6563;0.6597;0.6632;0.6666;0.6700;0.6735;0.6769;0.6804;0.6838;0.6872;0.6907;0.6941;0.6975;0.7010;0.7044;0.7078;0.7113;0.7147;0.7181;0.7216;0.7250;0.7285;0.7319;0.7353;0.7388;0.7422;0.7456;0.7491;0.7525;0.7559;0.7594;0.7628;0.7663;0.7697;0.7731;0.7766;0.7800;1" dur="35.1s" repeatCount="indefinite"/>
-  <animate attributeName="cy" values="94;94;94;94;94;94;94;94;81;68;68;81;81;68;68;81;94;107;107;107;107;120;120;120;120;120;120;120;120;120;120;120;107;107;107;94;81;68;68;68;68;68;68;68;68;81;94;107;107;120;120;120;120;120;120;107;94;94;81;81;94;107;107;107;107;107;107;107;107;120;120;120;107;107;107;107;107;107;107;107;107;107;107;94;81;81;81;94;107;120;120;120;120;120;107;94;94;81;68;68;68;68;81;81;68;68;81;94;94;94;94;81;68;68;81;94;94;81;68;68;68;68;68;68;81;94;107;120;120;120;120;120;120;120;120;120;120;120;120;120;120;120;107;107;94;81;68;68;81;81;94;94;94;94;94;94;94;94;94;94;94;94;94;94;94;94;94;94;94;94;94;94;94;94;94;94;94;94;94;94;94;94;81;81;81;81;68;68;81;94;94;107;107;107;94;81;68;68;81;94;94;81;68;55;55;68;81;94;94;81;68;68;81;94;107;107;107;107;107;107;107;107;107;107;107;120;120;120;120" keyTimes="0;0.0034;0.0069;0.0103;0.0137;0.0172;0.0206;0.0241;0.0275;0.0309;0.0344;0.0378;0.0412;0.0447;0.0481;0.0515;0.0550;0.0584;0.0619;0.0653;0.0687;0.0722;0.0756;0.0790;0.0825;0.0859;0.0893;0.0928;0.0962;0.0996;0.1031;0.1065;0.1100;0.1134;0.1168;0.1203;0.1237;0.1271;0.1306;0.1340;0.1374;0.1409;0.1443;0.1478;0.1512;0.1546;0.1581;0.1615;0.1649;0.1684;0.1718;0.1752;0.1787;0.1821;0.1856;0.1890;0.1924;0.1959;0.1993;0.2027;0.2062;0.2096;0.2130;0.2165;0.2199;0.2233;0.2268;0.2302;0.2337;0.2371;0.2405;0.2440;0.2474;0.2508;0.2543;0.2577;0.2611;0.2646;0.2680;0.2715;0.2749;0.2783;0.2818;0.2852;0.2886;0.2921;0.2955;0.2989;0.3024;0.3058;0.3093;0.3127;0.3161;0.3196;0.3230;0.3264;0.3299;0.3333;0.3367;0.3402;0.3436;0.3470;0.3505;0.3539;0.3574;0.3608;0.3642;0.3677;0.3711;0.3745;0.3780;0.3814;0.3848;0.3883;0.3917;0.3952;0.3986;0.4020;0.4055;0.4089;0.4123;0.4158;0.4192;0.4226;0.4261;0.4295;0.4330;0.4364;0.4398;0.4433;0.4467;0.4501;0.4536;0.4570;0.4604;0.4639;0.4673;0.4707;0.4742;0.4776;0.4811;0.4845;0.4879;0.4914;0.4948;0.4982;0.5017;0.5051;0.5085;0.5120;0.5154;0.5189;0.5223;0.5257;0.5292;0.5326;0.5360;0.5395;0.5429;0.5463;0.5498;0.5532;0.5567;0.5601;0.5635;0.5670;0.5704;0.5738;0.5773;0.5807;0.5841;0.5876;0.5910;0.5944;0.5979;0.6013;0.6048;0.6082;0.6116;0.6151;0.6185;0.6219;0.6254;0.6288;0.6322;0.6357;0.6391;0.6426;0.6460;0.6494;0.6529;0.6563;0.6597;0.6632;0.6666;0.6700;0.6735;0.6769;0.6804;0.6838;0.6872;0.6907;0.6941;0.6975;0.7010;0.7044;0.7078;0.7113;0.7147;0.7181;0.7216;0.7250;0.7285;0.7319;0.7353;0.7388;0.7422;0.7456;0.7491;0.7525;0.7559;0.7594;0.7628;0.7663;0.7697;0.7731;0.7766;0.7800;1" dur="35.1s" repeatCount="indefinite"/>
+  <animate attributeName="cx" values="712.0;712.0;699.0;686.0;673.0;673.0;673.0;686.0;686.0;699.0;699.0;712.0;712.0;712.0;712.0;699.0;686.0;673.0;673.0;660.0;647.0;634.0;621.0;608.0;595.0;582.0;569.0;556.0;543.0;543.0;530.0;543.0;543.0;543.0;543.0;530.0;517.0;504.0;491.0;478.0;465.0;478.0;478.0;478.0;478.0;491.0;491.0;504.0;491.0;478.0;465.0;452.0;452.0;452.0;439.0;439.0;426.0;426.0;426.0;413.0;400.0;387.0;374.0;361.0;348.0;335.0;335.0;322.0;309.0;309.0;296.0;283.0;270.0;257.0;244.0;231.0;218.0;205.0;192.0;179.0;179.0;179.0;166.0;153.0;153.0;153.0;153.0;166.0;179.0;192.0;205.0;205.0;205.0;192.0;192.0;192.0;179.0;192.0;205.0;205.0;218.0;218.0;231.0;231.0;231.0;218.0;231.0;244.0;244.0;244.0;257.0;257.0;257.0;270.0;270.0;270.0;283.0;296.0;283.0;270.0;257.0;257.0;257.0;257.0;257.0;244.0;231.0;218.0;205.0;192.0;179.0;166.0;153.0;140.0;127.0;114.0;101.0;88.0;75.0;75.0;88.0;88.0;88.0;88.0;101.0;101.0;114.0;114.0;127.0;140.0;153.0;166.0;179.0;192.0;205.0;218.0;231.0;244.0;257.0;270.0;283.0;296.0;309.0;322.0;335.0;348.0;361.0;374.0;387.0;400.0;413.0;426.0;439.0;452.0;465.0;478.0;491.0;504.0;517.0;517.0;530.0;543.0;556.0;556.0;569.0;569.0;569.0;556.0;556.0;569.0;582.0;582.0;582.0;582.0;595.0;595.0;595.0;608.0;608.0;608.0;608.0;621.0;621.0;621.0;621.0;634.0;634.0;634.0;647.0;647.0;647.0;647.0;634.0;621.0;608.0;621.0;634.0;647.0;660.0;673.0;686.0;699.0;699.0;712.0;725.0;725.0;725.0;725.0;725.0" keyTimes="0;0.0034;0.0069;0.0103;0.0137;0.0172;0.0206;0.0241;0.0275;0.0309;0.0344;0.0378;0.0412;0.0447;0.0481;0.0515;0.0550;0.0584;0.0619;0.0653;0.0687;0.0722;0.0756;0.0790;0.0825;0.0859;0.0893;0.0928;0.0962;0.0996;0.1031;0.1065;0.1100;0.1134;0.1168;0.1203;0.1237;0.1271;0.1306;0.1340;0.1374;0.1409;0.1443;0.1478;0.1512;0.1546;0.1581;0.1615;0.1649;0.1684;0.1718;0.1752;0.1787;0.1821;0.1856;0.1890;0.1924;0.1959;0.1993;0.2027;0.2062;0.2096;0.2130;0.2165;0.2199;0.2233;0.2268;0.2302;0.2337;0.2371;0.2405;0.2440;0.2474;0.2508;0.2543;0.2577;0.2611;0.2646;0.2680;0.2715;0.2749;0.2783;0.2818;0.2852;0.2886;0.2921;0.2955;0.2989;0.3024;0.3058;0.3093;0.3127;0.3161;0.3196;0.3230;0.3264;0.3299;0.3333;0.3367;0.3402;0.3436;0.3470;0.3505;0.3539;0.3574;0.3608;0.3642;0.3677;0.3711;0.3745;0.3780;0.3814;0.3848;0.3883;0.3917;0.3952;0.3986;0.4020;0.4055;0.4089;0.4123;0.4158;0.4192;0.4226;0.4261;0.4295;0.4330;0.4364;0.4398;0.4433;0.4467;0.4501;0.4536;0.4570;0.4604;0.4639;0.4673;0.4707;0.4742;0.4776;0.4811;0.4845;0.4879;0.4914;0.4948;0.4982;0.5017;0.5051;0.5085;0.5120;0.5154;0.5189;0.5223;0.5257;0.5292;0.5326;0.5360;0.5395;0.5429;0.5463;0.5498;0.5532;0.5567;0.5601;0.5635;0.5670;0.5704;0.5738;0.5773;0.5807;0.5841;0.5876;0.5910;0.5944;0.5979;0.6013;0.6048;0.6082;0.6116;0.6151;0.6185;0.6219;0.6254;0.6288;0.6322;0.6357;0.6391;0.6426;0.6460;0.6494;0.6529;0.6563;0.6597;0.6632;0.6666;0.6700;0.6735;0.6769;0.6804;0.6838;0.6872;0.6907;0.6941;0.6975;0.7010;0.7044;0.7078;0.7113;0.7147;0.7181;0.7216;0.7250;0.7285;0.7319;0.7353;0.7388;0.7422;0.7456;0.7491;0.7525;0.7559;0.7594;0.7628;0.7663;0.7697;0.7731;0.7766;0.7800;1" dur="58.5s" repeatCount="indefinite"/>
+  <animate attributeName="cy" values="94.0;94.0;94.0;94.0;94.0;81.0;68.0;68.0;81.0;81.0;68.0;68.0;81.0;94.0;107.0;107.0;107.0;107.0;120.0;120.0;120.0;120.0;120.0;120.0;120.0;120.0;120.0;120.0;120.0;107.0;107.0;107.0;94.0;81.0;68.0;68.0;68.0;68.0;68.0;68.0;68.0;68.0;81.0;94.0;107.0;107.0;120.0;120.0;120.0;120.0;120.0;120.0;107.0;94.0;94.0;81.0;81.0;94.0;107.0;107.0;107.0;107.0;107.0;107.0;107.0;107.0;120.0;120.0;120.0;107.0;107.0;107.0;107.0;107.0;107.0;107.0;107.0;107.0;107.0;107.0;94.0;81.0;81.0;81.0;94.0;107.0;120.0;120.0;120.0;120.0;120.0;107.0;94.0;94.0;81.0;68.0;68.0;68.0;68.0;81.0;81.0;68.0;68.0;81.0;94.0;94.0;94.0;94.0;81.0;68.0;68.0;81.0;94.0;94.0;81.0;68.0;68.0;68.0;68.0;68.0;68.0;81.0;94.0;107.0;120.0;120.0;120.0;120.0;120.0;120.0;120.0;120.0;120.0;120.0;120.0;120.0;120.0;120.0;120.0;107.0;107.0;94.0;81.0;68.0;68.0;81.0;81.0;94.0;94.0;94.0;94.0;94.0;94.0;94.0;94.0;94.0;94.0;94.0;94.0;94.0;94.0;94.0;94.0;94.0;94.0;94.0;94.0;94.0;94.0;94.0;94.0;94.0;94.0;94.0;94.0;94.0;94.0;94.0;94.0;81.0;81.0;81.0;81.0;68.0;68.0;81.0;94.0;94.0;107.0;107.0;107.0;94.0;81.0;68.0;68.0;81.0;94.0;94.0;81.0;68.0;55.0;55.0;68.0;81.0;94.0;94.0;81.0;68.0;68.0;81.0;94.0;107.0;107.0;107.0;107.0;107.0;107.0;107.0;107.0;107.0;107.0;107.0;120.0;120.0;120.0;107.0;94.0;81.0;81.0" keyTimes="0;0.0034;0.0069;0.0103;0.0137;0.0172;0.0206;0.0241;0.0275;0.0309;0.0344;0.0378;0.0412;0.0447;0.0481;0.0515;0.0550;0.0584;0.0619;0.0653;0.0687;0.0722;0.0756;0.0790;0.0825;0.0859;0.0893;0.0928;0.0962;0.0996;0.1031;0.1065;0.1100;0.1134;0.1168;0.1203;0.1237;0.1271;0.1306;0.1340;0.1374;0.1409;0.1443;0.1478;0.1512;0.1546;0.1581;0.1615;0.1649;0.1684;0.1718;0.1752;0.1787;0.1821;0.1856;0.1890;0.1924;0.1959;0.1993;0.2027;0.2062;0.2096;0.2130;0.2165;0.2199;0.2233;0.2268;0.2302;0.2337;0.2371;0.2405;0.2440;0.2474;0.2508;0.2543;0.2577;0.2611;0.2646;0.2680;0.2715;0.2749;0.2783;0.2818;0.2852;0.2886;0.2921;0.2955;0.2989;0.3024;0.3058;0.3093;0.3127;0.3161;0.3196;0.3230;0.3264;0.3299;0.3333;0.3367;0.3402;0.3436;0.3470;0.3505;0.3539;0.3574;0.3608;0.3642;0.3677;0.3711;0.3745;0.3780;0.3814;0.3848;0.3883;0.3917;0.3952;0.3986;0.4020;0.4055;0.4089;0.4123;0.4158;0.4192;0.4226;0.4261;0.4295;0.4330;0.4364;0.4398;0.4433;0.4467;0.4501;0.4536;0.4570;0.4604;0.4639;0.4673;0.4707;0.4742;0.4776;0.4811;0.4845;0.4879;0.4914;0.4948;0.4982;0.5017;0.5051;0.5085;0.5120;0.5154;0.5189;0.5223;0.5257;0.5292;0.5326;0.5360;0.5395;0.5429;0.5463;0.5498;0.5532;0.5567;0.5601;0.5635;0.5670;0.5704;0.5738;0.5773;0.5807;0.5841;0.5876;0.5910;0.5944;0.5979;0.6013;0.6048;0.6082;0.6116;0.6151;0.6185;0.6219;0.6254;0.6288;0.6322;0.6357;0.6391;0.6426;0.6460;0.6494;0.6529;0.6563;0.6597;0.6632;0.6666;0.6700;0.6735;0.6769;0.6804;0.6838;0.6872;0.6907;0.6941;0.6975;0.7010;0.7044;0.7078;0.7113;0.7147;0.7181;0.7216;0.7250;0.7285;0.7319;0.7353;0.7388;0.7422;0.7456;0.7491;0.7525;0.7559;0.7594;0.7628;0.7663;0.7697;0.7731;0.7766;0.7800;1" dur="58.5s" repeatCount="indefinite"/>
 </circle>
 <circle class="snake-element" cx="712" cy="94" r="3.9" fill="#58a6ff" opacity="0.8">
-  <animate attributeName="cx" values="712;712;712;712;712;712;712;699;686;673;673;673;686;686;699;699;712;712;712;712;699;686;673;673;660;647;634;621;608;595;582;569;556;543;543;530;543;543;543;543;530;517;504;491;478;465;478;478;478;478;491;491;504;491;478;465;452;452;452;439;439;426;426;426;413;400;387;374;361;348;335;335;322;309;309;296;283;270;257;244;231;218;205;192;179;179;179;166;153;153;153;153;166;179;192;205;205;205;192;192;192;179;192;205;205;218;218;231;231;231;218;231;244;244;244;257;257;257;270;270;270;283;296;283;270;257;257;257;257;257;244;231;218;205;192;179;166;153;140;127;114;101;88;75;75;88;88;88;88;101;101;114;114;127;140;153;166;179;192;205;218;231;244;257;270;283;296;309;322;335;348;361;374;387;400;413;426;439;452;465;478;491;504;517;517;530;543;556;556;569;569;569;556;556;569;582;582;582;582;595;595;595;608;608;608;608;621;621;621;621;634;634;634;647;647;647;647;634;621;608;621;634;647;660;673;686;699;699;699" keyTimes="0;0.0034;0.0069;0.0103;0.0137;0.0172;0.0206;0.0241;0.0275;0.0309;0.0344;0.0378;0.0412;0.0447;0.0481;0.0515;0.0550;0.0584;0.0619;0.0653;0.0687;0.0722;0.0756;0.0790;0.0825;0.0859;0.0893;0.0928;0.0962;0.0996;0.1031;0.1065;0.1100;0.1134;0.1168;0.1203;0.1237;0.1271;0.1306;0.1340;0.1374;0.1409;0.1443;0.1478;0.1512;0.1546;0.1581;0.1615;0.1649;0.1684;0.1718;0.1752;0.1787;0.1821;0.1856;0.1890;0.1924;0.1959;0.1993;0.2027;0.2062;0.2096;0.2130;0.2165;0.2199;0.2233;0.2268;0.2302;0.2337;0.2371;0.2405;0.2440;0.2474;0.2508;0.2543;0.2577;0.2611;0.2646;0.2680;0.2715;0.2749;0.2783;0.2818;0.2852;0.2886;0.2921;0.2955;0.2989;0.3024;0.3058;0.3093;0.3127;0.3161;0.3196;0.3230;0.3264;0.3299;0.3333;0.3367;0.3402;0.3436;0.3470;0.3505;0.3539;0.3574;0.3608;0.3642;0.3677;0.3711;0.3745;0.3780;0.3814;0.3848;0.3883;0.3917;0.3952;0.3986;0.4020;0.4055;0.4089;0.4123;0.4158;0.4192;0.4226;0.4261;0.4295;0.4330;0.4364;0.4398;0.4433;0.4467;0.4501;0.4536;0.4570;0.4604;0.4639;0.4673;0.4707;0.4742;0.4776;0.4811;0.4845;0.4879;0.4914;0.4948;0.4982;0.5017;0.5051;0.5085;0.5120;0.5154;0.5189;0.5223;0.5257;0.5292;0.5326;0.5360;0.5395;0.5429;0.5463;0.5498;0.5532;0.5567;0.5601;0.5635;0.5670;0.5704;0.5738;0.5773;0.5807;0.5841;0.5876;0.5910;0.5944;0.5979;0.6013;0.6048;0.6082;0.6116;0.6151;0.6185;0.6219;0.6254;0.6288;0.6322;0.6357;0.6391;0.6426;0.6460;0.6494;0.6529;0.6563;0.6597;0.6632;0.6666;0.6700;0.6735;0.6769;0.6804;0.6838;0.6872;0.6907;0.6941;0.6975;0.7010;0.7044;0.7078;0.7113;0.7147;0.7181;0.7216;0.7250;0.7285;0.7319;0.7353;0.7388;0.7422;0.7456;0.7491;0.7525;0.7559;0.7594;0.7628;0.7663;0.7697;0.7731;0.7766;0.7800;1" dur="35.1s" repeatCount="indefinite"/>
-  <animate attributeName="cy" values="94;94;94;94;94;94;94;94;94;94;81;68;68;81;81;68;68;81;94;107;107;107;107;120;120;120;120;120;120;120;120;120;120;120;107;107;107;94;81;68;68;68;68;68;68;68;68;81;94;107;107;120;120;120;120;120;120;107;94;94;81;81;94;107;107;107;107;107;107;107;107;120;120;120;107;107;107;107;107;107;107;107;107;107;107;94;81;81;81;94;107;120;120;120;120;120;107;94;94;81;68;68;68;68;81;81;68;68;81;94;94;94;94;81;68;68;81;94;94;81;68;68;68;68;68;68;81;94;107;120;120;120;120;120;120;120;120;120;120;120;120;120;120;120;107;107;94;81;68;68;81;81;94;94;94;94;94;94;94;94;94;94;94;94;94;94;94;94;94;94;94;94;94;94;94;94;94;94;94;94;94;94;94;94;81;81;81;81;68;68;81;94;94;107;107;107;94;81;68;68;81;94;94;81;68;55;55;68;81;94;94;81;68;68;81;94;107;107;107;107;107;107;107;107;107;107;107;120;120" keyTimes="0;0.0034;0.0069;0.0103;0.0137;0.0172;0.0206;0.0241;0.0275;0.0309;0.0344;0.0378;0.0412;0.0447;0.0481;0.0515;0.0550;0.0584;0.0619;0.0653;0.0687;0.0722;0.0756;0.0790;0.0825;0.0859;0.0893;0.0928;0.0962;0.0996;0.1031;0.1065;0.1100;0.1134;0.1168;0.1203;0.1237;0.1271;0.1306;0.1340;0.1374;0.1409;0.1443;0.1478;0.1512;0.1546;0.1581;0.1615;0.1649;0.1684;0.1718;0.1752;0.1787;0.1821;0.1856;0.1890;0.1924;0.1959;0.1993;0.2027;0.2062;0.2096;0.2130;0.2165;0.2199;0.2233;0.2268;0.2302;0.2337;0.2371;0.2405;0.2440;0.2474;0.2508;0.2543;0.2577;0.2611;0.2646;0.2680;0.2715;0.2749;0.2783;0.2818;0.2852;0.2886;0.2921;0.2955;0.2989;0.3024;0.3058;0.3093;0.3127;0.3161;0.3196;0.3230;0.3264;0.3299;0.3333;0.3367;0.3402;0.3436;0.3470;0.3505;0.3539;0.3574;0.3608;0.3642;0.3677;0.3711;0.3745;0.3780;0.3814;0.3848;0.3883;0.3917;0.3952;0.3986;0.4020;0.4055;0.4089;0.4123;0.4158;0.4192;0.4226;0.4261;0.4295;0.4330;0.4364;0.4398;0.4433;0.4467;0.4501;0.4536;0.4570;0.4604;0.4639;0.4673;0.4707;0.4742;0.4776;0.4811;0.4845;0.4879;0.4914;0.4948;0.4982;0.5017;0.5051;0.5085;0.5120;0.5154;0.5189;0.5223;0.5257;0.5292;0.5326;0.5360;0.5395;0.5429;0.5463;0.5498;0.5532;0.5567;0.5601;0.5635;0.5670;0.5704;0.5738;0.5773;0.5807;0.5841;0.5876;0.5910;0.5944;0.5979;0.6013;0.6048;0.6082;0.6116;0.6151;0.6185;0.6219;0.6254;0.6288;0.6322;0.6357;0.6391;0.6426;0.6460;0.6494;0.6529;0.6563;0.6597;0.6632;0.6666;0.6700;0.6735;0.6769;0.6804;0.6838;0.6872;0.6907;0.6941;0.6975;0.7010;0.7044;0.7078;0.7113;0.7147;0.7181;0.7216;0.7250;0.7285;0.7319;0.7353;0.7388;0.7422;0.7456;0.7491;0.7525;0.7559;0.7594;0.7628;0.7663;0.7697;0.7731;0.7766;0.7800;1" dur="35.1s" repeatCount="indefinite"/>
+  <animate attributeName="cx" values="712.0;712.0;705.5;692.5;679.5;673.0;673.0;679.5;686.0;692.5;699.0;705.5;712.0;712.0;712.0;705.5;692.5;679.5;673.0;666.5;653.5;640.5;627.5;614.5;601.5;588.5;575.5;562.5;549.5;543.0;536.5;536.5;543.0;543.0;543.0;536.5;523.5;510.5;497.5;484.5;471.5;471.5;478.0;478.0;478.0;484.5;491.0;497.5;497.5;484.5;471.5;458.5;452.0;452.0;445.5;439.0;432.5;426.0;426.0;419.5;406.5;393.5;380.5;367.5;354.5;341.5;335.0;328.5;315.5;309.0;302.5;289.5;276.5;263.5;250.5;237.5;224.5;211.5;198.5;185.5;179.0;179.0;172.5;159.5;153.0;153.0;153.0;159.5;172.5;185.5;198.5;205.0;205.0;198.5;192.0;192.0;185.5;185.5;198.5;205.0;211.5;218.0;224.5;231.0;231.0;224.5;224.5;237.5;244.0;244.0;250.5;257.0;257.0;263.5;270.0;270.0;276.5;289.5;289.5;276.5;263.5;257.0;257.0;257.0;257.0;250.5;237.5;224.5;211.5;198.5;185.5;172.5;159.5;146.5;133.5;120.5;107.5;94.5;81.5;75.0;81.5;88.0;88.0;88.0;94.5;101.0;107.5;114.0;120.5;133.5;146.5;159.5;172.5;185.5;198.5;211.5;224.5;237.5;250.5;263.5;276.5;289.5;302.5;315.5;328.5;341.5;354.5;367.5;380.5;393.5;406.5;419.5;432.5;445.5;458.5;471.5;484.5;497.5;510.5;517.0;523.5;536.5;549.5;556.0;562.5;569.0;569.0;562.5;556.0;562.5;575.5;582.0;582.0;582.0;588.5;595.0;595.0;601.5;608.0;608.0;608.0;614.5;621.0;621.0;621.0;627.5;634.0;634.0;640.5;647.0;647.0;647.0;640.5;627.5;614.5;614.5;627.5;640.5;653.5;666.5;679.5;692.5;699.0;705.5;718.5;725.0;725.0;725.0;725.0" keyTimes="0;0.0034;0.0069;0.0103;0.0137;0.0172;0.0206;0.0241;0.0275;0.0309;0.0344;0.0378;0.0412;0.0447;0.0481;0.0515;0.0550;0.0584;0.0619;0.0653;0.0687;0.0722;0.0756;0.0790;0.0825;0.0859;0.0893;0.0928;0.0962;0.0996;0.1031;0.1065;0.1100;0.1134;0.1168;0.1203;0.1237;0.1271;0.1306;0.1340;0.1374;0.1409;0.1443;0.1478;0.1512;0.1546;0.1581;0.1615;0.1649;0.1684;0.1718;0.1752;0.1787;0.1821;0.1856;0.1890;0.1924;0.1959;0.1993;0.2027;0.2062;0.2096;0.2130;0.2165;0.2199;0.2233;0.2268;0.2302;0.2337;0.2371;0.2405;0.2440;0.2474;0.2508;0.2543;0.2577;0.2611;0.2646;0.2680;0.2715;0.2749;0.2783;0.2818;0.2852;0.2886;0.2921;0.2955;0.2989;0.3024;0.3058;0.3093;0.3127;0.3161;0.3196;0.3230;0.3264;0.3299;0.3333;0.3367;0.3402;0.3436;0.3470;0.3505;0.3539;0.3574;0.3608;0.3642;0.3677;0.3711;0.3745;0.3780;0.3814;0.3848;0.3883;0.3917;0.3952;0.3986;0.4020;0.4055;0.4089;0.4123;0.4158;0.4192;0.4226;0.4261;0.4295;0.4330;0.4364;0.4398;0.4433;0.4467;0.4501;0.4536;0.4570;0.4604;0.4639;0.4673;0.4707;0.4742;0.4776;0.4811;0.4845;0.4879;0.4914;0.4948;0.4982;0.5017;0.5051;0.5085;0.5120;0.5154;0.5189;0.5223;0.5257;0.5292;0.5326;0.5360;0.5395;0.5429;0.5463;0.5498;0.5532;0.5567;0.5601;0.5635;0.5670;0.5704;0.5738;0.5773;0.5807;0.5841;0.5876;0.5910;0.5944;0.5979;0.6013;0.6048;0.6082;0.6116;0.6151;0.6185;0.6219;0.6254;0.6288;0.6322;0.6357;0.6391;0.6426;0.6460;0.6494;0.6529;0.6563;0.6597;0.6632;0.6666;0.6700;0.6735;0.6769;0.6804;0.6838;0.6872;0.6907;0.6941;0.6975;0.7010;0.7044;0.7078;0.7113;0.7147;0.7181;0.7216;0.7250;0.7285;0.7319;0.7353;0.7388;0.7422;0.7456;0.7491;0.7525;0.7559;0.7594;0.7628;0.7663;0.7697;0.7731;0.7766;0.7800;1" dur="58.5s" repeatCount="indefinite"/>
+  <animate attributeName="cy" values="94.0;94.0;94.0;94.0;94.0;87.5;74.5;68.0;74.5;81.0;74.5;68.0;74.5;87.5;100.5;107.0;107.0;107.0;113.5;120.0;120.0;120.0;120.0;120.0;120.0;120.0;120.0;120.0;120.0;113.5;107.0;107.0;100.5;87.5;74.5;68.0;68.0;68.0;68.0;68.0;68.0;68.0;74.5;87.5;100.5;107.0;113.5;120.0;120.0;120.0;120.0;120.0;113.5;100.5;94.0;87.5;81.0;87.5;100.5;107.0;107.0;107.0;107.0;107.0;107.0;107.0;113.5;120.0;120.0;113.5;107.0;107.0;107.0;107.0;107.0;107.0;107.0;107.0;107.0;107.0;100.5;87.5;81.0;81.0;87.5;100.5;113.5;120.0;120.0;120.0;120.0;113.5;100.5;94.0;87.5;74.5;68.0;68.0;68.0;74.5;81.0;74.5;68.0;74.5;87.5;94.0;94.0;94.0;87.5;74.5;68.0;74.5;87.5;94.0;87.5;74.5;68.0;68.0;68.0;68.0;68.0;74.5;87.5;100.5;113.5;120.0;120.0;120.0;120.0;120.0;120.0;120.0;120.0;120.0;120.0;120.0;120.0;120.0;120.0;113.5;107.0;100.5;87.5;74.5;68.0;74.5;81.0;87.5;94.0;94.0;94.0;94.0;94.0;94.0;94.0;94.0;94.0;94.0;94.0;94.0;94.0;94.0;94.0;94.0;94.0;94.0;94.0;94.0;94.0;94.0;94.0;94.0;94.0;94.0;94.0;94.0;94.0;94.0;94.0;87.5;81.0;81.0;81.0;74.5;68.0;74.5;87.5;94.0;100.5;107.0;107.0;100.5;87.5;74.5;68.0;74.5;87.5;94.0;87.5;74.5;61.5;55.0;61.5;74.5;87.5;94.0;87.5;74.5;68.0;74.5;87.5;100.5;107.0;107.0;107.0;107.0;107.0;107.0;107.0;107.0;107.0;107.0;113.5;120.0;120.0;113.5;100.5;87.5;87.5" keyTimes="0;0.0034;0.0069;0.0103;0.0137;0.0172;0.0206;0.0241;0.0275;0.0309;0.0344;0.0378;0.0412;0.0447;0.0481;0.0515;0.0550;0.0584;0.0619;0.0653;0.0687;0.0722;0.0756;0.0790;0.0825;0.0859;0.0893;0.0928;0.0962;0.0996;0.1031;0.1065;0.1100;0.1134;0.1168;0.1203;0.1237;0.1271;0.1306;0.1340;0.1374;0.1409;0.1443;0.1478;0.1512;0.1546;0.1581;0.1615;0.1649;0.1684;0.1718;0.1752;0.1787;0.1821;0.1856;0.1890;0.1924;0.1959;0.1993;0.2027;0.2062;0.2096;0.2130;0.2165;0.2199;0.2233;0.2268;0.2302;0.2337;0.2371;0.2405;0.2440;0.2474;0.2508;0.2543;0.2577;0.2611;0.2646;0.2680;0.2715;0.2749;0.2783;0.2818;0.2852;0.2886;0.2921;0.2955;0.2989;0.3024;0.3058;0.3093;0.3127;0.3161;0.3196;0.3230;0.3264;0.3299;0.3333;0.3367;0.3402;0.3436;0.3470;0.3505;0.3539;0.3574;0.3608;0.3642;0.3677;0.3711;0.3745;0.3780;0.3814;0.3848;0.3883;0.3917;0.3952;0.3986;0.4020;0.4055;0.4089;0.4123;0.4158;0.4192;0.4226;0.4261;0.4295;0.4330;0.4364;0.4398;0.4433;0.4467;0.4501;0.4536;0.4570;0.4604;0.4639;0.4673;0.4707;0.4742;0.4776;0.4811;0.4845;0.4879;0.4914;0.4948;0.4982;0.5017;0.5051;0.5085;0.5120;0.5154;0.5189;0.5223;0.5257;0.5292;0.5326;0.5360;0.5395;0.5429;0.5463;0.5498;0.5532;0.5567;0.5601;0.5635;0.5670;0.5704;0.5738;0.5773;0.5807;0.5841;0.5876;0.5910;0.5944;0.5979;0.6013;0.6048;0.6082;0.6116;0.6151;0.6185;0.6219;0.6254;0.6288;0.6322;0.6357;0.6391;0.6426;0.6460;0.6494;0.6529;0.6563;0.6597;0.6632;0.6666;0.6700;0.6735;0.6769;0.6804;0.6838;0.6872;0.6907;0.6941;0.6975;0.7010;0.7044;0.7078;0.7113;0.7147;0.7181;0.7216;0.7250;0.7285;0.7319;0.7353;0.7388;0.7422;0.7456;0.7491;0.7525;0.7559;0.7594;0.7628;0.7663;0.7697;0.7731;0.7766;0.7800;1" dur="58.5s" repeatCount="indefinite"/>
 </circle>
 <circle class="snake-element" cx="712" cy="94" r="3.6" fill="#58a6ff" opacity="0.7">
-  <animate attributeName="cx" values="712;712;712;712;712;712;712;712;712;699;686;673;673;673;686;686;699;699;712;712;712;712;699;686;673;673;660;647;634;621;608;595;582;569;556;543;543;530;543;543;543;543;530;517;504;491;478;465;478;478;478;478;491;491;504;491;478;465;452;452;452;439;439;426;426;426;413;400;387;374;361;348;335;335;322;309;309;296;283;270;257;244;231;218;205;192;179;179;179;166;153;153;153;153;166;179;192;205;205;205;192;192;192;179;192;205;205;218;218;231;231;231;218;231;244;244;244;257;257;257;270;270;270;283;296;283;270;257;257;257;257;257;244;231;218;205;192;179;166;153;140;127;114;101;88;75;75;88;88;88;88;101;101;114;114;127;140;153;166;179;192;205;218;231;244;257;270;283;296;309;322;335;348;361;374;387;400;413;426;439;452;465;478;491;504;517;517;530;543;556;556;569;569;569;556;556;569;582;582;582;582;595;595;595;608;608;608;608;621;621;621;621;634;634;634;647;647;647;647;634;621;608;621;634;647;660;673;686;686" keyTimes="0;0.0034;0.0069;0.0103;0.0137;0.0172;0.0206;0.0241;0.0275;0.0309;0.0344;0.0378;0.0412;0.0447;0.0481;0.0515;0.0550;0.0584;0.0619;0.0653;0.0687;0.0722;0.0756;0.0790;0.0825;0.0859;0.0893;0.0928;0.0962;0.0996;0.1031;0.1065;0.1100;0.1134;0.1168;0.1203;0.1237;0.1271;0.1306;0.1340;0.1374;0.1409;0.1443;0.1478;0.1512;0.1546;0.1581;0.1615;0.1649;0.1684;0.1718;0.1752;0.1787;0.1821;0.1856;0.1890;0.1924;0.1959;0.1993;0.2027;0.2062;0.2096;0.2130;0.2165;0.2199;0.2233;0.2268;0.2302;0.2337;0.2371;0.2405;0.2440;0.2474;0.2508;0.2543;0.2577;0.2611;0.2646;0.2680;0.2715;0.2749;0.2783;0.2818;0.2852;0.2886;0.2921;0.2955;0.2989;0.3024;0.3058;0.3093;0.3127;0.3161;0.3196;0.3230;0.3264;0.3299;0.3333;0.3367;0.3402;0.3436;0.3470;0.3505;0.3539;0.3574;0.3608;0.3642;0.3677;0.3711;0.3745;0.3780;0.3814;0.3848;0.3883;0.3917;0.3952;0.3986;0.4020;0.4055;0.4089;0.4123;0.4158;0.4192;0.4226;0.4261;0.4295;0.4330;0.4364;0.4398;0.4433;0.4467;0.4501;0.4536;0.4570;0.4604;0.4639;0.4673;0.4707;0.4742;0.4776;0.4811;0.4845;0.4879;0.4914;0.4948;0.4982;0.5017;0.5051;0.5085;0.5120;0.5154;0.5189;0.5223;0.5257;0.5292;0.5326;0.5360;0.5395;0.5429;0.5463;0.5498;0.5532;0.5567;0.5601;0.5635;0.5670;0.5704;0.5738;0.5773;0.5807;0.5841;0.5876;0.5910;0.5944;0.5979;0.6013;0.6048;0.6082;0.6116;0.6151;0.6185;0.6219;0.6254;0.6288;0.6322;0.6357;0.6391;0.6426;0.6460;0.6494;0.6529;0.6563;0.6597;0.6632;0.6666;0.6700;0.6735;0.6769;0.6804;0.6838;0.6872;0.6907;0.6941;0.6975;0.7010;0.7044;0.7078;0.7113;0.7147;0.7181;0.7216;0.7250;0.7285;0.7319;0.7353;0.7388;0.7422;0.7456;0.7491;0.7525;0.7559;0.7594;0.7628;0.7663;0.7697;0.7731;0.7766;0.7800;1" dur="35.1s" repeatCount="indefinite"/>
-  <animate attributeName="cy" values="94;94;94;94;94;94;94;94;94;94;94;94;81;68;68;81;81;68;68;81;94;107;107;107;107;120;120;120;120;120;120;120;120;120;120;120;107;107;107;94;81;68;68;68;68;68;68;68;68;81;94;107;107;120;120;120;120;120;120;107;94;94;81;81;94;107;107;107;107;107;107;107;107;120;120;120;107;107;107;107;107;107;107;107;107;107;107;94;81;81;81;94;107;120;120;120;120;120;107;94;94;81;68;68;68;68;81;81;68;68;81;94;94;94;94;81;68;68;81;94;94;81;68;68;68;68;68;68;81;94;107;120;120;120;120;120;120;120;120;120;120;120;120;120;120;120;107;107;94;81;68;68;81;81;94;94;94;94;94;94;94;94;94;94;94;94;94;94;94;94;94;94;94;94;94;94;94;94;94;94;94;94;94;94;94;94;81;81;81;81;68;68;81;94;94;107;107;107;94;81;68;68;81;94;94;81;68;55;55;68;81;94;94;81;68;68;81;94;107;107;107;107;107;107;107;107;107;107;107" keyTimes="0;0.0034;0.0069;0.0103;0.0137;0.0172;0.0206;0.0241;0.0275;0.0309;0.0344;0.0378;0.0412;0.0447;0.0481;0.0515;0.0550;0.0584;0.0619;0.0653;0.0687;0.0722;0.0756;0.0790;0.0825;0.0859;0.0893;0.0928;0.0962;0.0996;0.1031;0.1065;0.1100;0.1134;0.1168;0.1203;0.1237;0.1271;0.1306;0.1340;0.1374;0.1409;0.1443;0.1478;0.1512;0.1546;0.1581;0.1615;0.1649;0.1684;0.1718;0.1752;0.1787;0.1821;0.1856;0.1890;0.1924;0.1959;0.1993;0.2027;0.2062;0.2096;0.2130;0.2165;0.2199;0.2233;0.2268;0.2302;0.2337;0.2371;0.2405;0.2440;0.2474;0.2508;0.2543;0.2577;0.2611;0.2646;0.2680;0.2715;0.2749;0.2783;0.2818;0.2852;0.2886;0.2921;0.2955;0.2989;0.3024;0.3058;0.3093;0.3127;0.3161;0.3196;0.3230;0.3264;0.3299;0.3333;0.3367;0.3402;0.3436;0.3470;0.3505;0.3539;0.3574;0.3608;0.3642;0.3677;0.3711;0.3745;0.3780;0.3814;0.3848;0.3883;0.3917;0.3952;0.3986;0.4020;0.4055;0.4089;0.4123;0.4158;0.4192;0.4226;0.4261;0.4295;0.4330;0.4364;0.4398;0.4433;0.4467;0.4501;0.4536;0.4570;0.4604;0.4639;0.4673;0.4707;0.4742;0.4776;0.4811;0.4845;0.4879;0.4914;0.4948;0.4982;0.5017;0.5051;0.5085;0.5120;0.5154;0.5189;0.5223;0.5257;0.5292;0.5326;0.5360;0.5395;0.5429;0.5463;0.5498;0.5532;0.5567;0.5601;0.5635;0.5670;0.5704;0.5738;0.5773;0.5807;0.5841;0.5876;0.5910;0.5944;0.5979;0.6013;0.6048;0.6082;0.6116;0.6151;0.6185;0.6219;0.6254;0.6288;0.6322;0.6357;0.6391;0.6426;0.6460;0.6494;0.6529;0.6563;0.6597;0.6632;0.6666;0.6700;0.6735;0.6769;0.6804;0.6838;0.6872;0.6907;0.6941;0.6975;0.7010;0.7044;0.7078;0.7113;0.7147;0.7181;0.7216;0.7250;0.7285;0.7319;0.7353;0.7388;0.7422;0.7456;0.7491;0.7525;0.7559;0.7594;0.7628;0.7663;0.7697;0.7731;0.7766;0.7800;1" dur="35.1s" repeatCount="indefinite"/>
+  <animate attributeName="cx" values="712.0;712.0;712.0;699.0;686.0;673.0;673.0;673.0;686.0;686.0;699.0;699.0;712.0;712.0;712.0;712.0;699.0;686.0;673.0;673.0;660.0;647.0;634.0;621.0;608.0;595.0;582.0;569.0;556.0;543.0;543.0;530.0;543.0;543.0;543.0;543.0;530.0;517.0;504.0;491.0;478.0;465.0;478.0;478.0;478.0;478.0;491.0;491.0;504.0;491.0;478.0;465.0;452.0;452.0;452.0;439.0;439.0;426.0;426.0;426.0;413.0;400.0;387.0;374.0;361.0;348.0;335.0;335.0;322.0;309.0;309.0;296.0;283.0;270.0;257.0;244.0;231.0;218.0;205.0;192.0;179.0;179.0;179.0;166.0;153.0;153.0;153.0;153.0;166.0;179.0;192.0;205.0;205.0;205.0;192.0;192.0;192.0;179.0;192.0;205.0;205.0;218.0;218.0;231.0;231.0;231.0;218.0;231.0;244.0;244.0;244.0;257.0;257.0;257.0;270.0;270.0;270.0;283.0;296.0;283.0;270.0;257.0;257.0;257.0;257.0;257.0;244.0;231.0;218.0;205.0;192.0;179.0;166.0;153.0;140.0;127.0;114.0;101.0;88.0;75.0;75.0;88.0;88.0;88.0;88.0;101.0;101.0;114.0;114.0;127.0;140.0;153.0;166.0;179.0;192.0;205.0;218.0;231.0;244.0;257.0;270.0;283.0;296.0;309.0;322.0;335.0;348.0;361.0;374.0;387.0;400.0;413.0;426.0;439.0;452.0;465.0;478.0;491.0;504.0;517.0;517.0;530.0;543.0;556.0;556.0;569.0;569.0;569.0;556.0;556.0;569.0;582.0;582.0;582.0;582.0;595.0;595.0;595.0;608.0;608.0;608.0;608.0;621.0;621.0;621.0;621.0;634.0;634.0;634.0;647.0;647.0;647.0;647.0;634.0;621.0;608.0;621.0;634.0;647.0;660.0;673.0;686.0;699.0;699.0;712.0;725.0;725.0;725.0;725.0" keyTimes="0;0.0034;0.0069;0.0103;0.0137;0.0172;0.0206;0.0241;0.0275;0.0309;0.0344;0.0378;0.0412;0.0447;0.0481;0.0515;0.0550;0.0584;0.0619;0.0653;0.0687;0.0722;0.0756;0.0790;0.0825;0.0859;0.0893;0.0928;0.0962;0.0996;0.1031;0.1065;0.1100;0.1134;0.1168;0.1203;0.1237;0.1271;0.1306;0.1340;0.1374;0.1409;0.1443;0.1478;0.1512;0.1546;0.1581;0.1615;0.1649;0.1684;0.1718;0.1752;0.1787;0.1821;0.1856;0.1890;0.1924;0.1959;0.1993;0.2027;0.2062;0.2096;0.2130;0.2165;0.2199;0.2233;0.2268;0.2302;0.2337;0.2371;0.2405;0.2440;0.2474;0.2508;0.2543;0.2577;0.2611;0.2646;0.2680;0.2715;0.2749;0.2783;0.2818;0.2852;0.2886;0.2921;0.2955;0.2989;0.3024;0.3058;0.3093;0.3127;0.3161;0.3196;0.3230;0.3264;0.3299;0.3333;0.3367;0.3402;0.3436;0.3470;0.3505;0.3539;0.3574;0.3608;0.3642;0.3677;0.3711;0.3745;0.3780;0.3814;0.3848;0.3883;0.3917;0.3952;0.3986;0.4020;0.4055;0.4089;0.4123;0.4158;0.4192;0.4226;0.4261;0.4295;0.4330;0.4364;0.4398;0.4433;0.4467;0.4501;0.4536;0.4570;0.4604;0.4639;0.4673;0.4707;0.4742;0.4776;0.4811;0.4845;0.4879;0.4914;0.4948;0.4982;0.5017;0.5051;0.5085;0.5120;0.5154;0.5189;0.5223;0.5257;0.5292;0.5326;0.5360;0.5395;0.5429;0.5463;0.5498;0.5532;0.5567;0.5601;0.5635;0.5670;0.5704;0.5738;0.5773;0.5807;0.5841;0.5876;0.5910;0.5944;0.5979;0.6013;0.6048;0.6082;0.6116;0.6151;0.6185;0.6219;0.6254;0.6288;0.6322;0.6357;0.6391;0.6426;0.6460;0.6494;0.6529;0.6563;0.6597;0.6632;0.6666;0.6700;0.6735;0.6769;0.6804;0.6838;0.6872;0.6907;0.6941;0.6975;0.7010;0.7044;0.7078;0.7113;0.7147;0.7181;0.7216;0.7250;0.7285;0.7319;0.7353;0.7388;0.7422;0.7456;0.7491;0.7525;0.7559;0.7594;0.7628;0.7663;0.7697;0.7731;0.7766;0.7800;1" dur="58.5s" repeatCount="indefinite"/>
+  <animate attributeName="cy" values="94.0;94.0;94.0;94.0;94.0;94.0;81.0;68.0;68.0;81.0;81.0;68.0;68.0;81.0;94.0;107.0;107.0;107.0;107.0;120.0;120.0;120.0;120.0;120.0;120.0;120.0;120.0;120.0;120.0;120.0;107.0;107.0;107.0;94.0;81.0;68.0;68.0;68.0;68.0;68.0;68.0;68.0;68.0;81.0;94.0;107.0;107.0;120.0;120.0;120.0;120.0;120.0;120.0;107.0;94.0;94.0;81.0;81.0;94.0;107.0;107.0;107.0;107.0;107.0;107.0;107.0;107.0;120.0;120.0;120.0;107.0;107.0;107.0;107.0;107.0;107.0;107.0;107.0;107.0;107.0;107.0;94.0;81.0;81.0;81.0;94.0;107.0;120.0;120.0;120.0;120.0;120.0;107.0;94.0;94.0;81.0;68.0;68.0;68.0;68.0;81.0;81.0;68.0;68.0;81.0;94.0;94.0;94.0;94.0;81.0;68.0;68.0;81.0;94.0;94.0;81.0;68.0;68.0;68.0;68.0;68.0;68.0;81.0;94.0;107.0;120.0;120.0;120.0;120.0;120.0;120.0;120.0;120.0;120.0;120.0;120.0;120.0;120.0;120.0;120.0;107.0;107.0;94.0;81.0;68.0;68.0;81.0;81.0;94.0;94.0;94.0;94.0;94.0;94.0;94.0;94.0;94.0;94.0;94.0;94.0;94.0;94.0;94.0;94.0;94.0;94.0;94.0;94.0;94.0;94.0;94.0;94.0;94.0;94.0;94.0;94.0;94.0;94.0;94.0;94.0;81.0;81.0;81.0;81.0;68.0;68.0;81.0;94.0;94.0;107.0;107.0;107.0;94.0;81.0;68.0;68.0;81.0;94.0;94.0;81.0;68.0;55.0;55.0;68.0;81.0;94.0;94.0;81.0;68.0;68.0;81.0;94.0;107.0;107.0;107.0;107.0;107.0;107.0;107.0;107.0;107.0;107.0;107.0;120.0;120.0;120.0;107.0;94.0;94.0" keyTimes="0;0.0034;0.0069;0.0103;0.0137;0.0172;0.0206;0.0241;0.0275;0.0309;0.0344;0.0378;0.0412;0.0447;0.0481;0.0515;0.0550;0.0584;0.0619;0.0653;0.0687;0.0722;0.0756;0.0790;0.0825;0.0859;0.0893;0.0928;0.0962;0.0996;0.1031;0.1065;0.1100;0.1134;0.1168;0.1203;0.1237;0.1271;0.1306;0.1340;0.1374;0.1409;0.1443;0.1478;0.1512;0.1546;0.1581;0.1615;0.1649;0.1684;0.1718;0.1752;0.1787;0.1821;0.1856;0.1890;0.1924;0.1959;0.1993;0.2027;0.2062;0.2096;0.2130;0.2165;0.2199;0.2233;0.2268;0.2302;0.2337;0.2371;0.2405;0.2440;0.2474;0.2508;0.2543;0.2577;0.2611;0.2646;0.2680;0.2715;0.2749;0.2783;0.2818;0.2852;0.2886;0.2921;0.2955;0.2989;0.3024;0.3058;0.3093;0.3127;0.3161;0.3196;0.3230;0.3264;0.3299;0.3333;0.3367;0.3402;0.3436;0.3470;0.3505;0.3539;0.3574;0.3608;0.3642;0.3677;0.3711;0.3745;0.3780;0.3814;0.3848;0.3883;0.3917;0.3952;0.3986;0.4020;0.4055;0.4089;0.4123;0.4158;0.4192;0.4226;0.4261;0.4295;0.4330;0.4364;0.4398;0.4433;0.4467;0.4501;0.4536;0.4570;0.4604;0.4639;0.4673;0.4707;0.4742;0.4776;0.4811;0.4845;0.4879;0.4914;0.4948;0.4982;0.5017;0.5051;0.5085;0.5120;0.5154;0.5189;0.5223;0.5257;0.5292;0.5326;0.5360;0.5395;0.5429;0.5463;0.5498;0.5532;0.5567;0.5601;0.5635;0.5670;0.5704;0.5738;0.5773;0.5807;0.5841;0.5876;0.5910;0.5944;0.5979;0.6013;0.6048;0.6082;0.6116;0.6151;0.6185;0.6219;0.6254;0.6288;0.6322;0.6357;0.6391;0.6426;0.6460;0.6494;0.6529;0.6563;0.6597;0.6632;0.6666;0.6700;0.6735;0.6769;0.6804;0.6838;0.6872;0.6907;0.6941;0.6975;0.7010;0.7044;0.7078;0.7113;0.7147;0.7181;0.7216;0.7250;0.7285;0.7319;0.7353;0.7388;0.7422;0.7456;0.7491;0.7525;0.7559;0.7594;0.7628;0.7663;0.7697;0.7731;0.7766;0.7800;1" dur="58.5s" repeatCount="indefinite"/>
 </circle>
 <circle class="snake-element" cx="712" cy="94" r="3.3" fill="#58a6ff" opacity="0.6">
-  <animate attributeName="cx" values="712;712;712;712;712;712;712;712;712;712;712;699;686;673;673;673;686;686;699;699;712;712;712;712;699;686;673;673;660;647;634;621;608;595;582;569;556;543;543;530;543;543;543;543;530;517;504;491;478;465;478;478;478;478;491;491;504;491;478;465;452;452;452;439;439;426;426;426;413;400;387;374;361;348;335;335;322;309;309;296;283;270;257;244;231;218;205;192;179;179;179;166;153;153;153;153;166;179;192;205;205;205;192;192;192;179;192;205;205;218;218;231;231;231;218;231;244;244;244;257;257;257;270;270;270;283;296;283;270;257;257;257;257;257;244;231;218;205;192;179;166;153;140;127;114;101;88;75;75;88;88;88;88;101;101;114;114;127;140;153;166;179;192;205;218;231;244;257;270;283;296;309;322;335;348;361;374;387;400;413;426;439;452;465;478;491;504;517;517;530;543;556;556;569;569;569;556;556;569;582;582;582;582;595;595;595;608;608;608;608;621;621;621;621;634;634;634;647;647;647;647;634;621;608;621;634;647;660;660" keyTimes="0;0.0034;0.0069;0.0103;0.0137;0.0172;0.0206;0.0241;0.0275;0.0309;0.0344;0.0378;0.0412;0.0447;0.0481;0.0515;0.0550;0.0584;0.0619;0.0653;0.0687;0.0722;0.0756;0.0790;0.0825;0.0859;0.0893;0.0928;0.0962;0.0996;0.1031;0.1065;0.1100;0.1134;0.1168;0.1203;0.1237;0.1271;0.1306;0.1340;0.1374;0.1409;0.1443;0.1478;0.1512;0.1546;0.1581;0.1615;0.1649;0.1684;0.1718;0.1752;0.1787;0.1821;0.1856;0.1890;0.1924;0.1959;0.1993;0.2027;0.2062;0.2096;0.2130;0.2165;0.2199;0.2233;0.2268;0.2302;0.2337;0.2371;0.2405;0.2440;0.2474;0.2508;0.2543;0.2577;0.2611;0.2646;0.2680;0.2715;0.2749;0.2783;0.2818;0.2852;0.2886;0.2921;0.2955;0.2989;0.3024;0.3058;0.3093;0.3127;0.3161;0.3196;0.3230;0.3264;0.3299;0.3333;0.3367;0.3402;0.3436;0.3470;0.3505;0.3539;0.3574;0.3608;0.3642;0.3677;0.3711;0.3745;0.3780;0.3814;0.3848;0.3883;0.3917;0.3952;0.3986;0.4020;0.4055;0.4089;0.4123;0.4158;0.4192;0.4226;0.4261;0.4295;0.4330;0.4364;0.4398;0.4433;0.4467;0.4501;0.4536;0.4570;0.4604;0.4639;0.4673;0.4707;0.4742;0.4776;0.4811;0.4845;0.4879;0.4914;0.4948;0.4982;0.5017;0.5051;0.5085;0.5120;0.5154;0.5189;0.5223;0.5257;0.5292;0.5326;0.5360;0.5395;0.5429;0.5463;0.5498;0.5532;0.5567;0.5601;0.5635;0.5670;0.5704;0.5738;0.5773;0.5807;0.5841;0.5876;0.5910;0.5944;0.5979;0.6013;0.6048;0.6082;0.6116;0.6151;0.6185;0.6219;0.6254;0.6288;0.6322;0.6357;0.6391;0.6426;0.6460;0.6494;0.6529;0.6563;0.6597;0.6632;0.6666;0.6700;0.6735;0.6769;0.6804;0.6838;0.6872;0.6907;0.6941;0.6975;0.7010;0.7044;0.7078;0.7113;0.7147;0.7181;0.7216;0.7250;0.7285;0.7319;0.7353;0.7388;0.7422;0.7456;0.7491;0.7525;0.7559;0.7594;0.7628;0.7663;0.7697;0.7731;0.7766;0.7800;1" dur="35.1s" repeatCount="indefinite"/>
-  <animate attributeName="cy" values="94;94;94;94;94;94;94;94;94;94;94;94;94;94;81;68;68;81;81;68;68;81;94;107;107;107;107;120;120;120;120;120;120;120;120;120;120;120;107;107;107;94;81;68;68;68;68;68;68;68;68;81;94;107;107;120;120;120;120;120;120;107;94;94;81;81;94;107;107;107;107;107;107;107;107;120;120;120;107;107;107;107;107;107;107;107;107;107;107;94;81;81;81;94;107;120;120;120;120;120;107;94;94;81;68;68;68;68;81;81;68;68;81;94;94;94;94;81;68;68;81;94;94;81;68;68;68;68;68;68;81;94;107;120;120;120;120;120;120;120;120;120;120;120;120;120;120;120;107;107;94;81;68;68;81;81;94;94;94;94;94;94;94;94;94;94;94;94;94;94;94;94;94;94;94;94;94;94;94;94;94;94;94;94;94;94;94;94;81;81;81;81;68;68;81;94;94;107;107;107;94;81;68;68;81;94;94;81;68;55;55;68;81;94;94;81;68;68;81;94;107;107;107;107;107;107;107;107;107" keyTimes="0;0.0034;0.0069;0.0103;0.0137;0.0172;0.0206;0.0241;0.0275;0.0309;0.0344;0.0378;0.0412;0.0447;0.0481;0.0515;0.0550;0.0584;0.0619;0.0653;0.0687;0.0722;0.0756;0.0790;0.0825;0.0859;0.0893;0.0928;0.0962;0.0996;0.1031;0.1065;0.1100;0.1134;0.1168;0.1203;0.1237;0.1271;0.1306;0.1340;0.1374;0.1409;0.1443;0.1478;0.1512;0.1546;0.1581;0.1615;0.1649;0.1684;0.1718;0.1752;0.1787;0.1821;0.1856;0.1890;0.1924;0.1959;0.1993;0.2027;0.2062;0.2096;0.2130;0.2165;0.2199;0.2233;0.2268;0.2302;0.2337;0.2371;0.2405;0.2440;0.2474;0.2508;0.2543;0.2577;0.2611;0.2646;0.2680;0.2715;0.2749;0.2783;0.2818;0.2852;0.2886;0.2921;0.2955;0.2989;0.3024;0.3058;0.3093;0.3127;0.3161;0.3196;0.3230;0.3264;0.3299;0.3333;0.3367;0.3402;0.3436;0.3470;0.3505;0.3539;0.3574;0.3608;0.3642;0.3677;0.3711;0.3745;0.3780;0.3814;0.3848;0.3883;0.3917;0.3952;0.3986;0.4020;0.4055;0.4089;0.4123;0.4158;0.4192;0.4226;0.4261;0.4295;0.4330;0.4364;0.4398;0.4433;0.4467;0.4501;0.4536;0.4570;0.4604;0.4639;0.4673;0.4707;0.4742;0.4776;0.4811;0.4845;0.4879;0.4914;0.4948;0.4982;0.5017;0.5051;0.5085;0.5120;0.5154;0.5189;0.5223;0.5257;0.5292;0.5326;0.5360;0.5395;0.5429;0.5463;0.5498;0.5532;0.5567;0.5601;0.5635;0.5670;0.5704;0.5738;0.5773;0.5807;0.5841;0.5876;0.5910;0.5944;0.5979;0.6013;0.6048;0.6082;0.6116;0.6151;0.6185;0.6219;0.6254;0.6288;0.6322;0.6357;0.6391;0.6426;0.6460;0.6494;0.6529;0.6563;0.6597;0.6632;0.6666;0.6700;0.6735;0.6769;0.6804;0.6838;0.6872;0.6907;0.6941;0.6975;0.7010;0.7044;0.7078;0.7113;0.7147;0.7181;0.7216;0.7250;0.7285;0.7319;0.7353;0.7388;0.7422;0.7456;0.7491;0.7525;0.7559;0.7594;0.7628;0.7663;0.7697;0.7731;0.7766;0.7800;1" dur="35.1s" repeatCount="indefinite"/>
+  <animate attributeName="cx" values="712.0;712.0;712.0;705.5;692.5;679.5;673.0;673.0;679.5;686.0;692.5;699.0;705.5;712.0;712.0;712.0;705.5;692.5;679.5;673.0;666.5;653.5;640.5;627.5;614.5;601.5;588.5;575.5;562.5;549.5;543.0;536.5;536.5;543.0;543.0;543.0;536.5;523.5;510.5;497.5;484.5;471.5;471.5;478.0;478.0;478.0;484.5;491.0;497.5;497.5;484.5;471.5;458.5;452.0;452.0;445.5;439.0;432.5;426.0;426.0;419.5;406.5;393.5;380.5;367.5;354.5;341.5;335.0;328.5;315.5;309.0;302.5;289.5;276.5;263.5;250.5;237.5;224.5;211.5;198.5;185.5;179.0;179.0;172.5;159.5;153.0;153.0;153.0;159.5;172.5;185.5;198.5;205.0;205.0;198.5;192.0;192.0;185.5;185.5;198.5;205.0;211.5;218.0;224.5;231.0;231.0;224.5;224.5;237.5;244.0;244.0;250.5;257.0;257.0;263.5;270.0;270.0;276.5;289.5;289.5;276.5;263.5;257.0;257.0;257.0;257.0;250.5;237.5;224.5;211.5;198.5;185.5;172.5;159.5;146.5;133.5;120.5;107.5;94.5;81.5;75.0;81.5;88.0;88.0;88.0;94.5;101.0;107.5;114.0;120.5;133.5;146.5;159.5;172.5;185.5;198.5;211.5;224.5;237.5;250.5;263.5;276.5;289.5;302.5;315.5;328.5;341.5;354.5;367.5;380.5;393.5;406.5;419.5;432.5;445.5;458.5;471.5;484.5;497.5;510.5;517.0;523.5;536.5;549.5;556.0;562.5;569.0;569.0;562.5;556.0;562.5;575.5;582.0;582.0;582.0;588.5;595.0;595.0;601.5;608.0;608.0;608.0;614.5;621.0;621.0;621.0;627.5;634.0;634.0;640.5;647.0;647.0;647.0;640.5;627.5;614.5;614.5;627.5;640.5;653.5;666.5;679.5;692.5;699.0;705.5;718.5;725.0;725.0;725.0" keyTimes="0;0.0034;0.0069;0.0103;0.0137;0.0172;0.0206;0.0241;0.0275;0.0309;0.0344;0.0378;0.0412;0.0447;0.0481;0.0515;0.0550;0.0584;0.0619;0.0653;0.0687;0.0722;0.0756;0.0790;0.0825;0.0859;0.0893;0.0928;0.0962;0.0996;0.1031;0.1065;0.1100;0.1134;0.1168;0.1203;0.1237;0.1271;0.1306;0.1340;0.1374;0.1409;0.1443;0.1478;0.1512;0.1546;0.1581;0.1615;0.1649;0.1684;0.1718;0.1752;0.1787;0.1821;0.1856;0.1890;0.1924;0.1959;0.1993;0.2027;0.2062;0.2096;0.2130;0.2165;0.2199;0.2233;0.2268;0.2302;0.2337;0.2371;0.2405;0.2440;0.2474;0.2508;0.2543;0.2577;0.2611;0.2646;0.2680;0.2715;0.2749;0.2783;0.2818;0.2852;0.2886;0.2921;0.2955;0.2989;0.3024;0.3058;0.3093;0.3127;0.3161;0.3196;0.3230;0.3264;0.3299;0.3333;0.3367;0.3402;0.3436;0.3470;0.3505;0.3539;0.3574;0.3608;0.3642;0.3677;0.3711;0.3745;0.3780;0.3814;0.3848;0.3883;0.3917;0.3952;0.3986;0.4020;0.4055;0.4089;0.4123;0.4158;0.4192;0.4226;0.4261;0.4295;0.4330;0.4364;0.4398;0.4433;0.4467;0.4501;0.4536;0.4570;0.4604;0.4639;0.4673;0.4707;0.4742;0.4776;0.4811;0.4845;0.4879;0.4914;0.4948;0.4982;0.5017;0.5051;0.5085;0.5120;0.5154;0.5189;0.5223;0.5257;0.5292;0.5326;0.5360;0.5395;0.5429;0.5463;0.5498;0.5532;0.5567;0.5601;0.5635;0.5670;0.5704;0.5738;0.5773;0.5807;0.5841;0.5876;0.5910;0.5944;0.5979;0.6013;0.6048;0.6082;0.6116;0.6151;0.6185;0.6219;0.6254;0.6288;0.6322;0.6357;0.6391;0.6426;0.6460;0.6494;0.6529;0.6563;0.6597;0.6632;0.6666;0.6700;0.6735;0.6769;0.6804;0.6838;0.6872;0.6907;0.6941;0.6975;0.7010;0.7044;0.7078;0.7113;0.7147;0.7181;0.7216;0.7250;0.7285;0.7319;0.7353;0.7388;0.7422;0.7456;0.7491;0.7525;0.7559;0.7594;0.7628;0.7663;0.7697;0.7731;0.7766;0.7800;1" dur="58.5s" repeatCount="indefinite"/>
+  <animate attributeName="cy" values="94.0;94.0;94.0;94.0;94.0;94.0;87.5;74.5;68.0;74.5;81.0;74.5;68.0;74.5;87.5;100.5;107.0;107.0;107.0;113.5;120.0;120.0;120.0;120.0;120.0;120.0;120.0;120.0;120.0;120.0;113.5;107.0;107.0;100.5;87.5;74.5;68.0;68.0;68.0;68.0;68.0;68.0;68.0;74.5;87.5;100.5;107.0;113.5;120.0;120.0;120.0;120.0;120.0;113.5;100.5;94.0;87.5;81.0;87.5;100.5;107.0;107.0;107.0;107.0;107.0;107.0;107.0;113.5;120.0;120.0;113.5;107.0;107.0;107.0;107.0;107.0;107.0;107.0;107.0;107.0;107.0;100.5;87.5;81.0;81.0;87.5;100.5;113.5;120.0;120.0;120.0;120.0;113.5;100.5;94.0;87.5;74.5;68.0;68.0;68.0;74.5;81.0;74.5;68.0;74.5;87.5;94.0;94.0;94.0;87.5;74.5;68.0;74.5;87.5;94.0;87.5;74.5;68.0;68.0;68.0;68.0;68.0;74.5;87.5;100.5;113.5;120.0;120.0;120.0;120.0;120.0;120.0;120.0;120.0;120.0;120.0;120.0;120.0;120.0;120.0;113.5;107.0;100.5;87.5;74.5;68.0;74.5;81.0;87.5;94.0;94.0;94.0;94.0;94.0;94.0;94.0;94.0;94.0;94.0;94.0;94.0;94.0;94.0;94.0;94.0;94.0;94.0;94.0;94.0;94.0;94.0;94.0;94.0;94.0;94.0;94.0;94.0;94.0;94.0;94.0;87.5;81.0;81.0;81.0;74.5;68.0;74.5;87.5;94.0;100.5;107.0;107.0;100.5;87.5;74.5;68.0;74.5;87.5;94.0;87.5;74.5;61.5;55.0;61.5;74.5;87.5;94.0;87.5;74.5;68.0;74.5;87.5;100.5;107.0;107.0;107.0;107.0;107.0;107.0;107.0;107.0;107.0;107.0;113.5;120.0;120.0;113.5;100.5;100.5" keyTimes="0;0.0034;0.0069;0.0103;0.0137;0.0172;0.0206;0.0241;0.0275;0.0309;0.0344;0.0378;0.0412;0.0447;0.0481;0.0515;0.0550;0.0584;0.0619;0.0653;0.0687;0.0722;0.0756;0.0790;0.0825;0.0859;0.0893;0.0928;0.0962;0.0996;0.1031;0.1065;0.1100;0.1134;0.1168;0.1203;0.1237;0.1271;0.1306;0.1340;0.1374;0.1409;0.1443;0.1478;0.1512;0.1546;0.1581;0.1615;0.1649;0.1684;0.1718;0.1752;0.1787;0.1821;0.1856;0.1890;0.1924;0.1959;0.1993;0.2027;0.2062;0.2096;0.2130;0.2165;0.2199;0.2233;0.2268;0.2302;0.2337;0.2371;0.2405;0.2440;0.2474;0.2508;0.2543;0.2577;0.2611;0.2646;0.2680;0.2715;0.2749;0.2783;0.2818;0.2852;0.2886;0.2921;0.2955;0.2989;0.3024;0.3058;0.3093;0.3127;0.3161;0.3196;0.3230;0.3264;0.3299;0.3333;0.3367;0.3402;0.3436;0.3470;0.3505;0.3539;0.3574;0.3608;0.3642;0.3677;0.3711;0.3745;0.3780;0.3814;0.3848;0.3883;0.3917;0.3952;0.3986;0.4020;0.4055;0.4089;0.4123;0.4158;0.4192;0.4226;0.4261;0.4295;0.4330;0.4364;0.4398;0.4433;0.4467;0.4501;0.4536;0.4570;0.4604;0.4639;0.4673;0.4707;0.4742;0.4776;0.4811;0.4845;0.4879;0.4914;0.4948;0.4982;0.5017;0.5051;0.5085;0.5120;0.5154;0.5189;0.5223;0.5257;0.5292;0.5326;0.5360;0.5395;0.5429;0.5463;0.5498;0.5532;0.5567;0.5601;0.5635;0.5670;0.5704;0.5738;0.5773;0.5807;0.5841;0.5876;0.5910;0.5944;0.5979;0.6013;0.6048;0.6082;0.6116;0.6151;0.6185;0.6219;0.6254;0.6288;0.6322;0.6357;0.6391;0.6426;0.6460;0.6494;0.6529;0.6563;0.6597;0.6632;0.6666;0.6700;0.6735;0.6769;0.6804;0.6838;0.6872;0.6907;0.6941;0.6975;0.7010;0.7044;0.7078;0.7113;0.7147;0.7181;0.7216;0.7250;0.7285;0.7319;0.7353;0.7388;0.7422;0.7456;0.7491;0.7525;0.7559;0.7594;0.7628;0.7663;0.7697;0.7731;0.7766;0.7800;1" dur="58.5s" repeatCount="indefinite"/>
 </circle>
 </svg>
