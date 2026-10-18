@@ -42,6 +42,18 @@ jobs:
         with:
           python-version: "3.11"
 
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+          cache: npm
+
+      - name: Install snake renderer
+        run: npm ci --ignore-scripts
+
+      - name: Test snake renderer
+        run: npm test
+
       - name: Install Dependencies
         run: pip install python-gitlab svgwrite
 
@@ -55,7 +67,7 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          for svg_file in gitlab-graph.svg gitlab-snk.svg; do
+          for svg_file in gitlab-graph.svg gitlab-snk.svg gitlab-snk-light.svg; do
             [ -f "$svg_file" ] && git add "$svg_file"
           done
           git commit -m "Update GitLab contribution graph and snake" || echo "No changes"
