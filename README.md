@@ -13,7 +13,7 @@ This project automatically generates a GitHub-style contribution graph from a pr
 
 The daily GitHub Action fetches authenticated GitLab push events from the last year. Each event counts once, rather than counting the commits inside a push. Only daily totals reach the renderers; tokens, repository names and commit messages stay private.
 
-The static heatmap and both snake themes use the same totals. The snake uses the pinned [Platane/snk](https://github.com/Platane/snk) solver through its `generate-snake-animation` SDK. A local calendar adapter keeps private GitLab authentication in Python. Both transparent SVG themes complete their route in 24 seconds, using the same intensity thresholds as the static graph.
+The static heatmap and both snake themes use the same totals. The snake uses the pinned [Platane/snk](https://github.com/Platane/snk) solver through its `generate-snake-animation` SDK. A local calendar adapter keeps private GitLab authentication in Python. Both SVG themes preserve the calendar header, months, weekdays and intensity legend. The snake advances one cell every 300 ms, using the same intensity thresholds as the static graph; its full loop duration depends on the route length.
 
 ## Setup
 

@@ -5,28 +5,33 @@ import { createSnakeSvgs } from "./snake_animation.mjs";
 test("exports both palettes with a shared loop and one contribution total", async () => {
   const today = new Date().toISOString().slice(0, 10);
   const results = await createSnakeSvgs({ [today]: 12 });
-  assert.match(results.light, /12 GitLab contributions/);
-  assert.match(results.dark, /12 GitLab contributions/);
+  assert.match(results.light, /12 contributions in the last year/);
+  assert.match(results.dark, /12 contributions in the last year/);
   assert.match(results.light, /--cs:#0969da/);
   assert.match(results.dark, /--cs:#79c0ff/);
   for (const svg of Object.values(results)) {
     assert.match(svg, /Generated with https:\/\/github.com\/Platane\/snk/);
-    assert.match(svg, /data-animation-duration="24000"/);
+    const expectedDuration = Number(
+      svg.match(/data-animation-duration="(\d+)"/)[1],
+    );
+    assert.ok(expectedDuration >= 2400);
     const durations = [...svg.matchAll(/animation:[^;}]*?\b([\d.]+)ms/g)].map(
       (match) => Number(match[1]),
     );
     assert.ok(durations.length >= 2);
-    assert.ok(durations.every((duration) => duration === 24000));
-    assert.doesNotMatch(
-      svg,
-      /<rect[^>]*width="\d+"[^>]*fill="#(?:fff|0d1117)"/,
-    );
+    assert.ok(durations.every((duration) => duration === expectedDuration));
+    for (const label of ["Mon", "Wed", "Fri", "Less", "More"]) {
+      assert.ok(svg.includes(`>${label}</text>`));
+    }
+    assert.doesNotMatch(svg, /\d{4}-\d{2}-\d{2} to/);
+    assert.doesNotMatch(svg, /<rect class="u /);
+    assert.match(svg, /<rect[^>]+rx="6"/);
   }
 });
 
 test("an empty contribution calendar still renders a valid loop", async () => {
   const results = await createSnakeSvgs({});
-  assert.match(results.light, /0 GitLab contributions/);
+  assert.match(results.light, /0 contributions in the last year/);
   assert.match(results.dark, /@keyframes/);
 });
 
@@ -75,6 +80,7 @@ test("dense routes turn on grid cells, avoid their own body and return to the st
   }
   const { light } = await createSnakeSvgs(calendar);
   const tracks = snakeTracks(light);
+  const duration = Number(light.match(/data-animation-duration="(\d+)"/)[1]);
   assert.equal(tracks.length, 4);
   for (const track of tracks) {
     assert.deepEqual(
@@ -84,6 +90,13 @@ test("dense routes turn on grid cells, avoid their own body and return to the st
     for (let index = 1; index < track.length; index++) {
       const previous = track[index - 1];
       const current = track[index];
+      const distance =
+        Math.abs(current.x - previous.x) + Math.abs(current.y - previous.y);
+      const seconds = ((current.time - previous.time) * duration) / 100000;
+      assert.ok(
+        distance === 0 || distance / seconds < 48,
+        "Snake exceeded one cell per 300ms",
+      );
       assert.ok(
         current.x === previous.x || current.y === previous.y,
         "A snake segment cut diagonally across a corner",

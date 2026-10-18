@@ -3,6 +3,7 @@ import { readFileSync, writeFileSync } from "node:fs";
 import { createServer } from "node:http";
 import { pathToFileURL } from "node:url";
 import { generateSnakeAnimation } from "generate-snake-animation";
+import { frameSnake } from "./snake_calendar.mjs";
 
 const palettes = {
   light: {
@@ -10,6 +11,7 @@ const palettes = {
     colorEmpty: "#ebedf0",
     colorDotBorder: "#d0d7de",
     colorSnake: "#0969da",
+    background: "#ffffff",
     foreground: "#1f2328",
     muted: "#59636e",
   },
@@ -18,6 +20,7 @@ const palettes = {
     colorEmpty: "#161b22",
     colorDotBorder: "#30363d",
     colorSnake: "#79c0ff",
+    background: "#0d1117",
     foreground: "#e6edf3",
     muted: "#9198a1",
   },
@@ -29,30 +32,6 @@ function contributionLevel(count) {
   if (count < 6) return 2;
   if (count < 10) return 3;
   return 4;
-}
-
-function frameSnake(svg, contributions, palette) {
-  const width = Number(svg.match(/\bwidth="(\d+)"/)[1]);
-  const height = Number(svg.match(/\bheight="(\d+)"/)[1]);
-  const today = new Date().toISOString().slice(0, 10);
-  const start = new Date(`${today}T00:00:00Z`);
-  start.setUTCDate(start.getUTCDate() - 365);
-  const startDate = start.toISOString().slice(0, 10);
-  const total = Object.entries(contributions)
-    .filter(([date]) => startDate <= date && date <= today)
-    .reduce((sum, [, count]) => sum + count, 0);
-  const animation = svg
-    .replace(
-      /(animation:[^;}]*?)\b[\d.]+ms/g,
-      (_, prefix) => `${prefix}24000ms`,
-    )
-    .replace("<svg ", '<svg x="24" y="30" ');
-  return `<svg xmlns="http://www.w3.org/2000/svg" width="${width + 48}" height="${height + 42}" viewBox="0 0 ${width + 48} ${height + 42}" data-animation-duration="24000">
-<title>${total.toLocaleString("en-US")} GitLab contributions</title>
-<text x="38" y="20" fill="${palette.foreground}" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,sans-serif" font-size="14">${total.toLocaleString("en-US")} GitLab contributions</text>
-<text x="${width + 24}" y="20" text-anchor="end" fill="${palette.muted}" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,sans-serif" font-size="12">${startDate} to ${today}</text>
-${animation}
-</svg>`;
 }
 
 export async function createSnakeSvgs(contributions) {
@@ -98,11 +77,12 @@ export async function createSnakeSvgs(contributions) {
         format: "svg",
         drawOptions: {
           ...palettes[theme],
+          colorDotBorder: "none",
           sizeCell: 13,
           sizeDot: 10,
           sizeDotBorderRadius: 2,
         },
-        animationOptions: { stepDurationMs: 100, frameByStep: 1 },
+        animationOptions: { stepDurationMs: 300, frameByStep: 1 },
       })),
     );
     return Object.fromEntries(
